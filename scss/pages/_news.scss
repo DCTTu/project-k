@@ -1,0 +1,243 @@
+.news {
+  &__top {
+    display: flex;
+    padding: 0px 40px;
+    margin-top: 30px;
+    align-items: flex-start;
+    gap: 20px;
+    align-self: stretch;
+    &__left {
+      width: 49.511%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+      img {
+        width: 100%;
+        height: 540px;
+      }
+      &__title {
+        align-self: stretch;
+        color: $black-color;
+        font-family: "fw-700";
+        font-size: 24px;
+        font-style: normal;
+        line-height: normal;
+      }
+      &__text {
+        align-self: stretch;
+        color: $black-color;
+        font-family: "fw-400";
+        font-size: 14px;
+        font-style: normal;
+        line-height: normal;
+      }
+    }
+    &__center {
+      width: 24.13%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+      &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        img {
+          width: 100%;
+          height: 264px;
+        }
+        &__title {
+          align-self: stretch;
+          color: $black-color;
+          font-family: "fw-700";
+          font-size: 24px;
+          font-style: normal;
+          line-height: normal;
+        }
+      }
+    }
+    &__right {
+      width: 24.185%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+      &__header {
+        display: flex;
+        padding: 30px 20px;
+        align-items: flex-start;
+        gap: 10px;
+        align-self: stretch;
+        border-radius: 4px;
+        background: $main-color-blue;
+        &__text {
+          flex: 1 0 0;
+          color: $white-color;
+          font-family: "fw-700";
+          font-size: 28px;
+          font-style: normal;
+          line-height: normal;
+        }
+      }
+      &__item {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+        align-self: stretch;
+        img {
+          width: 135px;
+          height: 83px;
+        }
+        &__title {
+          flex: 1 0 0;
+          color: $black-color;
+          font-family: "fw-700";
+          font-size: 14px;
+          font-style: normal;
+          line-height: normal;
+        }
+      }
+    }
+  }
+  &__bottom {
+    display: flex;
+    padding: 0px 40px;
+    margin-top: 30px;
+    align-items: flex-start;
+    gap: 20px;
+    align-self: stretch;
+    &__left {
+      width: 74.565%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+      &__top {
+        display: flex;
+        width: 100%;
+        align-items: flex-start;
+        gap: 20px;
+        &__item {
+          width: 32.362%;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 20px;
+          img {
+            width: 100%;
+            height: 264px;
+          }
+          &__title {
+            align-self: stretch;
+            color: $black-color;
+            font-family: "fw-700";
+            font-size: 24px;
+            font-style: normal;
+            line-height: normal;
+          }
+        }
+      }
+      &__item {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+        align-self: stretch;
+        img {
+          width: 32.362%;
+          height: 264px;
+        }
+        &__content {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 20px;
+          flex: 1 0 0;
+          &__title {
+            color: $black-color;
+            font-family: "fw-700";
+            font-size: 24px;
+            font-style: normal;
+            line-height: normal;
+          }
+          &__text {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            i {
+              color: $black-color;
+              font-family: Font Awesome 6 Free;
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+            }
+            span {
+              color: $black-color;
+              font-family: "fw-400";
+              font-size: 14px;
+              font-style: normal;
+              line-height: normal;
+            }
+          }
+        }
+      }
+    }
+    &__right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+      flex: 1 0 0;
+      &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        align-self: stretch;
+        &__header {
+          display: flex;
+          padding: 30px 20px;
+          align-items: flex-start;
+          gap: 10px;
+          align-self: stretch;
+          border-radius: 4px;
+          background: $main-color-blue;
+          &__title {
+            flex: 1 0 0;
+            color: $white-color;
+            font-family: "fw-700";
+            font-size: 28px;
+            font-style: normal;
+            line-height: normal;
+          }
+        }
+        &__item {
+          display: flex;
+          align-items: flex-start;
+          gap: 20px;
+          align-self: stretch;
+          img {
+            width: 135px;
+            height: 83px;
+            object-fit: cover;
+          }
+          &__title {
+            flex: 1 0 0;
+            color: $black-color;
+            font-family: "fw-700";
+            font-size: 14px;
+            font-style: normal;
+            line-height: normal;
+          }
+        }
+      }
+    }
+    hr {
+      width: 100%;
+      margin: 0;
+      height:1px;
+    }
+  }
+}
