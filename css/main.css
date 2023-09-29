@@ -87,5 +87,66 @@ body {
     display: none !important;
   }
 }
+.header {
+  padding: 30px 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-self: stretch;
+  gap: 17.391%;
+}
+.header__logo {
+  color: #303030;
+  font-family: "fw-400";
+  font-size: 48px;
+  font-style: normal;
+  line-height: normal;
+  text-decoration: none;
+}
+.header__search {
+  display: flex;
+  padding: 20px 30px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  border: 1px solid #303030;
+  flex: 1 0 0;
+}
+.header__search input {
+  flex: 1 0 0;
+  outline: none;
+  border: none;
+  background-color: #F2F2F2;
+}
+.header__search i {
+  cursor: pointer;
+}
+.header__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  color: #303030;
+  font-family: "fw-400";
+  font-size: 24px;
+  font-style: normal;
+  line-height: normal;
+}
+.header__info__phone {
+  color: #303030;
+  font-family: "fw-400";
+  font-size: 28px;
+  font-style: normal;
+  line-height: normal;
+}
+.header__info__phone i {
+  color: #303030;
+  font-family: Font Awesome 6 Free;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
 
 /*# sourceMappingURL=main.css.map */
