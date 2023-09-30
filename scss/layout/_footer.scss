@@ -1,0 +1,109 @@
+.footer {
+  width: 100%;
+  display: flex;
+  padding: 60px 40px;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+  background: $black-color;
+
+  &__intro {
+    width: 32.989%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+
+    h2 {
+      margin: 0;
+      color: $white-color;
+      font-family: "fw-700";
+      font-size: 24px;
+      font-style: normal;
+      line-height: normal;
+      text-transform: capitalize;
+    }
+
+    &__items {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      a {
+        color: $white-color;
+        font-family: "fw-500";
+        font-size: 18px;
+        font-style: normal;
+        line-height: normal;
+        text-decoration: none;
+      }
+
+      i {
+        color: $white-color;
+        font-family: Font Awesome 6 Free;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+      }
+    }
+  }
+
+  &__support {
+    width: 32.989%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+
+    h2 {
+      margin: 0;
+      color: $white-color;
+      font-family: "fw-700";
+      font-size: 24px;
+      font-style: normal;
+      line-height: normal;
+      text-transform: capitalize;
+    }
+
+    &__items {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      a {
+        color: $white-color;
+        font-family: "fw-500";
+        font-size: 18px;
+        font-style: normal;
+        line-height: normal;
+        text-decoration: none;
+      }
+
+      i {
+        color: $white-color;
+        font-family: Font Awesome 6 Free;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+        width: 20px;
+      }
+    }
+  }
+
+  &__img {
+    width: 32.989%;
+    align-self: stretch;
+
+    img {
+      width: 100%;
+      height: 207px;
+      object-fit: cover;
+    }
+  }
+
+  &--mt30 {
+    margin-top: 30px;
+  }
+}
