@@ -147,6 +147,31 @@ body {
   font-style: normal;
   font-weight: 900;
   line-height: normal;
+.navbar {
+  display: flex;
+  margin-top: 30px;
+  padding: 20px;
+  background: #162E4D;
+}
+.navbar a {
+  color: #FFFFFF;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-family: "fw-700";
+  font-size: 18px;
+  font-style: normal;
+  line-height: normal;
+}
+.navbar a:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+.navbar--drop {
+  cursor: pointer;
+}
+.navbar__sticky {
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,26 @@
+.navbar {
+  display: flex;
+  margin-top: 30px;
+  padding: 20px;
+  background: $main-color-blue;
+  a {
+    color: $white-color;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-family: "fw-700";
+    font-size: 18px;
+    font-style: normal;
+    line-height: normal;
+    &:hover {
+      color: rgba($color: $white-color, $alpha: 0.7);
+    }
+  }
+  &--drop {
+    cursor: pointer;
+  }
+  &__sticky {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+}
