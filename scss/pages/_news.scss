@@ -16,7 +16,7 @@
         width: 100%;
         height: 540px;
       }
-      &__title {
+      .title {
         align-self: stretch;
         color: $black-color;
         font-family: "fw-700";
@@ -24,7 +24,7 @@
         font-style: normal;
         line-height: normal;
       }
-      &__text {
+      .text {
         align-self: stretch;
         color: $black-color;
         font-family: "fw-400";
@@ -39,7 +39,7 @@
       flex-direction: column;
       align-items: flex-start;
       gap: 20px;
-      &__item {
+      .item {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -64,7 +64,7 @@
       flex-direction: column;
       align-items: flex-start;
       gap: 20px;
-      &__header {
+      .header {
         display: flex;
         padding: 30px 20px;
         align-items: flex-start;
@@ -81,7 +81,7 @@
           line-height: normal;
         }
       }
-      &__item {
+      .item {
         display: flex;
         align-items: flex-start;
         gap: 20px;
@@ -114,7 +114,7 @@
       flex-direction: column;
       align-items: flex-start;
       gap: 20px;
-      &__top {
+      .top {
         display: flex;
         width: 100%;
         align-items: flex-start;
@@ -139,7 +139,7 @@
           }
         }
       }
-      &__item {
+      .item {
         display: flex;
         align-items: flex-start;
         gap: 20px;
@@ -190,7 +190,7 @@
       align-items: flex-start;
       gap: 20px;
       flex: 1 0 0;
-      &__list {
+      .list {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
