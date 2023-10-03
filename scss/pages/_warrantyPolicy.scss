@@ -75,14 +75,14 @@
         align-self: stretch;
     }
 
-    .WarrantyPolicy-types{
+    .WarrantyPolicy{
         display: flex;
         width: 100%;
         align-items: flex-start;
         align-content: space-between;
         gap: 41px;
 
-        .WarrantyPolicy-type1{
+        &__type1{
             display: flex;
             padding: 30px;
             flex-direction: column;
@@ -129,7 +129,7 @@
             }
         }
 
-        .WarrantyPolicy-type2{
+        &__type2{
             display: flex;
             padding: 30px;
             flex-direction: column;
@@ -194,7 +194,7 @@
             line-height: normal;
         }
 
-        .brands-detail{
+        &__details{
             width: 100%;
             display: flex;
             align-items: flex-start;
