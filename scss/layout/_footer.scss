@@ -25,6 +25,8 @@
         }
         &__items{
             display: flex;
+            align-items: center;
+            gap: 20px;
             a{
             display: flex;
             gap: 10px;
@@ -72,7 +74,7 @@
             a{
             // display: flex;
             color: var(--hite, #FFF);
-            font-family: Inter;
+            font-family: fw-500;
             font-size: 18px;
             font-style: normal;
             font-weight: 500;
