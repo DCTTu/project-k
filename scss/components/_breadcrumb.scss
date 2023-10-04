@@ -1,0 +1,34 @@
+.breadcrumb{
+    display: flex;
+    padding: 0px 20px;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+
+    &__item{
+        display: flex;
+        padding: 10px 20px;
+        align-items: flex-start;
+        gap: 10px;
+
+        p{
+            color: #303030;
+            font-family: fw-500;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+    }
+}
+
+// @include mobile{
+//     .breadcrumb-nav{
+//         width: 100%;
+//         padding: 0px 10px;
+//         div{
+//             display: flex;
+//             padding: 10px 10px;
+//         }
+//     }
+// }
