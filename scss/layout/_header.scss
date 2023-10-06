@@ -1,0 +1,63 @@
+.header {
+  padding: 30px 40px 0;  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-self: stretch;
+  gap: 17.391%;
+  &__logo {
+    color: $black-color;
+    font-family: "fw-400";
+    font-size: 48px;
+    font-style: normal;
+    line-height: normal;
+    text-decoration: none;
+  }
+  &__search {
+    display: flex;
+    padding: 20px 30px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    border: 1px solid $black-color;
+    flex: 1 0 0;
+    input {
+      flex: 1 0 0;
+      outline: none;
+      border: none;
+      background-color: $main-background-color;
+    }
+    i {
+      cursor: pointer;
+    }
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    color: $black-color;
+    font-family: "fw-400";
+    font-size: 24px;
+    font-style: normal;
+    line-height: normal;
+    &__phone {
+      color: $black-color;
+      font-family: "fw-400";
+      font-size: 28px;
+      font-style: normal;
+      line-height: normal;
+      i {
+        color: $black-color;
+        font-family: Font Awesome 6 Free;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+      }
+    }
+  }
+}
+
+
