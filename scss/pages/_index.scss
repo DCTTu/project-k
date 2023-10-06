@@ -1,0 +1,178 @@
+.index {
+  &__slideshow {
+    margin-top: 30px;
+    width: 100%;
+    height: 540px;
+    object-fit: cover;
+  }
+  &__produce {
+    display: flex;
+    padding: 0px 20px;
+    margin-top: 30px;
+    align-items: flex-start;
+    gap: 20px;
+    align-self: stretch;
+    &__menu{
+      width: 13.542%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+      background-color: yellow;
+    }
+    &__listProduct {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      flex: 1 0 0;
+      background: $white-color;
+      .filter {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        align-self: stretch;
+        &__box {
+          display: flex;
+          padding: 15px 20px;
+          justify-content: flex-end;
+          align-items: center;
+          gap: 10px;
+          border-radius: 8px;
+          background: $main-color-blue;
+          color: $white-color;
+          font-family: "fw-400";
+          font-size: 18px;
+          font-style: normal;
+          line-height: normal;
+          i {
+            color: $white-color;
+            font-family: Font Awesome 6 Free;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: normal;
+          }
+        }
+      }
+      .displayProduct {
+        padding: 20px;
+        display: grid;
+        grid-auto-rows: minmax(min-content, max-content);
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        row-gap: 20px;
+        column-gap: 20px;
+      }
+      .productCard {
+        display: flex;
+        padding: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        border-radius: 8px;
+        border: 1px solid $black-color;
+        img {
+          width: 100%;
+        }
+        .productInfo {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          align-self: stretch;
+          &__des {
+            color: $black-color;
+            font-family: "fw-400";
+            font-size: 14px;
+            font-style: normal;
+            line-height: 20px;
+            height: 80px;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 4;
+            overflow: hidden;
+          }
+          &__price {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            align-self: stretch;
+            &--new {
+              position: relative;
+              // width: 48%;
+              color: $red-color;
+              font-family: "fw-700";
+              font-size: 18px;
+              font-style: normal;
+              line-height: 20px; 
+              height: 20px;
+              display: -webkit-box;
+              -webkit-box-orient: vertical;
+              -webkit-line-clamp: 1;
+              overflow: hidden;
+            }
+            &--old {
+              flex: 1 0 0;
+              color: $red-color;
+              text-align: right;
+              font-family: "fw-700";
+              font-size: 12px;
+              font-style: normal;
+              line-height: 20px;
+              text-decoration: line-through;
+              height: 20px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+          }
+        }
+      }
+    }
+  }
+  @include md-desk {
+    &__produce {
+      &__listProduct {
+        .productCard {
+          .productInfo {
+            gap: 10px;
+            &__des {
+              font-size: 11.6px;
+              height: 60px;
+              -webkit-line-clamp: 3;
+            }
+            &__price {
+              &--new {
+                font-size: 11.5px;
+              }
+              &--old {
+                font-size: 11px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.tooltip {
+  width: 48%;
+  position: relative;
+  word-wrap: normal
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  color: $red-color;
+  background-color: $black-color;
+  width: max-content;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0; 
+  position: absolute;
+  z-index: 1;
+  bottom: 80%;
+  font-size: 14px;
+  font-family: "fw-700";
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
