@@ -1,20 +1,5 @@
-@mixin sm-mobile {
-	@media (max-width: 411px) {
-		@content;
-	}
-}
-@mixin mobile {
-	@media (min-width: 412px) and (max-width: 748px) {
-		@content;
-	}
-}
-@mixin tablet {
-	@media (min-width: 749px) and (max-width: 1024px){
-		@content;
-	}
-}
-@mixin xl-desk {
-	@media (min-width: 1920px){
+@mixin md-desk {
+	@media (min-width: 1336px) and (max-width: 1500px) {
 		@content;
 	}
 }
