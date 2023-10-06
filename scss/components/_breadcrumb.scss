@@ -4,31 +4,23 @@
     align-items: flex-start;
     gap: 10px;
     align-self: stretch;
->
+    background-color: $main-background-color;
+
     &__item{
         display: flex;
-        padding: 10px 20px;
+        padding: 10px 0px;
         align-items: flex-start;
         gap: 10px;
-
-        p{
-            color: $black-color;
-            font-family: fw-500;
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: normal;
+        color: #303030;
+        font-family: fw-500;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        
+        &:not(:last-child)::after{
+            margin: 0 50px;
+            content: ">";
         }
     }
 }
-
-// @include mobile{
-//     .breadcrumb-nav{
-//         width: 100%;
-//         padding: 0px 10px;
-//         div{
-//             display: flex;
-//             padding: 10px 10px;
-//         }
-//     }
-// }
