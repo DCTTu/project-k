@@ -1,18 +1,19 @@
 .btn {
-  &--more {
-    display: flex;
-    padding: 20px 0px;
+  &--seeDetails {
+    padding: 10px;
     justify-content: center;
     align-items: center;
     gap: 10px;
     align-self: stretch;
+    border: none;
     border-radius: 8px;
-    border: 1px solid $black-color;
-    color: $black-color;
-    font-family: "fw-700";
-    font-size: 24px;
+    background: $main-color-blue;
+    color: $white-color;
+    text-align: center;
+    font-family: "fw-400";
+    font-size: 14px;
     font-style: normal;
-    line-height: normal;
+    line-height: 20px; 
     i {
       color: $black-color;
       font-family: Font Awesome 6 Free;
