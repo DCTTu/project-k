@@ -22,3 +22,4 @@ var forEach = function (array, callback, scope) {
     callback.call(scope, i, array[i]); // passes back stuff we need
   }
 };
+
