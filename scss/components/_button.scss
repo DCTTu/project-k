@@ -29,4 +29,29 @@
         background-color:#c5c5c5 ;
         text-decoration-line: none;
     }
+.btn {
+  &--seeDetails {
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border: none;
+    border-radius: 8px;
+    background: $main-color-blue;
+    color: $white-color;
+    text-align: center;
+    font-family: "fw-400";
+    font-size: 14px;
+    font-style: normal;
+    line-height: 20px; 
+    i {
+      color: $black-color;
+      font-family: Font Awesome 6 Free;
+      font-size: 8px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: normal;
+    }
+  }
 }
