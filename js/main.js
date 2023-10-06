@@ -23,13 +23,3 @@ var forEach = function (array, callback, scope) {
   }
 };
 
-$(document).ready(function () {
-  $(window).scroll(function () { 
-      console.log($(window).scrollTop());
-      if($(window).scrollTop() > 200){
-          $(".nav").addClass("sticky");
-      }else{
-          $(".nav").removeClass("sticky");
-      }
-  });
-});
