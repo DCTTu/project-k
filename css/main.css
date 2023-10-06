@@ -182,6 +182,1497 @@ body {
 }
 .footer--mt30 {
   margin-top: 30px;
+
+.mainPayment {
+  width: 100%;
+  display: flex;
+  padding: 0px 40px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 50px;
+  align-self: stretch;
+}
+.mainPayment .ModeOfPayment {
+  display: flex;
+  padding: 0px 40px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 50px;
+  align-self: stretch;
+}
+.mainPayment .ModeOfPayment .ModeOfPayment-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  align-self: stretch;
+}
+.mainPayment .ModeOfPayment .ModeOfPayment-title p {
+  color: var(--bleck, #303030);
+  font-family: fw-500;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.mainPayment .ModeOfPayment .ModeOfPayment-title h2 {
+  align-self: stretch;
+  color: var(--bleck, #303030);
+  font-family: fw-500;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.mainPayment .ModeOfPayment .paymentMutipleChoices-1 {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: space-between;
+  flex-wrap: wrap;
+}
+.mainPayment .ModeOfPayment .paymentMutipleChoices-1 .paymentChoice {
+  display: flex;
+  width: 30%;
+  padding: 30px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  background: var(--hite, #FFF);
+  box-shadow: -1px 1px 2px 0px rgba(0, 0, 0, 0.25);
+}
+.mainPayment .ModeOfPayment .paymentMutipleChoices-1 .paymentChoice svg {
+  width: 100%;
+}
+.mainPayment .ModeOfPayment .paymentMutipleChoices-1 .paymentChoice a {
+  align-self: stretch;
+  color: var(--bleck, #303030);
+  font-family: fw-500;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.mainPayment .ModeOfPayment .paymentMutipleChoices-1 .paymentChoice p {
+  align-self: stretch;
+  color: var(--bleck, #303030);
+  font-family: fw-500;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.mainPayment .ModeOfPayment .paymentMutipleChoices-1 .paymentChoice .paymentChoice-title {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  align-self: stretch;
+}
+.mainPayment .ModeOfPayment .paymentMutipleChoices-1 .paymentChoice .paymentChoice-title h2 {
+  flex: 1 0 0;
+  color: #162E4C;
+  font-family: fw-500;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.mainPayment .ModeOfPayment .paymentMutipleChoices-1 .paymentChoice .paymentChoice-title img {
+  width: 54px;
+  height: 41.929px;
+  flex-shrink: 0;
+}
+.mainPayment .ModeOfPayment .paymentMutipleChoices-2 {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: space-between;
+  column-gap: 41px;
+  flex-wrap: wrap;
+}
+.mainPayment .ModeOfPayment .paymentMutipleChoices-2 .paymentChoice {
+  display: flex;
+  width: 602px;
+  padding: 30px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  background: var(--hite, #FFF);
+  box-shadow: -1px 1px 2px 0px rgba(0, 0, 0, 0.25);
+}
+.mainPayment .ModeOfPayment .paymentMutipleChoices-2 .paymentChoice a {
+  align-self: stretch;
+  color: var(--bleck, #303030);
+  font-family: fw-500;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.mainPayment .ModeOfPayment .paymentMutipleChoices-2 .paymentChoice p {
+  align-self: stretch;
+  color: var(--bleck, #303030);
+  font-family: fw-500;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.mainPayment .ModeOfPayment .paymentMutipleChoices-2 .paymentChoice .paymentChoice-title {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  align-self: stretch;
+}
+.mainPayment .ModeOfPayment .paymentMutipleChoices-2 .paymentChoice .paymentChoice-title h2 {
+  flex: 1 0 0;
+  color: #162E4C;
+  font-family: fw-500;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.mainPayment .ModeOfPayment .paymentMutipleChoices-2 .paymentChoice .paymentChoice-title img {
+  width: 54px;
+  height: 41.929px;
+  flex-shrink: 0;
+}
+.mainPayment .byCash {
+  display: flex;
+  padding: 0px 40px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 50px;
+  align-self: stretch;
+}
+.mainPayment .byCash .byCash-title {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 15px;
+  background: var(--hite, #FFF);
+}
+.mainPayment .wireTransfer {
+  display: flex;
+  padding: 0px 40px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 50px;
+  align-self: stretch;
+}
+.mainPayment .wireTransfer .wireTransferDetail {
+  display: flex;
+  padding: 30px;
+  align-items: flex-start;
+  gap: 40px;
+  align-self: stretch;
+  border-radius: 15px;
+  background: var(--hite, #FFF);
+}
+.mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer {
+  width: 100%;
+  height: 557px;
+}
+.mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img {
+  width: 77%;
+  height: 557px;
+  flex-shrink: 0;
+}
+.mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img .wireTransfer-thumbnail-background {
+  position: absolute;
+  margin: -530px 0 0px 230px;
+  display: flex;
+  width: 249px;
+  height: 500px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 30px;
+  background: rgba(37, 37, 37, 0.6);
+}
+.mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img .wireTransfer-thumbnail-background .wireTransfer-img {
+  display: flex;
+  padding: 30px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-radius: 15px;
+  background: var(--hite, #FFF);
+}
+.mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img .wireTransfer-thumbnail-background .wireTransfer-img i {
+  color: #1ABD00;
+  text-align: center;
+  font-family: Font Awesome 6 Free;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+.mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img .wireTransfer-thumbnail-background .wireTransfer-img .text-status {
+  color: #1ABD00;
+  text-align: center;
+  font-family: fw-500;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img .wireTransfer-thumbnail-background .wireTransfer-img .ok {
+  color: var(--bleck, #303030);
+  text-align: center;
+  font-family: fw-500;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer {
+  width: 100%;
+}
+.mainPayment .momo {
+  display: flex;
+  padding: 0px 40px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
+  align-self: stretch;
+}
+.mainPayment .momo .momoDetail {
+  display: flex;
+  padding: 30px;
+  align-items: center;
+  gap: 40px;
+  align-self: stretch;
+  border-radius: 15px;
+  background: var(--hite, #FFF);
+}
+.mainPayment .momo .momoDetail .momo-descript {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  flex: 1 0 0;
+}
+.mainPayment .zaloPay {
+  display: flex;
+  padding: 0px 40px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
+  align-self: stretch;
+}
+.mainPayment .zaloPay .zaloPayDetail {
+  display: flex;
+  padding: 30px;
+  align-items: center;
+  gap: 40px;
+  align-self: stretch;
+  border-radius: 15px;
+  background: var(--hite, #FFF);
+}
+.mainPayment .zaloPay .zaloPayDetail .zaloPayDescript {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  flex: 1 0 0;
+}
+.mainPayment .exchangeOfGoods {
+  display: flex;
+  padding: 0px 40px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
+  align-self: stretch;
+}
+.mainPayment .exchangeOfGoods .exchangeOfGoodsDetail {
+  display: flex;
+  padding: 30px;
+  align-items: center;
+  gap: 40px;
+  align-self: stretch;
+  border-radius: 15px;
+  background: var(--hite, #FFF);
+}
+.mainPayment .exchangeOfGoods .exchangeOfGoodsDetail .exchangeOfGoodsDescript {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  flex: 1 0 0;
+}
+
+@media (min-width: 412px) and (max-width: 748px) {
+  .mainPayment {
+    width: 100%;
+    display: flex;
+    padding: 0px 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    align-self: stretch;
+  }
+  .mainPayment .ModeOfPayment {
+    display: flex;
+    padding: 0px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    align-self: stretch;
+  }
+  .mainPayment .ModeOfPayment .ModeOfPayment-title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+  }
+  .mainPayment .ModeOfPayment .ModeOfPayment-title p {
+    color: var(--bleck, #303030);
+    font-family: fw-500;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .mainPayment .ModeOfPayment .ModeOfPayment-title h2 {
+    align-self: stretch;
+    color: var(--bleck, #303030);
+    font-family: fw-500;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .mainPayment .ModeOfPayment .paymentMutipleChoices-1 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: space-between;
+    flex-wrap: wrap;
+  }
+  .mainPayment .ModeOfPayment .paymentMutipleChoices-1 .paymentChoice {
+    display: flex;
+    width: 30%;
+    height: 20%;
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: var(--hite, #FFF);
+    box-shadow: -1px 1px 2px 0px rgba(0, 0, 0, 0.25);
+  }
+  .mainPayment .ModeOfPayment .paymentMutipleChoices-1 .paymentChoice svg {
+    width: 100%;
+  }
+  .mainPayment .ModeOfPayment .paymentMutipleChoices-1 .paymentChoice a {
+    align-self: stretch;
+    color: var(--bleck, #303030);
+    font-family: fw-500;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .mainPayment .ModeOfPayment .paymentMutipleChoices-1 .paymentChoice p {
+    align-self: stretch;
+    color: var(--bleck, #303030);
+    font-family: fw-500;
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .mainPayment .ModeOfPayment .paymentMutipleChoices-1 .paymentChoice .paymentChoice-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+  }
+  .mainPayment .ModeOfPayment .paymentMutipleChoices-1 .paymentChoice .paymentChoice-title h2 {
+    flex: 1 0 0;
+    color: #162E4C;
+    font-family: fw-500;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .mainPayment .ModeOfPayment .paymentMutipleChoices-1 .paymentChoice .paymentChoice-title img {
+    width: 24px;
+    height: 20px;
+    flex-shrink: 0;
+  }
+  .mainPayment .ModeOfPayment .paymentMutipleChoices-2 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: space-between;
+    flex-wrap: wrap;
+  }
+  .mainPayment .ModeOfPayment .paymentMutipleChoices-2 .paymentChoice {
+    display: flex;
+    width: 40%;
+    padding: 30px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: var(--hite, #FFF);
+    box-shadow: -1px 1px 2px 0px rgba(0, 0, 0, 0.25);
+  }
+  .mainPayment .ModeOfPayment .paymentMutipleChoices-2 .paymentChoice svg {
+    width: 100%;
+  }
+  .mainPayment .ModeOfPayment .paymentMutipleChoices-2 .paymentChoice a {
+    align-self: stretch;
+    color: var(--bleck, #303030);
+    font-family: fw-500;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .mainPayment .ModeOfPayment .paymentMutipleChoices-2 .paymentChoice p {
+    align-self: stretch;
+    color: var(--bleck, #303030);
+    font-family: fw-500;
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .mainPayment .ModeOfPayment .paymentMutipleChoices-2 .paymentChoice .paymentChoice-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+  }
+  .mainPayment .ModeOfPayment .paymentMutipleChoices-2 .paymentChoice .paymentChoice-title h2 {
+    flex: 1 0 0;
+    color: #162E4C;
+    font-family: fw-500;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .mainPayment .ModeOfPayment .paymentMutipleChoices-2 .paymentChoice .paymentChoice-title img {
+    width: 24px;
+    height: 20px;
+    flex-shrink: 0;
+  }
+  .mainPayment .byCash {
+    width: 100%;
+    display: flex;
+    padding: 0px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    align-self: stretch;
+  }
+  .mainPayment .byCash .byCash-title {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 15px;
+    background: var(--hite, #FFF);
+  }
+  .mainPayment .wireTransfer {
+    width: 100%;
+    display: flex;
+    padding: 0px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    align-self: stretch;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail {
+    display: flex;
+    padding: 10px;
+    height: 480px;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 15px;
+    background: var(--hite, #FFF);
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer {
+    width: 100%;
+    height: 557px;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img {
+    width: 190px;
+    height: 257px;
+    flex-shrink: 0;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img img {
+    width: 100%;
+    height: 237px;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img .wireTransfer-thumbnail-background {
+    position: absolute;
+    margin: -227px 0 0px 88px;
+    display: flex;
+    width: 98px;
+    height: 218px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: rgba(37, 37, 37, 0.6);
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img .wireTransfer-thumbnail-background .wireTransfer-img {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 15px;
+    background: var(--hite, #FFF);
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img .wireTransfer-thumbnail-background .wireTransfer-img i {
+    margin-top: 20px;
+    color: #1ABD00;
+    text-align: center;
+    font-family: Font Awesome 6 Free;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img .wireTransfer-thumbnail-background .wireTransfer-img .text-status {
+    color: #1ABD00;
+    text-align: center;
+    font-family: fw-500;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img .wireTransfer-thumbnail-background .wireTransfer-img svg {
+    width: 100%;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img .wireTransfer-thumbnail-background .wireTransfer-img .ok {
+    margin-top: -20px;
+    color: var(--bleck, #303030);
+    text-align: center;
+    font-family: fw-500;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer {
+    width: 100%;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer h2 {
+    color: var(--bleck, #303030);
+    text-align: center;
+    font-family: fw-500;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer p {
+    color: var(--bleck, #303030);
+    text-align: center;
+    font-family: fw-500;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer .logo-illustration img {
+    width: 50%;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer .scan img {
+    width: 30%;
+  }
+  .mainPayment .momo {
+    width: 100%;
+    display: flex;
+    padding: 0px 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    align-self: stretch;
+  }
+  .mainPayment .momo .momoDetail {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 15px;
+    background: var(--hite, #FFF);
+  }
+  .mainPayment .momo .momoDetail .momo-descript {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    flex: 1 0 0;
+  }
+  .mainPayment .momo .momoDetail img {
+    width: 30%;
+  }
+  .mainPayment .zaloPay {
+    width: 100%;
+    display: flex;
+    padding: 0px 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    align-self: stretch;
+  }
+  .mainPayment .zaloPay .zaloPayDetail {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 15px;
+    background: var(--hite, #FFF);
+  }
+  .mainPayment .zaloPay .zaloPayDetail .zaloPayDescript {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    flex: 1 0 0;
+  }
+  .mainPayment .zaloPay .zaloPayDetail img {
+    width: 30%;
+  }
+  .mainPayment .exchangeOfGoods {
+    width: 100%;
+    display: flex;
+    padding: 0px 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    align-self: stretch;
+  }
+  .mainPayment .exchangeOfGoods .exchangeOfGoodsDetail {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 15px;
+    background: var(--hite, #FFF);
+  }
+  .mainPayment .exchangeOfGoods .exchangeOfGoodsDetail .exchangeOfGoodsDescript {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    flex: 1 0 0;
+  }
+  .mainPayment .exchangeOfGoods .exchangeOfGoodsDetail img {
+    width: 30%;
+  }
+}
+@media (min-width: 749px) and (max-width: 1024px) {
+  .mainPayment {
+    width: 100%;
+    display: flex;
+    padding: 0px 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    align-self: stretch;
+  }
+  .mainPayment .ModeOfPayment {
+    display: flex;
+    padding: 0px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    align-self: stretch;
+  }
+  .mainPayment .ModeOfPayment .ModeOfPayment-title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+  }
+  .mainPayment .ModeOfPayment .ModeOfPayment-title p {
+    color: var(--bleck, #303030);
+    font-family: fw-500;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .mainPayment .ModeOfPayment .ModeOfPayment-title h2 {
+    align-self: stretch;
+    color: var(--bleck, #303030);
+    font-family: fw-500;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .mainPayment .ModeOfPayment .paymentMutipleChoices-1 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: space-between;
+    flex-wrap: wrap;
+  }
+  .mainPayment .ModeOfPayment .paymentMutipleChoices-1 .paymentChoice {
+    display: flex;
+    width: 30%;
+    height: 20%;
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: var(--hite, #FFF);
+    box-shadow: -1px 1px 2px 0px rgba(0, 0, 0, 0.25);
+  }
+  .mainPayment .ModeOfPayment .paymentMutipleChoices-1 .paymentChoice svg {
+    width: 100%;
+  }
+  .mainPayment .ModeOfPayment .paymentMutipleChoices-1 .paymentChoice a {
+    align-self: stretch;
+    color: var(--bleck, #303030);
+    font-family: fw-500;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .mainPayment .ModeOfPayment .paymentMutipleChoices-1 .paymentChoice p {
+    align-self: stretch;
+    color: var(--bleck, #303030);
+    font-family: fw-500;
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .mainPayment .ModeOfPayment .paymentMutipleChoices-1 .paymentChoice .paymentChoice-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+  }
+  .mainPayment .ModeOfPayment .paymentMutipleChoices-1 .paymentChoice .paymentChoice-title h2 {
+    flex: 1 0 0;
+    color: #162E4C;
+    font-family: fw-500;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .mainPayment .ModeOfPayment .paymentMutipleChoices-1 .paymentChoice .paymentChoice-title img {
+    width: 24px;
+    height: 20px;
+    flex-shrink: 0;
+  }
+  .mainPayment .ModeOfPayment .paymentMutipleChoices-2 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: space-between;
+    flex-wrap: wrap;
+  }
+  .mainPayment .ModeOfPayment .paymentMutipleChoices-2 .paymentChoice {
+    display: flex;
+    width: 40%;
+    padding: 30px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: var(--hite, #FFF);
+    box-shadow: -1px 1px 2px 0px rgba(0, 0, 0, 0.25);
+  }
+  .mainPayment .ModeOfPayment .paymentMutipleChoices-2 .paymentChoice svg {
+    width: 100%;
+  }
+  .mainPayment .ModeOfPayment .paymentMutipleChoices-2 .paymentChoice a {
+    align-self: stretch;
+    color: var(--bleck, #303030);
+    font-family: fw-500;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .mainPayment .ModeOfPayment .paymentMutipleChoices-2 .paymentChoice p {
+    align-self: stretch;
+    color: var(--bleck, #303030);
+    font-family: fw-500;
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .mainPayment .ModeOfPayment .paymentMutipleChoices-2 .paymentChoice .paymentChoice-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+  }
+  .mainPayment .ModeOfPayment .paymentMutipleChoices-2 .paymentChoice .paymentChoice-title h2 {
+    flex: 1 0 0;
+    color: #162E4C;
+    font-family: fw-500;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .mainPayment .ModeOfPayment .paymentMutipleChoices-2 .paymentChoice .paymentChoice-title img {
+    width: 24px;
+    height: 20px;
+    flex-shrink: 0;
+  }
+  .mainPayment .byCash {
+    width: 100%;
+    display: flex;
+    padding: 0px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    align-self: stretch;
+  }
+  .mainPayment .byCash .byCash-title {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 15px;
+    background: var(--hite, #FFF);
+  }
+  .mainPayment .wireTransfer {
+    width: 100%;
+    display: flex;
+    padding: 0px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    align-self: stretch;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail {
+    display: flex;
+    padding: 10px;
+    height: 480px;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 15px;
+    background: var(--hite, #FFF);
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer {
+    width: 100%;
+    height: 557px;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img {
+    width: 190px;
+    height: 257px;
+    flex-shrink: 0;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img img {
+    width: 100%;
+    height: 237px;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img .wireTransfer-thumbnail-background {
+    position: absolute;
+    margin: -227px 0 0px 88px;
+    display: flex;
+    width: 98px;
+    height: 218px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: rgba(37, 37, 37, 0.6);
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img .wireTransfer-thumbnail-background .wireTransfer-img {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 15px;
+    background: var(--hite, #FFF);
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img .wireTransfer-thumbnail-background .wireTransfer-img i {
+    margin-top: 20px;
+    color: #1ABD00;
+    text-align: center;
+    font-family: Font Awesome 6 Free;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img .wireTransfer-thumbnail-background .wireTransfer-img .text-status {
+    color: #1ABD00;
+    text-align: center;
+    font-family: fw-500;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img .wireTransfer-thumbnail-background .wireTransfer-img svg {
+    width: 100%;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img .wireTransfer-thumbnail-background .wireTransfer-img .ok {
+    margin-top: -20px;
+    color: var(--bleck, #303030);
+    text-align: center;
+    font-family: fw-500;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer {
+    width: 100%;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer h2 {
+    color: var(--bleck, #303030);
+    text-align: center;
+    font-family: fw-500;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer p {
+    color: var(--bleck, #303030);
+    text-align: center;
+    font-family: fw-500;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer .logo-illustration img {
+    width: 50%;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer .scan img {
+    width: 30%;
+  }
+  .mainPayment .momo {
+    width: 100%;
+    display: flex;
+    padding: 0px 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    align-self: stretch;
+  }
+  .mainPayment .momo .momoDetail {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 15px;
+    background: var(--hite, #FFF);
+  }
+  .mainPayment .momo .momoDetail .momo-descript {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    flex: 1 0 0;
+  }
+  .mainPayment .momo .momoDetail img {
+    width: 30%;
+  }
+  .mainPayment .zaloPay {
+    width: 100%;
+    display: flex;
+    padding: 0px 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    align-self: stretch;
+  }
+  .mainPayment .zaloPay .zaloPayDetail {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 15px;
+    background: var(--hite, #FFF);
+  }
+  .mainPayment .zaloPay .zaloPayDetail .zaloPayDescript {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    flex: 1 0 0;
+  }
+  .mainPayment .zaloPay .zaloPayDetail img {
+    width: 30%;
+  }
+  .mainPayment .exchangeOfGoods {
+    width: 100%;
+    display: flex;
+    padding: 0px 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    align-self: stretch;
+  }
+  .mainPayment .exchangeOfGoods .exchangeOfGoodsDetail {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 15px;
+    background: var(--hite, #FFF);
+  }
+  .mainPayment .exchangeOfGoods .exchangeOfGoodsDetail .exchangeOfGoodsDescript {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    flex: 1 0 0;
+  }
+  .mainPayment .exchangeOfGoods .exchangeOfGoodsDetail img {
+    width: 30%;
+  }
+}
+.WarrantyPolicy-title {
+  display: flex;
+  padding: 0px 40px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+}
+.WarrantyPolicy-title h2 {
+  color: var(--bleck, #303030);
+  font-family: fw-500;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  align-self: stretch;
+}
+.WarrantyPolicy-title p {
+  align-self: stretch;
+  color: var(--bleck, #303030);
+  font-family: fw-500;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.WarrantyPolicy-main {
+  display: flex;
+  padding: 0px 40px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+}
+.WarrantyPolicy-main h2 {
+  color: var(--bleck, #303030);
+  font-family: fw-500;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  align-self: stretch;
+}
+.WarrantyPolicy-main b {
+  color: var(--bleck, #303030);
+  font-family: fw-500;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  align-self: stretch;
+}
+.WarrantyPolicy-main ul li {
+  color: var(--bleck, #303030);
+  font-family: fw-500;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  align-self: stretch;
+}
+.WarrantyPolicy-main p {
+  color: var(--bleck, #303030);
+  font-family: fw-500;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  align-self: stretch;
+}
+.WarrantyPolicy-main .WarrantyPolicy-types {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  align-content: space-between;
+  gap: 41px;
+}
+.WarrantyPolicy-main .WarrantyPolicy-types .WarrantyPolicy-type1 {
+  display: flex;
+  padding: 30px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  flex: 1 0 0;
+  border-radius: 15px;
+  background: var(--hite, #FFF);
+  box-shadow: -1px 1px 2px 0px rgba(0, 0, 0, 0.25);
+}
+.WarrantyPolicy-main .WarrantyPolicy-types .WarrantyPolicy-type1 h2 {
+  color: #162E4C;
+  font-family: fw-500;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  flex: 1 0 0;
+}
+.WarrantyPolicy-main .WarrantyPolicy-types .WarrantyPolicy-type1 p {
+  color: var(--bleck, #303030);
+  font-family: fw-500;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 155.556% */
+  align-self: stretch;
+}
+.WarrantyPolicy-main .WarrantyPolicy-types .WarrantyPolicy-type1 ul li {
+  color: var(--bleck, #303030);
+  font-family: fw-500;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 155.556% */
+  align-self: stretch;
+}
+.WarrantyPolicy-main .WarrantyPolicy-types .WarrantyPolicy-type1 svg {
+  width: 100%;
+}
+.WarrantyPolicy-main .WarrantyPolicy-types .WarrantyPolicy-type2 {
+  display: flex;
+  padding: 30px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  flex: 1 0 0;
+  border-radius: 15px;
+  background: var(--hite, #FFF);
+  box-shadow: -1px 1px 2px 0px rgba(0, 0, 0, 0.25);
+}
+.WarrantyPolicy-main .WarrantyPolicy-types .WarrantyPolicy-type2 h2 {
+  color: #162E4C;
+  font-family: fw-500;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  flex: 1 0 0;
+}
+.WarrantyPolicy-main .WarrantyPolicy-types .WarrantyPolicy-type2 p {
+  color: var(--bleck, #303030);
+  font-family: fw-500;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 155.556% */
+  align-self: stretch;
+}
+.WarrantyPolicy-main .WarrantyPolicy-types .WarrantyPolicy-type2 ul li {
+  color: var(--bleck, #303030);
+  font-family: fw-500;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 155.556% */
+  align-self: stretch;
+}
+.WarrantyPolicy-main .WarrantyPolicy-types .WarrantyPolicy-type2 svg {
+  width: 100%;
+}
+.WarrantyPolicy-main .brands {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+}
+.WarrantyPolicy-main .brands h2 {
+  align-self: stretch;
+  color: var(--bleck, #303030);
+  font-family: fw-500;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.WarrantyPolicy-main .brands .brands-detail {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  align-self: stretch;
+}
+.WarrantyPolicy-main .brands .brands-detail img {
+  width: 10%;
+  flex: 1 0 0;
+}
+
+@media (min-width: 412px) and (max-width: 748px) {
+  .WarrantyPolicy-title {
+    display: flex;
+    padding: 0px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+  }
+  .WarrantyPolicy-title h2 {
+    color: var(--bleck, #303030);
+    font-family: fw-500;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    align-self: stretch;
+  }
+  .WarrantyPolicy-title p {
+    align-self: stretch;
+    color: var(--bleck, #303030);
+    font-family: fw-500;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .WarrantyPolicy-main {
+    display: flex;
+    padding: 0px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+  }
+  .WarrantyPolicy-main h2 {
+    color: var(--bleck, #303030);
+    font-family: fw-500;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    align-self: stretch;
+  }
+  .WarrantyPolicy-main b {
+    color: var(--bleck, #303030);
+    font-family: fw-500;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    align-self: stretch;
+  }
+  .WarrantyPolicy-main ul li {
+    color: var(--bleck, #303030);
+    font-family: fw-500;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    align-self: stretch;
+  }
+  .WarrantyPolicy-main p {
+    color: var(--bleck, #303030);
+    font-family: fw-500;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    align-self: stretch;
+  }
+  .WarrantyPolicy-main .WarrantyPolicy-types {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    align-content: space-between;
+    gap: 10px;
+  }
+  .WarrantyPolicy-main .WarrantyPolicy-types .WarrantyPolicy-type1 {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    flex: 1 0 0;
+    border-radius: 15px;
+    background: var(--hite, #FFF);
+    box-shadow: -1px 1px 2px 0px rgba(0, 0, 0, 0.25);
+  }
+  .WarrantyPolicy-main .WarrantyPolicy-types .WarrantyPolicy-type1 h2 {
+    color: #162E4C;
+    font-family: fw-500;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    flex: 1 0 0;
+  }
+  .WarrantyPolicy-main .WarrantyPolicy-types .WarrantyPolicy-type1 p {
+    color: var(--bleck, #303030);
+    font-family: fw-500;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 155.556% */
+    align-self: stretch;
+  }
+  .WarrantyPolicy-main .WarrantyPolicy-types .WarrantyPolicy-type1 ul li {
+    color: var(--bleck, #303030);
+    font-family: fw-500;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 155.556% */
+    align-self: stretch;
+  }
+  .WarrantyPolicy-main .WarrantyPolicy-types .WarrantyPolicy-type1 svg {
+    width: 100%;
+  }
+  .WarrantyPolicy-main .WarrantyPolicy-types .WarrantyPolicy-type2 {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    flex: 1 0 0;
+    border-radius: 15px;
+    background: var(--hite, #FFF);
+    box-shadow: -1px 1px 2px 0px rgba(0, 0, 0, 0.25);
+  }
+  .WarrantyPolicy-main .WarrantyPolicy-types .WarrantyPolicy-type2 h2 {
+    color: #162E4C;
+    font-family: fw-500;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    flex: 1 0 0;
+  }
+  .WarrantyPolicy-main .WarrantyPolicy-types .WarrantyPolicy-type2 p {
+    color: var(--bleck, #303030);
+    font-family: fw-500;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 155.556% */
+    align-self: stretch;
+  }
+  .WarrantyPolicy-main .WarrantyPolicy-types .WarrantyPolicy-type2 ul li {
+    color: var(--bleck, #303030);
+    font-family: fw-500;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 155.556% */
+    align-self: stretch;
+  }
+  .WarrantyPolicy-main .WarrantyPolicy-types .WarrantyPolicy-type2 svg {
+    width: 100%;
+  }
+  .WarrantyPolicy-main .brands {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+  }
+  .WarrantyPolicy-main .brands h2 {
+    align-self: stretch;
+    color: var(--bleck, #303030);
+    font-family: fw-500;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .WarrantyPolicy-main .brands .brands-detail {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+  }
+  .WarrantyPolicy-main .brands .brands-detail img {
+    width: 10%;
+    flex: 1 0 0;
+  }
 .header {
   padding: 30px 40px 0;
   display: flex;
