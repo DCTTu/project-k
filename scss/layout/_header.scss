@@ -1,6 +1,5 @@
 body{
     display: flex;
-    // width: 1920px;
     padding-top: 30px;
     flex-direction: column;
     align-items: flex-start;
@@ -16,7 +15,7 @@ body{
     align-self: stretch;
 
     .Logo{
-        color:#303030;
+        color:$black-color;
         font-size: 48px;
         font-family: fw-500;
         font-weight: 400;
@@ -35,14 +34,14 @@ body{
         border-style: solid;
         &__text{
             flex: 1 0 0;
-            color: var(--bleck, #303030);
+            color: $black-color;
             font-size: 14px;
             font-style: normal;
             font-weight: 400;
             line-height: normal;
             border: none;
             font-family: fw-500;
-            background-color: #F2F2F2;
+            background-color: $main-background-color;
             outline: none;
         }
     }
@@ -60,10 +59,9 @@ body{
             display: flex;
             gap: 10px;
             .fa-solid.fa-phone{
-                color:#303030;
+                color:$black-color;
                 font-size: 28px;
                 font-weight: 900;
-                
             }
         }
     }
@@ -107,7 +105,7 @@ body{
             .nav-item{
                 width: max-content;
                 margin-left: 50px;
-                color: white;
+                color: $white-color;
                 font-family: fw-500;
                 font-size: 18px;
                 font-weight: 700;
