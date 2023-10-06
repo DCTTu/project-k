@@ -15,10 +15,15 @@
   <header class="header">
     <div class="Logo">Logo</div>
     <div class="search">
-      <input class="text-search" type="text" value="Bạn cần tìm gì?">
+      <input class="search__text" type="text" value="Bạn cần tìm gì?">
       <i class="fa-solid fa-magnifying-glass"></i>
     </div>
-    <div class="hotline"><h2>Hotline</h2> <Span><i class="fa-solid fa-phone"></i><p>09012345678</p></Span></div>
+    <div class="hotline">Hotline 
+        <div class="hotline__number">
+            <i class="fa-solid fa-phone"></i>
+            09012345678
+        </div>
+    </div>
   </header>
   <div class="nav">
     <nav class="navbar navbar-expand-lg">
@@ -38,14 +43,14 @@
       </div>
     </nav>
   </div>
-      <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-turn-up"></i></button>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-turn-up"></i></button>
+    <div class="breadcrumb">
+      <div class="breadcrumb__item">Trang chủ</div>
+      <div class="breadcrumb__item">Chính sách bảo hành</div>
+    </div>
 
       <main>
-        <div class="breadcrumb-nav">
-            <div><p>Trang chủ</p></div>
-            <div><p>></p></div>
-            <div><p>Chính sách bảo hành</p></div>
-        </div>
+        
 
         <div class="WarrantyPolicy-title">
             <h2>Chính sách bảo hành</h2>
@@ -59,8 +64,8 @@
                 <li>Sản phẩm không trầy xước, còn đầy đủ hộp, sách và phụ kiện.</li>
                 <li>Hộp sản phẩm còn nguyên vẹn, không để rách, nát, biến dạng.</li>
             </ul>
-            <div class="WarrantyPolicy-types">
-                <div class="WarrantyPolicy-type1">
+            <div class="WarrantyPolicy">
+                <div class="WarrantyPolicy__type1">
                     <h2>ĐỔI MỚI 100% - TRONG 30 NGÀY ĐẦU</h2>
                     <svg xmlns="http://www.w3.org/2000/svg" width="840" height="2" viewBox="0 0 840 2" fill="none">
                         <path d="M839.5 1H0" stroke="#303030"/>
@@ -71,7 +76,7 @@
                         <li>Linh kiện máy tính : CPU, RAM, HDD, SSD, FAN.......</li>
                     </ul>                           
                 </div>
-                <div class="WarrantyPolicy-type2">
+                <div class="WarrantyPolicy__type2">
                     <h2>ĐỔI MỚI 100% - TRONG 7 NGÀY ĐẦU</h2>
                     <svg xmlns="http://www.w3.org/2000/svg" width="840" height="2" viewBox="0 0 840 2" fill="none">
                         <path d="M839.5 1H0" stroke="#303030"/>
@@ -92,7 +97,7 @@
             <p>Chúng tôi có thể giữ lại sản phẩm để tiếp tục kiểm tra trong vòng 3 ngày làm việc nếu có yêu cầu kiểm tra của khách hàng(không bao gồm thứ 7, Chủ Nhật & các ngày Lễ, Tết).Sau 3 ngày kiểm tra vẫn chưa phát hiện được lỗi của sản phẩm, GearVN xin phép hoàn trả lại sản phẩm đến quý khách.</p>
             <div class="brands">
                 <h2>II. Thông tin liên hệ bảo hành theo hãng</h2>
-                <div class="brands-detail">
+                <div class="brands__details">
                     <img src="/Img/Rectangle 3.png" alt="">
                     <img src="/Img/Rectangle 4.png" alt="">
                     <img src="/Img/Rectangle 5.png" alt="">
@@ -101,24 +106,24 @@
                 </div>
                 <h2>III. Chi nhánh của chúng tôi</h2>
                 <div class="map">
-                    <div class="address">
-                      <div class="title-address">Địa chỉ chi nhánh</div>
-                      <div class="departments-list">
-                        <div class="departments">
-                          <p class="title-department">Chi nhánh quận 1</p>
-                          <p class="descript-department">ẤP CHỢ Đường Nhà Thờ, Phường Thủ Thiêm, Quận 2, Thành Phố Hồ Chí Minh</p>
-                        </div>
-                        <div class="departments">
-                          <p class="title-department">Chi nhánh quận 1</p>
-                          <p class="descript-department">ẤP CHỢ Đường Nhà Thờ, Phường Thủ Thiêm, Quận 2, Thành Phố Hồ Chí Minh</p>
-                        </div>
-                        <div class="departments">
-                          <p class="title-department">Chi nhánh quận 1</p>
-                          <p class="descript-department">ẤP CHỢ Đường Nhà Thờ, Phường Thủ Thiêm, Quận 2, Thành Phố Hồ Chí Minh</p>
-                        </div>
-                      </div>      
-                    </div>
-                </div>
+                  <div class="address">
+                    <div class="address__title">Địa chỉ chi nhánh</div>
+                    <div class="address__departmentsList">
+                      <div class="department">
+                        <p class="department__title">Chi nhánh quận 1</p>
+                        <p class="department__descript">ẤP CHỢ Đường Nhà Thờ, Phường Thủ Thiêm, Quận 2, Thành Phố Hồ Chí Minh</p>
+                      </div>
+                      <div class="department">
+                          <p class="department__title">Chi nhánh quận 1</p>
+                          <p class="department__descript">ẤP CHỢ Đường Nhà Thờ, Phường Thủ Thiêm, Quận 2, Thành Phố Hồ Chí Minh</p>
+                      </div>
+                      <div class="department">
+                          <p class="department__title">Chi nhánh quận 1</p>
+                          <p class="department__descript">ẤP CHỢ Đường Nhà Thờ, Phường Thủ Thiêm, Quận 2, Thành Phố Hồ Chí Minh</p>
+                      </div>
+                    </div>      
+                  </div>
+              </div>
             </div>
         </div>
 
@@ -143,7 +148,6 @@
             <i class="fa-regular fa-clock"></i>
             <a href="#">8:00 - 22:00</a>
           </div>
-          
         </div>
         <div class="footer__support">
           <h2>Hỗ trợ nhanh</h2>
@@ -155,7 +159,7 @@
           </div>
           
         </div>
-        <div class="footer__img"><img src="../../img/fce0b8f070a0595a0b34ce619b9ee747.png" alt=""></div>
+        <div class="footer__img"><img src="/img/fce0b8f070a0595a0b34ce619b9ee747.png" alt=""></div>
       </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
