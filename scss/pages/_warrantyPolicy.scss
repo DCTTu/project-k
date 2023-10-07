@@ -1,423 +1,217 @@
-.WarrantyPolicy-title{
-    display: flex;
-    padding: 0px 40px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-    align-self: stretch;
+.warrantyPolicy-title {
+  display: flex;
+  padding: 0px 40px;
+  margin-top: 30px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
 
-    h2{
-        color: var(--bleck, #303030);
-        font-family: fw-500;
+  h2 {
+    margin: 0;
+    color: $black-color;
+    font-family: "fw-700";
+    font-size: 28px;
+    font-style: normal;
+    line-height: normal;
+    align-self: stretch;
+  }
+
+  p {
+    margin: 0;
+    align-self: stretch;
+    color: $black-color;
+    font-family: "fw-400";
+    font-size: 14px;
+    font-style: normal;
+    line-height: normal;
+  }
+}
+
+.warrantyPolicy-main {
+  display: flex;
+  padding: 0px 40px;
+  margin-top: 30px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+
+  h2 {
+    margin: 0;
+    color: $black-color;
+    font-family: "fw-700";
+    font-size: 24px;
+    font-style: normal;
+    line-height: normal;
+    align-self: stretch;
+  }
+
+  .bold {
+    color: $black-color;
+    font-family: "fw-700";
+    font-size: 18px;
+    font-style: normal;
+    line-height: normal;
+    align-self: stretch;
+    &--16 {
+      @extend .bold;
+      font-size: 16px;
+    }
+  }
+
+  ul {
+    margin: 0;
+    padding-left: 17px;
+    li {
+      color: $black-color;
+      font-family: "fw-400";
+      font-size: 14px;
+      font-style: normal;
+      line-height: normal;
+      align-self: stretch;
+    }
+  }
+
+  p {
+    margin: 0;
+    color: $black-color;
+    font-family: "fw-400";
+    font-size: 14px;
+    font-style: normal;
+    line-height: normal;
+    align-self: stretch;
+  }
+
+  .warrantyPolicy {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    align-content: space-between;
+    gap: 41px;
+
+    &__type1 {
+      display: flex;
+      padding: 30px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+      flex: 1 0 0;
+      border-radius: 15px;
+      background: $white-color;
+      box-shadow: $shadow-box;
+
+      h2 {
+        margin: 0;
+        color: $main-color-blue;
+        font-family: "fw-700";
         font-size: 28px;
         font-style: normal;
-        font-weight: 700;
         line-height: normal;
-        align-self: stretch;
-    }
-    p{
-        align-self: stretch;
-        color: var(--bleck, #303030);
-        font-family: fw-500;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-    }
-}
+        flex: 1 0 0;
+      }
 
-.WarrantyPolicy-main{
+      p {
+        margin: 0;
+        color: $black-color;
+        font-family: "fw-400";
+        font-size: 18px;
+        font-style: normal;
+        line-height: 28px;
+        align-self: stretch;
+      }
+
+      ul {
+        li {
+          color: $black-color;
+          font-family: "fw-400";
+          font-size: 18px;
+          font-style: normal;
+          line-height: 28px;
+          align-self: stretch;
+        }
+      }
+
+      svg {
+        width: 100%;
+      }
+    }
+
+    &__type2 {
+      display: flex;
+      padding: 30px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+      flex: 1 0 0;
+      border-radius: 15px;
+      background: $white-color;
+      box-shadow: $shadow-box;
+
+      h2 {
+        margin: 0;
+        color: $main-color-blue;
+        font-family: "fw-700";
+        font-size: 28px;
+        font-style: normal;
+        line-height: normal;
+        flex: 1 0 0;
+      }
+
+      p {
+        margin: 0;
+        color: $black-color;
+        font-family: "fw-400";
+        font-size: 18px;
+        font-style: normal;
+        line-height: 28px;
+        align-self: stretch;
+      }
+
+      ul {
+        li {
+          color: $black-color;
+          font-family: "fw-400";
+          font-size: 18px;
+          font-style: normal;
+          line-height: 28px;
+          align-self: stretch;
+        }
+      }
+
+      svg {
+        width: 100%;
+      }
+    }
+  }
+
+  .brands {
     display: flex;
-    padding: 0px 40px;
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
     align-self: stretch;
 
-    h2{
-        color: var(--bleck, #303030);
-        font-family: fw-500;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        align-self: stretch;
+    h2 {
+      align-self: stretch;
+      color: $black-color;
+      font-family: "fw-700";
+      font-size: 24px;
+      font-style: normal;
+      line-height: normal;
     }
 
-    b{
-        color: var(--bleck, #303030);
-        font-family: fw-500;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        align-self: stretch;
+    &__details {
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      gap: 30px;
+      align-self: stretch;
+
+      img {
+        width: 10%;
+        flex: 1 0 0;
+      }
     }
-    ul{
-        li{
-            color: var(--bleck, #303030);
-            font-family: fw-500;
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-            align-self: stretch;
-        }
-    }
-
-    p{
-        color: var(--bleck, #303030);
-        font-family: fw-500;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        align-self: stretch;
-    }
-
-    .WarrantyPolicy{
-        display: flex;
-        width: 100%;
-        align-items: flex-start;
-        align-content: space-between;
-        gap: 41px;
-
-        &__type1{
-            display: flex;
-            padding: 30px;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 20px;
-            flex: 1 0 0;
-            border-radius: 15px;
-            background: var(--hite, #FFF);
-            box-shadow: -1px 1px 2px 0px rgba(0, 0, 0, 0.25);
-
-            h2{
-                color: #162E4C;
-                font-family: fw-500;
-                font-size: 28px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: normal;
-                flex: 1 0 0;
-            }
-
-            p{
-                color: var(--bleck, #303030);
-                font-family: fw-500;
-                font-size: 18px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 28px; /* 155.556% */
-                align-self: stretch;
-            }
-            ul{
-                li{
-                    color: var(--bleck, #303030);
-                    font-family: fw-500;
-                    font-size: 18px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 28px; /* 155.556% */
-                    align-self: stretch;
-                }
-            }
-
-            svg{
-                width: 100%;
-            }
-        }
-
-        &__type2{
-            display: flex;
-            padding: 30px;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 20px;
-            flex: 1 0 0;
-            border-radius: 15px;
-            background: var(--hite, #FFF);
-            box-shadow: -1px 1px 2px 0px rgba(0, 0, 0, 0.25);
-
-            h2{
-                color: #162E4C;
-                font-family: fw-500;
-                font-size: 28px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: normal;
-                flex: 1 0 0;
-            }
-
-            p{
-                color: var(--bleck, #303030);
-                font-family: fw-500;
-                font-size: 18px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 28px; /* 155.556% */
-                align-self: stretch;
-            }
-            ul{
-                li{
-                    color: var(--bleck, #303030);
-                    font-family: fw-500;
-                    font-size: 18px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 28px; /* 155.556% */
-                    align-self: stretch;
-                }
-            }
-
-            svg{
-                width: 100%;
-            }
-        }
-    }
-
-    .brands{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-        align-self: stretch;
-
-        h2{
-            align-self: stretch;
-            color: var(--bleck, #303030);
-            font-family: fw-500;
-            font-size: 24px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: normal;
-        }
-
-        &__details{
-            width: 100%;
-            display: flex;
-            align-items: flex-start;
-            gap: 30px;
-            align-self: stretch;
-
-            img{
-                width: 10%;
-                flex: 1 0 0;
-            }
-        }
-    }
-}
-
-@include mobile{
-    .WarrantyPolicy-title{
-        display: flex;
-        padding: 0px 20px;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-        align-self: stretch;
-    
-        h2{
-            color: var(--bleck, #303030);
-            font-family: fw-500;
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: normal;
-            align-self: stretch;
-        }
-        p{
-            align-self: stretch;
-            color: var(--bleck, #303030);
-            font-family: fw-500;
-            font-size: 12px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-        }
-    }
-    
-    .WarrantyPolicy-main{
-        display: flex;
-        padding: 0px 20px;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-        align-self: stretch;
-    
-        h2{
-            color: var(--bleck, #303030);
-            font-family: fw-500;
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: normal;
-            align-self: stretch;
-        }
-    
-        b{
-            color: var(--bleck, #303030);
-            font-family: fw-500;
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: normal;
-            align-self: stretch;
-        }
-        ul{
-            li{
-                color: var(--bleck, #303030);
-                font-family: fw-500;
-                font-size: 12px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: normal;
-                align-self: stretch;
-            }
-        }
-    
-        p{
-            color: var(--bleck, #303030);
-            font-family: fw-500;
-            font-size: 12px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-            align-self: stretch;
-        }
-    
-        .WarrantyPolicy-types{
-            display: flex;
-            width: 100%;
-            align-items: flex-start;
-            align-content: space-between;
-            gap: 10px;
-    
-            .WarrantyPolicy-type1{
-                display: flex;
-                padding: 10px;
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 10px;
-                flex: 1 0 0;
-                border-radius: 15px;
-                background: var(--hite, #FFF);
-                box-shadow: -1px 1px 2px 0px rgba(0, 0, 0, 0.25);
-    
-                h2{
-                    color: #162E4C;
-                    font-family: fw-500;
-                    font-size: 14px;
-                    font-style: normal;
-                    font-weight: 700;
-                    line-height: normal;
-                    flex: 1 0 0;
-                }
-    
-                p{
-                    color: var(--bleck, #303030);
-                    font-family: fw-500;
-                    font-size: 12px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 28px; /* 155.556% */
-                    align-self: stretch;
-                }
-                ul{
-                    li{
-                        color: var(--bleck, #303030);
-                        font-family: fw-500;
-                        font-size: 12px;
-                        font-style: normal;
-                        font-weight: 400;
-                        line-height: 28px; /* 155.556% */
-                        align-self: stretch;
-                    }
-                }
-    
-                svg{
-                    width: 100%;
-                }
-            }
-    
-            .WarrantyPolicy-type2{
-                display: flex;
-                padding: 10px;
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 10px;
-                flex: 1 0 0;
-                border-radius: 15px;
-                background: var(--hite, #FFF);
-                box-shadow: -1px 1px 2px 0px rgba(0, 0, 0, 0.25);
-    
-                h2{
-                    color: #162E4C;
-                    font-family: fw-500;
-                    font-size: 14px;
-                    font-style: normal;
-                    font-weight: 700;
-                    line-height: normal;
-                    flex: 1 0 0;
-                }
-    
-                p{
-                    color: var(--bleck, #303030);
-                    font-family: fw-500;
-                    font-size: 12px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 28px; /* 155.556% */
-                    align-self: stretch;
-                }
-                ul{
-                    li{
-                        color: var(--bleck, #303030);
-                        font-family: fw-500;
-                        font-size: 12px;
-                        font-style: normal;
-                        font-weight: 400;
-                        line-height: 28px; /* 155.556% */
-                        align-self: stretch;
-                    }
-                }
-    
-                svg{
-                    width: 100%;
-                }
-            }
-        }
-    
-        .brands{
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 10px;
-            align-self: stretch;
-    
-            h2{
-                align-self: stretch;
-                color: var(--bleck, #303030);
-                font-family: fw-500;
-                font-size: 18px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: normal;
-            }
-    
-            .brands-detail{
-                width: 100%;
-                display: flex;
-                align-items: flex-start;
-                gap: 10px;
-                align-self: stretch;
-    
-                img{
-                    width: 10%;
-                    flex: 1 0 0;
-                }
-            }
-        }
-    }
+  }
 }

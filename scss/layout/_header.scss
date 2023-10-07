@@ -1,118 +1,61 @@
-body{
+.header {
+  padding: 30px 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-self: stretch;
+  gap: 17.391%;
+  .logo {
+    color: $black-color;
+    font-family: "fw-400";
+    font-size: 48px;
+    font-style: normal;
+    line-height: normal;
+    text-decoration: none;
+  }
+  .search {
     display: flex;
-    padding-top: 30px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 30px;
-}
-
-.header{
-    width: 100%;
-    display: flex;
-    padding: 0px 40px;
+    padding: 20px 30px;
     align-items: center;
-    gap: 20px;
-    align-self: stretch;
-
-    .Logo{
-        color:$black-color;
-        font-size: 48px;
-        font-family: fw-500;
-        font-weight: 400;
-        line-height: normal;
+    gap: 10px;
+    border-radius: 8px;
+    border: 1px solid $black-color;
+    flex: 1 0 0;
+    input {
+      flex: 1 0 0;
+      outline: none;
+      border: none;
+      background-color: $main-background-color;
     }
-    .search{
-        margin-left: 20%;
-        margin-right: 20%;
-        border: 2px;
-        border-radius: 8px;
-        display: flex;
-        padding: 20px 30px;
-        align-items: center;
-        gap: 20px;
-        flex: 1 0 0;
-        border-style: solid;
-        &__text{
-            flex: 1 0 0;
-            color: $black-color;
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-            border: none;
-            font-family: fw-500;
-            background-color: $main-background-color;
-            outline: none;
-        }
+    i {
+      cursor: pointer;
     }
-    
-    .hotline{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        font-size: 24px;
-        gap: 10px;
-        font-family: fw-500;
-
-        &__number{
-            display: flex;
-            gap: 10px;
-            .fa-solid.fa-phone{
-                color:$black-color;
-                font-size: 28px;
-                font-weight: 900;
-            }
-        }
-    }
-}
-
-
-
-
-.nav{
-    width: 100%;
+  }
+  .hotline {
     display: flex;
-    padding: 20px;
+    flex-direction: column;
+    justify-content: center;
     align-items: flex-start;
-    align-self: stretch;
-    background: #162E4D;
-
-    &.sticky{
-        position: fixed;
-        padding: 0px;
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 1;
+    gap: 10px;
+    color: $black-color;
+    font-family: "fw-400";
+    font-size: 24px;
+    font-style: normal;
+    line-height: normal;
+    &__number {
+      color: $black-color;
+      font-family: "fw-400";
+      font-size: 28px;
+      font-style: normal;
+      line-height: normal;
+      i {
+        color: $black-color;
+        font-family: Font Awesome 6 Free;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+      }
     }
-    
-    .fa-solid{
-        &.fa-bars{
-            color: white;
-            font-family: Font Awesome 6 Free;
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 1000;
-            line-height: normal;
-            width: 50px;
-        }
-    }
-
-    .collapse{
-        display: flex;
-        .navbar-nav{
-            .nav-item{
-                width: max-content;
-                margin-left: 50px;
-                color: $white-color;
-                font-family: fw-500;
-                font-size: 18px;
-                font-weight: 700;
-                line-height: normal;
-            }
-        }
-    }
-
-    
+  }
 }

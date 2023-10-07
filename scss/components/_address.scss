@@ -1,165 +1,66 @@
-.map{
+.address {
+  margin-top: 30px;
+  position: relative;
+  align-items: flex-start;
+  gap: 10px;
+  width: 100%;
+  &--nm {
+    margin-top: 0;
+  }
+  img {
+    width: 100%;
+    height: 491px;
+    object-fit: cover;
+  }
+  .addressDetails {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    width: 349px;
     display: flex;
-    padding: 30px 20px;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: flex-start;
-    gap: 10px;
-    align-self: stretch;
-    background: url("/Img/map.jpg"), lightgray -77px 0px / 104.01% 100% no-repeat;
-
-    &__address{
-        display: flex;
-        width: 349px;
-        // height: 451px;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-start;
-        border-radius: 8px;
-        border: 1px solid #303030;
-        background: #FFF;
-
-        &__title{
-            display: flex;
-            border-radius: 8px;
-            background: #162E4D;
-            color: white;
-            padding: 15px 20px;
-            align-items: flex-start;
-            gap: 10px;
-            align-self: stretch;
-            font-family: fw-500;
-            font-size: 18px;
-        }
-
-        &__departmentsList{
-            display: flex;
-            height: 399px;
-            flex-direction: column;
-            align-items: flex-start;
-            flex-shrink: 0;
-            align-self: stretch;
-
-            &__departments{
-                display: flex;
-                padding: 15px 20px;
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 10px;
-                align-self: stretch;
-                background-color: white;
-
-                &__title{
-                    color: #303030;
-                    font-family: fw-500;
-                    font-size: 18px;
-                    font-style: normal;
-                    font-weight: 700;
-                    line-height: normal;
-                    text-transform: capitalize;
-                }
-                &__descript{
-                    color:#303030;
-                    font-family: fw-500;
-                    font-size: 14px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: normal;
-                    text-transform: capitalize;
-                    align-self: stretch;
-                }
-
-            }
-
-        }
-
+    border-radius: 8px;
+    border: 1px solid $black-color;
+    background: $white-color;
+    .header {
+      display: flex;
+      padding: 15px 20px;
+      align-items: flex-start;
+      gap: 10px;
+      align-self: stretch;
+      border-radius: 8px;
+      background: $main-color-blue;
+      color: $white-color;
+      font-family: "fw-400";
+      font-size: 18px;
+      font-style: normal;
+      line-height: normal;
     }
-}
-
-@include mobile{
-    .map{
-        width: 100%;
-        overflow: hidden;
-        position: relative;
-        height: 451px;
-        display: flex;
-        padding: 30px 20px;
-        align-items: flex-start;
-        gap: 10px;
-        align-self: stretch;
-        background: url("/Img/map.jpg"), lightgray -77px 0px / 104.01% 100% no-repeat;
-    
-        .address{
-            position: relative;
-            display: flex;
-            width: 100%;
-            // height: 451px;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: flex-start;
-            border-radius: 8px;
-            border: 1px solid #303030;
-            background: #FFF;
-            z-index: 10;
-    
-            .title-address{
-                position: relative;
-                display: flex;
-                border-radius: 8px;
-                background: #162E4D;
-                color: white;
-                padding: 15px 20px;
-                align-items: flex-start;
-                gap: 10px;
-                align-self: stretch;
-                font-family: fw-500;
-                font-size: 18px;
-    
-                i{
-                    margin-left: 50%;
-                    margin-top: 0.2%;
-                }
-            }
-    
-            .departments-list{  
-                position: absolute;
-                display: flex;
-                height: 399px;
-                flex-direction: column;
-                align-items: flex-start;
-                flex-shrink: 0;
-                align-self: stretch;
-    
-                .departments{
-                    display: flex;
-                    padding: 15px 20px;
-                    flex-direction: column;
-                    align-items: flex-start;
-                    gap: 10px;
-                    align-self: stretch;
-                    background-color: white;
-    
-                    .title-department{
-                        color: #303030;
-                        font-family: fw-500;
-                        font-size: 18px;
-                        font-style: normal;
-                        font-weight: 700;
-                        line-height: normal;
-                        text-transform: capitalize;
-                    }
-                    .descript-department{
-                        color:#303030;
-                        font-family: fw-500;
-                        font-size: 14px;
-                        font-style: normal;
-                        font-weight: 400;
-                        line-height: normal;
-                        text-transform: capitalize;
-                        align-self: stretch;
-                    }
-    
-                }
-    
-            }
-        }
+    .item {
+      display: flex;
+      padding: 15px 20px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+      align-self: stretch;
+      &__header {
+        color: $black-color;
+        font-family: "fw-700";
+        font-size: 18px;
+        font-style: normal;
+        line-height: normal;
+        text-transform: capitalize;
+      }
+      &__content {
+        color: $black-color;
+        font-family: "fw-400";
+        font-size: 14px;
+        font-style: normal;
+        line-height: normal;
+        text-transform: capitalize;
+      }
     }
+  }
 }

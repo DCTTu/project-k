@@ -15,14 +15,14 @@
     <div class="loading"></div>
     <div class="wrapper">
       <header class="header">
-        <a href="#" class="header__logo">Logo</a>
-        <div class="header__search">
+        <a href="#" class="logo">Logo</a>
+        <div class="search">
           <input type="text" placeholder="Bạn đang cần tìm gì ?" />
           <i class="fas fa-search"></i>
         </div>
-        <div class="header__info">
+        <div class="hotline">
           <span>Hotline</span>
-          <span class="header__info__phone">
+          <span class="hotline__number">
             <i class="fa-solid fa-phone"></i>
             0901345678
           </span>
@@ -33,17 +33,18 @@
         <a href="index.html">Trang chủ</a>
         <a href="news.html">Tin công nghệ</a>
         <a href="video.html">Video</a>
-        <a href="paymentInstructions.html">Hướng dẫn thanh toán</a>
+        <a href="payment.html">Hướng dẫn thanh toán</a>
         <a href="warrantyPolicy.html">Chính sách bảo hành</a>
       </div>
       <main class="main">
+        <button onclick="topFunction()" id="myBtn" title="Go to top">
+          <i class="fa-solid fa-turn-up"></i>
+        </button>
         <div class="breadcrumb">
-          <div class="breadcrumb__item ">Trang chủ</div>
-          <div class="breadcrumb__item ">></div>
-          <div class="breadcrumb__item ">Tin công nghệ</div>
-          <div class="breadcrumb__item ">></div>
-          <div class="breadcrumb__item ">
-            Trên tay Vivobook S 15 OLED BAPE Edition: Chiếc laptop "sơn súng", 
+          <a href="index.html" class="breadcrumb__item">Trang chủ</a>
+          <a href="news.html" class="breadcrumb__item">Tin công nghệ</a>
+          <div class="breadcrumb__item">Trên tay Vivobook
+            S 15 OLED BAPE Edition: Chiếc laptop "sơn súng", 
             không tăng dame nhưng khiến bạn ngầu hơn
           </div>
         </div>
@@ -219,11 +220,13 @@
             </div>
             <hr>
             <div class="listPosts">
-              <img src="../../img/c87c4133e9dbf965a63edcec95855ff4.png" alt="">
+              <a href="javascript:void(0)" class="image">
+                <img src="../../img/c87c4133e9dbf965a63edcec95855ff4.png" alt="">
+              </a>
               <div class="listPosts__content">
-                <div class="listPosts__content__title">
+                <a href="javascript:void(0)" class="listPosts__content__title">
                   ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên
-                </div>
+                </a>
                 <div class="listPosts__content__text">
                   <i class="fa-regular fa-clock"></i>
                   <span>Thứ tư 223/08/2023</span>
@@ -232,11 +235,13 @@
             </div>
             <hr>
             <div class="listPosts">
-              <img src="../../img/d13333936146e078dea4dabcbc942ade.png" alt="">
+              <a href="javascript:void(0)" class="image">
+                <img src="../../img/d13333936146e078dea4dabcbc942ade.png" alt="">
+              </a>             
               <div class="listPosts__content">
-                <div class="listPosts__content__title">
+                <a href="javascript:void(0)" class="listPosts__content__title">
                   ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên
-                </div>
+                </a>
                 <div class="listPosts__content__text">
                   <i class="fa-regular fa-clock"></i>
                   <span>Thứ tư 223/08/2023</span>
@@ -245,11 +250,13 @@
             </div>
             <hr>
             <div class="listPosts">
-              <img src="../../img/ba20d296bfe4d8a7d26b29d8720e3f45.png" alt="">
+              <a href="javascript:void(0)" class="image">
+                <img src="../../img/ba20d296bfe4d8a7d26b29d8720e3f45.png" alt="">
+              </a>              
               <div class="listPosts__content">
-                <div class="listPosts__content__title">
+                <a href="javascript:void(0)" class="listPosts__content__title">
                   ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên
-                </div>
+                </a>
                 <div class="listPosts__content__text">
                   <i class="fa-regular fa-clock"></i>
                   <span>Thứ tư 223/08/2023</span>
@@ -258,11 +265,13 @@
             </div>
             <hr>
             <div class="listPosts">
-              <img src="../../img/6e399d7e73780f48d7485e465eddb5ee.png" alt="">
+              <a href="javascript:void(0)" class="image">
+                <img src="../../img/6e399d7e73780f48d7485e465eddb5ee.png" alt="">
+              </a>             
               <div class="listPosts__content">
-                <div class="listPosts__content__title">
+                <a href="javascript:void(0)" class="listPosts__content__title">
                   ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên
-                </div>
+                </a>
                 <div class="listPosts__content__text">
                   <i class="fa-regular fa-clock"></i>
                   <span>Thứ tư 223/08/2023</span>
@@ -271,11 +280,28 @@
             </div>
             <hr>
             <div class="listPosts">
-              <img src="../../img/2aff12ed059937d431df6dc21bd7b5ee.png" alt="">
+              <a href="javascript:void(0)" class="image">
+                <img src="../../img/2aff12ed059937d431df6dc21bd7b5ee.png" alt="">
+              </a>             
               <div class="listPosts__content">
-                <div class="listPosts__content__title">
+                <a href="javascript:void(0)" class="listPosts__content__title">
                   ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên
+                </a>
+                <div class="listPosts__content__text">
+                  <i class="fa-regular fa-clock"></i>
+                  <span>Thứ tư 223/08/2023</span>
                 </div>
+              </div>
+            </div>
+            <hr>
+            <div class="listPosts">
+              <a href="javascript:void(0)" class="image">
+                <img src="../../img/3a8008668488c4ef798dcd233d5248d6.png" alt="">
+              </a>
+              <div class="listPosts__content">
+                <a href="javascript:void(0)" class="listPosts__content__title">
+                  ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên
+                </a>
                 <div class="listPosts__content__text">
                   <i class="fa-regular fa-clock"></i>
                   <span>Thứ tư 223/08/2023</span>
@@ -296,40 +322,52 @@
                 </div>
               </div>
               <div class="sidebar__item">
-                <img src="../../img/efc10348fe14879c4245475edee3b168.png" alt="">
-                <div class="sidebar__item__title">
+                <a href="javascript:void(0)">
+                  <img src="../../img/efc10348fe14879c4245475edee3b168.png" alt="">
+                </a>
+                <a href="javascript:void(0)" class="sidebar__item__title">
                   ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên
-                </div>
+                </a>
               </div>
               <div class="sidebar__item">
-                <img src="../../img/f2ccfde215f081ad72c8fee5dbf4a637.png" alt="">
-                <div class="sidebar__item__title">
+                <a href="javascript:void(0)">
+                  <img src="../../img/f2ccfde215f081ad72c8fee5dbf4a637.png" alt="">
+                </a>
+                <a href="javascript:void(0)" class="sidebar__item__title">
                   ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên
-                </div>
+                </a>
               </div>
               <div class="sidebar__item">
-                <img src="../../img/e23b4722a9b8107775155ee7b46307a4.png" alt="">
-                <div class="sidebar__item__title">
+                <a href="javascript:void(0)">
+                  <img src="../../img/e23b4722a9b8107775155ee7b46307a4.png" alt="">
+                </a>
+                <a href="javascript:void(0)" class="sidebar__item__title">
                   ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên
-                </div>
+                </a>
               </div>
               <div class="sidebar__item">
-                <img src="../../img/e7ab4bc036b5a6df03a85223f027dc08.png" alt="">
-                <div class="sidebar__item__title">
+                <a href="javascript:void(0)">
+                  <img src="../../img/e7ab4bc036b5a6df03a85223f027dc08.png" alt="">
+                </a>
+                <a href="javascript:void(0)" class="sidebar__item__title">
                   ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên
-                </div>
+                </a>
               </div>
               <div class="sidebar__item">
-                <img src="../../img/d4691da5fe88197410c6820f29dfceb0.png" alt="">
-                <div class="sidebar__item__title">
+                <a href="javascript:void(0)">
+                  <img src="../../img/d4691da5fe88197410c6820f29dfceb0.png" alt="">
+                </a>
+                <a href="javascript:void(0)" class="sidebar__item__title">
                   ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên
-                </div>
+                </a>
               </div>
               <div class="sidebar__item">
-                <img src="../../img/76ee136881bd6a56df09fad09a63563c.png" alt="">
-                <div class="sidebar__item__title">
+                <a href="javascript:void(0)">
+                  <img src="../../img/76ee136881bd6a56df09fad09a63563c.png" alt="">
+                </a>
+                <a href="javascript:void(0)" class="sidebar__item__title">
                   ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên
-                </div>
+                </a>
               </div>
             </div>
             <div class="sidebar">
@@ -339,40 +377,52 @@
                 </div>
               </div>
               <div class="sidebar__item">
-                <img src="../../img/0f27e93ba740269cb2da4357590c6fb9.png" alt="">
-                <div class="sidebar__item__title">
+                <a href="javascript:void(0)">
+                  <img src="../../img/0f27e93ba740269cb2da4357590c6fb9.png" alt="">
+                </a>
+                <a href="javascript:void(0)" class="sidebar__item__title">
                   ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên
-                </div>
+                </a>
               </div>
               <div class="sidebar__item">
-                <img src="../../img/1f18417b44d106be9aaedc3a4038b0b1.png" alt="">
-                <div class="sidebar__item__title">
+                <a href="javascript:void(0)">
+                  <img src="../../img/1f18417b44d106be9aaedc3a4038b0b1.png" alt="">
+                </a>
+                <a href="javascript:void(0)" class="sidebar__item__title">
                   ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên
-                </div>
+                </a>
               </div>
               <div class="sidebar__item">
-                <img src="../../img/0123efe74d51ff8b2450dbd397803053.png" alt="">
-                <div class="sidebar__item__title">
+                <a href="javascript:void(0)">
+                  <img src="../../img/0123efe74d51ff8b2450dbd397803053.png" alt="">
+                </a>
+                <a href="javascript:void(0)" class="sidebar__item__title">
                   ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên
-                </div>
+                </a>
               </div>
               <div class="sidebar__item">
-                <img src="../../img/4284a9389c2dd9a85c86bc31b4e8bb1f.png" alt="">
-                <div class="sidebar__item__title">
+                <a href="javascript:void(0)">
+                  <img src="../../img/4284a9389c2dd9a85c86bc31b4e8bb1f.png" alt="">
+                </a>
+                <a href="javascript:void(0)" class="sidebar__item__title">
                   ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên
-                </div>
+                </a>
               </div>
               <div class="sidebar__item">
-                <img src="../../img/e252067a1d242cd30b57af7f797424ff.png" alt="">
-                <div class="sidebar__item__title">
+                <a href="javascript:void(0)">
+                  <img src="../../img/e252067a1d242cd30b57af7f797424ff.png" alt="">
+                </a>
+                <a href="javascript:void(0)" class="sidebar__item__title">
                   ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên
-                </div>
+                </a>
               </div>
               <div class="sidebar__item">
-                <img src="../../img/22a8793ef92615d9d967f5c4877b5ef1.png" alt="">
-                <div class="sidebar__item__title">
+                <a href="javascript:void(0)">
+                  <img src="../../img/22a8793ef92615d9d967f5c4877b5ef1.png" alt="">
+                </a>
+                <a href="javascript:void(0)" class="sidebar__item__title">
                   ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên
-                </div>
+                </a>
               </div>
             </div>
             <div class="sidebar">
@@ -382,76 +432,89 @@
                 </div>
               </div>
               <div class="sidebar__item">
-                <img src="../../img/8f191c3a75507872f20ceb60da4549a4.png" alt="">
-                <div class="sidebar__item__title">
+                <a href="javascript:void(0)">
+                  <img src="../../img/8f191c3a75507872f20ceb60da4549a4.png" alt="">
+                </a>
+                <a href="javascript:void(0)" class="sidebar__item__title">
                   ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên
-                </div>
+                </a>
               </div>
               <div class="sidebar__item">
-                <img src="../../img/190da29fd5a57101069640fd2a990bda.png" alt="">
-                <div class="sidebar__item__title">
+                <a href="javascript:void(0)">
+                  <img src="../../img/190da29fd5a57101069640fd2a990bda.png" alt="">
+                </a>
+                <a href="javascript:void(0)" class="sidebar__item__title">
                   ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên
-                </div>
+                </a>
               </div>
               <div class="sidebar__item">
-                <img src="../../img/d0f6564a26152ab5123891558255aaa3.png" alt="">
-                <div class="sidebar__item__title">
+                <a href="javascript:void(0)">
+                  <img src="../../img/d0f6564a26152ab5123891558255aaa3.png" alt="">
+                </a>
+                <a href="javascript:void(0)" class="sidebar__item__title">
                   ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên
-                </div>
+                </a>
               </div>
               <div class="sidebar__item">
-                <img src="../../img/c747b4e497c71103207ad2a3962439f0.png" alt="">
-                <div class="sidebar__item__title">
+                <a href="javascript:void(0)">
+                  <img src="../../img/c747b4e497c71103207ad2a3962439f0.png" alt="">
+                </a>
+                <a href="javascript:void(0)" class="sidebar__item__title">
                   ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên
-                </div>
+                </a>
               </div>
               <div class="sidebar__item">
-                <img src="../../img/60d332144895c522a1f94d22f38e5b16.png" alt="">
-                <div class="sidebar__item__title">
+                <a href="javascript:void(0)">
+                  <img src="../../img/60d332144895c522a1f94d22f38e5b16.png" alt="">
+                </a>
+                <a href="javascript:void(0)" class="sidebar__item__title">
                   ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên
-                </div>
+                </a>
               </div>
               <div class="sidebar__item">
-                <img src="../../img/6b959f991a4d0708bef548c47155e243.png" alt="">
-                <div class="sidebar__item__title">
+                <a href="javascript:void(0)">
+                  <img src="../../img/6b959f991a4d0708bef548c47155e243.png" alt="">
+                </a>
+                <a href="javascript:void(0)" class="sidebar__item__title">
                   ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên
-                </div>
+                </a>
               </div>
             </div>
           </div>
         </div>
       </main>
-      <footer class="footer  footer--mt30">
+      <footer class="footer footer--mt30">
         <div class="footer__intro">
-          <h2>CÔNG TY TRUNG THÀNH ĐẠT COMPUTER</h2>
-          <div class="footer__support__items">
+          <a href="javascript:void(0)">
+            <h2>CÔNG TY TRUNG THÀNH ĐẠT COMPUTER</h2>
+          </a>
+          <div class="footer__intro__items">
             <i class="fa-solid fa-phone"></i>
-            <a href="#">0901345678</a>
+            <span>0901345678</span>
           </div>
           <div class="footer__intro__items">
             <i class="fa-solid fa-house"></i>
-            <a href="#">http://diachicuarkhach.com</a>
+            <a href="javascript:void(0)">http://diachicuarkhach.com</a>
           </div>
           <div class="footer__intro__items">
             <i class="fa-regular fa-envelope"></i>
-            <a href="#">info@thongtinkhachhang.com</a>
+            <a href="javascript:void(0)">info@thongtinkhachhang.com</a>
           </div>
           <div class="footer__intro__items">
             <i class="fa-regular fa-clock"></i>
-            <a href="#">8:00 - 22:00</a>
+            <span>8:00 - 22:00</span>
           </div>
         </div>
         <div class="footer__support">
           <h2>Hỗ trợ nhanh</h2>
           <div class="footer__support__items">
-            <i class="fa-solid fa-gears"></i><a href="#">Dịch vụ</a>
+            <i class="fa-solid fa-gears"></i><a href="javascript:void(0)">Dịch vụ</a>
           </div>
           <div class="footer__support__items">
-            <i class="fa-solid fa-question"></i><a href="#">Câu hỏi thường gặp</a>
+            <i class="fa-solid fa-question"></i><a href="javascript:void(0)">Câu hỏi thường gặp</a>
           </div>
-          
         </div>
-        <div class="footer__img"><img src="../../img/fce0b8f070a0595a0b34ce619b9ee747.png" alt=""></div>
+        <div class="footer__img"><img src="/img/fce0b8f070a0595a0b34ce619b9ee747.png" alt=""></div>
       </footer>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>

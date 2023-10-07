@@ -23,3 +23,18 @@ var forEach = function (array, callback, scope) {
   }
 };
 
+let addSticky = () => {
+  $(document).ready(function () {
+    $(window).scroll(function () { 
+      // console.log($(window).scrollTop());
+      if ($(window).scrollTop() > 234) {
+        $(".navbar").addClass("navbar__sticky");
+      } else {
+        $(".navbar").removeClass("navbar__sticky");
+      }
+    });
+  });
+}
+
+addSticky();
+

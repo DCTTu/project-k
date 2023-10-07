@@ -1,264 +1,413 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video đang xem</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lity/2.4.1/lity.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
-    <link rel="stylesheet" href="css/main.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video đang xem</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lity/2.4.1/lity.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/main.css" />
 </head>
+
 <body>
+  <div class="wrapper">
     <header class="header">
-        <div class="Logo">Logo</div>
-        <div class="search">
-          <input class="search__text" type="text" value="Bạn cần tìm gì?">
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
-        <div class="hotline">Hotline 
-            <div class="hotline__number">
-                <i class="fa-solid fa-phone"></i>
-                09012345678
-            </div>
-        </div>
-      </header>
-      <div class="nav">
-        <nav class="navbar navbar-expand-lg">
-            <a class="navbar--drop"><i class="fa-solid fa-bars"></i></a>
-          
-          <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button> -->
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-item nav-link" href="/index.html">Trang chủ</a>
-              <a class="nav-item nav-link" href="/news.html">Tin công nghệ<span class="sr-only">(current)</span></a>
-              <a class="nav-item nav-link" href="video.html">Video</a>
-              <a class="nav-item nav-link" href="/payment.html">Hướng dẫn thanh toán</a>
-              <a class="nav-item nav-link" href="WarrantyPolicy.html">Chính sách bảo hành</a>
-            </div>
-          </div>
-        </nav>
+      <a href="#" class="logo">Logo</a>
+      <div class="search">
+        <input type="text" placeholder="Bạn đang cần tìm gì ?" />
+        <i class="fas fa-search"></i>
       </div>
-      <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-turn-up"></i></button>
+      <div class="hotline">
+        <span>Hotline</span>
+        <span class="hotline__number">
+          <i class="fa-solid fa-phone"></i>
+          0901345678
+        </span>
+      </div>
+    </header>
+    <div class="navbar">
+      <a class="navbar--drop"><i class="fa-solid fa-bars"></i></a>
+      <a href="index.html">Trang chủ</a>
+      <a href="news.html">Tin công nghệ</a>
+      <a href="video.html">Video</a>
+      <a href="payment.html">Hướng dẫn thanh toán</a>
+      <a href="warrantyPolicy.html">Chính sách bảo hành</a>
+    </div>
+    <main>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <i class="fa-solid fa-turn-up"></i>
+      </button>
       <div class="breadcrumb">
         <div class="breadcrumb__item">Trang chủ</div>
         <div class="breadcrumb__item">Video đang xem</div>
+      </div>
+      <div class="videoIsViewing">
+        <div class="videoIsViewing__main">
+          <img src="/img/22a8793ef92615d9d967f5c4877b5ef1.png" alt="">
+          <h2>Khéo tay hay mò, một người đã biến chip Ryzen 5 4600G giá 95 đô thành… GPU 16GB để chạy AI</h2>
+          <p>Khéo tay hay mò, một người đã biến chip Ryzen 5 4600G giá 95 đô thành… GPU 16GB để chạy AI</p>
         </div>
-
-      <main>
-
-        <div class="videoIsViewing">
-            <div class="videoIsViewing__main">
-                <img src="/img/22a8793ef92615d9d967f5c4877b5ef1.png" alt="">
-                <h2>Khéo tay hay mò, một người đã biến chip Ryzen 5 4600G giá 95 đô thành… GPU 16GB để chạy AI</h2>
-                <p>Khéo tay hay mò, một người đã biến chip Ryzen 5 4600G giá 95 đô thành… GPU 16GB để chạy AI</p>
+        <div class="videoIsViewing__timeLines">
+          <div class="videoIsViewing__timeLines__details">
+            <a href="#"><img src="/img/783f5f9206c58dbbe92b1d58c37630d2.png" alt=""></a>
+            <div class="title">
+              <a href="#">
+                <h2>ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên</h2>
+              </a>
+              <p>29N lượt xem 1 tháng trước</p>
             </div>
-            <div class="videoIsViewing__timeLines">
-                <div class="videoIsViewing__timeLines__details">
-                    <a href="#"><img src="/img/783f5f9206c58dbbe92b1d58c37630d2.png" alt=""></a>
-                    <div class="title">
-                        <a href="#"><h2>ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên</h2></a>
-                        <p>29N lượt xem 1 tháng trước</p>
-                    </div>
-                </div>
-                <div class="videoIsViewing__timeLines__details">
-                    <a href="#"><img src="/img/783f5f9206c58dbbe92b1d58c37630d2.png" alt=""></a>
-                    <div class="title">
-                        <a href="#"><h2>ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên</h2></a>
-                        <p>29N lượt xem 1 tháng trước</p>
-                    </div>
-                </div>
-                <div class="videoIsViewing__timeLines__details">
-                    <a href="#"><img src="/img/783f5f9206c58dbbe92b1d58c37630d2.png" alt=""></a>
-                    <div class="title">
-                        <a href="#"><h2>ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên</h2></a>
-                        <p>29N lượt xem 1 tháng trước</p>
-                    </div>
-                </div>
-                <div class="videoIsViewing__timeLines__details">
-                    <a href="#"><img src="/img/783f5f9206c58dbbe92b1d58c37630d2.png" alt=""></a>
-                    <div class="title">
-                        <a href="#"><h2>ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên</h2></a>
-                        <p>29N lượt xem 1 tháng trước</p>
-                    </div>
-                </div>
-                <div class="videoIsViewing__timeLines__details">
-                    <a href="#"><img src="/img/783f5f9206c58dbbe92b1d58c37630d2.png" alt=""></a>
-                    <div class="title">
-                        <a href="#"><h2>ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên</h2></a>
-                        <p>29N lượt xem 1 tháng trước</p>
-                    </div>
-                </div>
+          </div>
+          <div class="videoIsViewing__timeLines__details">
+            <a href="#"><img src="/img/783f5f9206c58dbbe92b1d58c37630d2.png" alt=""></a>
+            <div class="title">
+              <a href="#">
+                <h2>ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên</h2>
+              </a>
+              <p>29N lượt xem 1 tháng trước</p>
             </div>
-
+          </div>
+          <div class="videoIsViewing__timeLines__details">
+            <a href="#"><img src="/img/783f5f9206c58dbbe92b1d58c37630d2.png" alt=""></a>
+            <div class="title">
+              <a href="#">
+                <h2>ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên</h2>
+              </a>
+              <p>29N lượt xem 1 tháng trước</p>
+            </div>
+          </div>
+          <div class="videoIsViewing__timeLines__details">
+            <a href="#"><img src="/img/783f5f9206c58dbbe92b1d58c37630d2.png" alt=""></a>
+            <div class="title">
+              <a href="#">
+                <h2>ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên</h2>
+              </a>
+              <p>29N lượt xem 1 tháng trước</p>
+            </div>
+          </div>
+          <div class="videoIsViewing__timeLines__details">
+            <a href="#"><img src="/img/783f5f9206c58dbbe92b1d58c37630d2.png" alt=""></a>
+            <div class="title">
+              <a href="#">
+                <h2>ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên</h2>
+              </a>
+              <p>29N lượt xem 1 tháng trước</p>
+            </div>
+          </div>
         </div>
-        <div class="moreVideo-title"><h2>Những video cùng chủ đề</h2></div>
-        <div class="videos">
-            <div class="videos__details">
-                <a href="videoDetails.html"><img src="/img/783f5f9206c58dbbe92b1d58c37630d2.png" alt=""></a>
-                <a href="videoDetails.html"><h2>ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên</h2></a>
-                <p>29N lượt xem 1 tháng trước</p>
+  
+      </div>
+      <div class="moreVideo-title">
+        <h2>Những video cùng chủ đề</h2>
+      </div>
+      <div class="videos">
+        <div class="details">
+          <a href="videoDetails.html"><img src="/img/783f5f9206c58dbbe92b1d58c37630d2.png" alt=""></a>
+          <div class="details__content">
+            <a href="videoDetails.html">
+              ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên
+            </a>
+            <div class="details__content__text">
+              29N lượt xem 1 tháng trước
             </div>
-            <div class="videos__details">
-                <a href="videoDetails.html"><img src="/img/69d4d4156e6656a30e167b6c1b471227.png" alt=""></a>
-                <a href="videoDetails.html"><h2>ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên</h2></a>
-                <p>29N lượt xem 1 tháng trước</p>
-            </div>
-            <div class="videos__details">
-                <a href="#"><img src="/img/c4e851a9fdd22eb443aa249d7d475c5c.png" alt=""></a>
-                <a href="#"><h2>ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên</h2></a>
-                <p>29N lượt xem 1 tháng trước</p>
-            </div>
-            <div class="videos__details">
-                <a href="#"><img src="/img/363bf0079022f3a295ad3f2f253d952f.png" alt=""></a>
-                <a href="#"><h2>ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên</h2></a>
-                <p>29N lượt xem 1 tháng trước</p>
-            </div>
-            <div class="videos__details">
-                <a href="#"><img src="/img/3ff9c4c64ac4082098e18603c30d0c67.png" alt=""></a>
-                <a href="#"><h2>ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên</h2></a>
-                <p>29N lượt xem 1 tháng trước</p>
-            </div>
-            <div class="videos__details">
-                <a href="#"><img src="/img/99e807c2c0e7a75d9d8244a865188a61.png" alt=""></a>
-                <a href="#"><h2>ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên</h2></a>
-                <p>29N lượt xem 1 tháng trước</p>
-            </div>
-            <div class="videos__details">
-                <a href="#"><img src="/img/1bc5bef670f79e11642ae8f1988ea715.png" alt=""></a>
-                <a href="#"><h2>ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên</h2></a>
-                <p>29N lượt xem 1 tháng trước</p>
-            </div>
-            <div class="videos__details">
-                <a href="#"><img src="/img/10ea4013a4b4b37a9a383bdb3abbc74d.png" alt=""></a>
-                <a href="#"><h2>ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên</h2></a>
-                <p>29N lượt xem 1 tháng trước</p>
-            </div>
-            <div class="videos__details">
-                <a href="#"><img src="/img/351c2c929dacb214f4048451929c86dc.png" alt=""></a>
-                <a href="#"><h2>ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên</h2></a>
-                <p>29N lượt xem 1 tháng trước</p>
-            </div>
-            <div class="videos__details">
-                <a href="#"><img src="/img/b33bf9962320efccc10c19cb885843f6.png" alt=""></a>
-                <a href="#"><h2>ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên</h2></a>
-                <p>29N lượt xem 1 tháng trước</p>
-            </div>
-            <div class="videos__details">
-                <a href="#"><img src="/img/265426cfeda9459165400d539dc8e92f.png" alt=""></a>
-                <a href="#"><h2>ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên</h2></a>
-                <p>29N lượt xem 1 tháng trước</p>
-            </div>
-            <div class="videos__details">
-                <a href="#"><img src="/img/3105358c1ed8eccaaf1cf7762be533ec.png" alt=""></a>
-                <a href="#"><h2>ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên</h2></a>
-                <p>29N lượt xem 1 tháng trước</p>
-            </div>
-            <div class="videos__details">
-                <a href="#"><img src="/img/b362956068e676e25057d34359a77373.png" alt=""></a>
-                <a href="#"><h2>ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên</h2></a>
-                <p>29N lượt xem 1 tháng trước</p>
-            </div>
-            <div class="videos__details">
-                <a href="#"><img src="/img/3cd8b5419b205b3761baad63df7358b6.png" alt=""></a>
-                <a href="#"><h2>ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên</h2></a>
-                <p>29N lượt xem 1 tháng trước</p>
-            </div>
-            <div class="videos__details">
-                <a href="#"><img src="/img/e252067a1d242cd30b57af7f797424ff.png" alt=""></a>
-                <a href="#"><h2>ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên</h2></a>
-                <p>29N lượt xem 1 tháng trước</p>
-            </div>
-            <div class="videos__details">
-                <a href="#"><img src="/img/c87c4133e9dbf965a63edcec95855ff4.png" alt=""></a>
-                <a href="#"><h2>ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên</h2></a>
-                <p>29N lượt xem 1 tháng trước</p>
-            </div>
-            <div class="videos__details">
-                <a href="#"><img src="/img/e11d849134100ea5bf8deb9732159a02.png" alt=""></a>
-                <a href="#"><h2>ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên</h2></a>
-                <p>29N lượt xem 1 tháng trước</p>
-            </div>
-            <div class="videos__details">
-                <a href="#"><img src="/img/4c43610bf6d65ab94845b16da7e76c61.png" alt=""></a>
-                <a href="#"><h2>ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên</h2></a>
-                <p>29N lượt xem 1 tháng trước</p>
-            </div>
-            <div class="videos__details">
-                <a href="#"><img src="/img/3340f84766e5f3dca2d8bd9c732db0ee.png" alt=""></a>
-                <a href="#"><h2>ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên</h2></a>
-                <p>29N lượt xem 1 tháng trước</p>
-            </div>
-            <div class="videos__details">
-                <a href="#"><img src="/img/ef93eb61545140238ab17f585e1c840a.png" alt=""></a>
-                <a href="#"><h2>ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên</h2></a>
-                <p>29N lượt xem 1 tháng trước</p>
-            </div>
-            <div class="videos__details">
-                <a href="#"><img src="/img/e58045bf863e53666870be898604e651.png" alt=""></a>
-                <a href="#"><h2>ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên</h2></a>
-                <p>29N lượt xem 1 tháng trước</p>
-            </div>
-            <div class="videos__details">
-                <a href="#"><img src="/img/26bf1bea30b63ce8631ff7d3985bf0a2.png" alt=""></a>
-                <a href="#"><h2>ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên</h2></a>
-                <p>29N lượt xem 1 tháng trước</p>
-            </div>
-            <div class="videos__details">
-                <a href="#"><img src="/img/22b689ca15b204e64fa02dbbe738d567.png" alt=""></a>
-                <a href="#"><h2>ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên</h2></a>
-                <p>29N lượt xem 1 tháng trước</p>
-            </div>
-            <div class="videos__details">
-                <a href="#"><img src="/img/efc10348fe14879c4245475edee3b168.png" alt=""></a>
-                <a href="#"><h2>ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên</h2></a>
-                <p>29N lượt xem 1 tháng trước</p>
-            </div>
+          </div>
         </div>
-
-      </main>
-
-      <footer class="footer">
-        <div class="footer__intro">
+        <div class="details">
+          <a href="videoDetails.html"><img src="/img/69d4d4156e6656a30e167b6c1b471227.png" alt=""></a>
+          <div class="details__content">
+            <a href="videoDetails.html">
+              ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên
+            </a>
+            <div class="details__content__text">
+              29N lượt xem 1 tháng trước
+            </div>
+          </div>
+        </div>
+        <div class="details">
+          <a href="videoDetails.html"><img src="/img/c4e851a9fdd22eb443aa249d7d475c5c.png" alt=""></a>
+          <div class="details__content">
+            <a href="videoDetails.html">
+              ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên
+            </a>
+            <div class="details__content__text">
+              29N lượt xem 1 tháng trước
+            </div>
+          </div>
+        </div>
+        <div class="details">
+          <a href="videoDetails.html"><img src="/img/363bf0079022f3a295ad3f2f253d952f.png" alt=""></a>
+          <div class="details__content">
+            <a href="videoDetails.html">
+              ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên
+            </a>
+            <div class="details__content__text">
+              29N lượt xem 1 tháng trước
+            </div>
+          </div>
+        </div>
+        <div class="details">
+          <a href="videoDetails.html"><img src="/img/3ff9c4c64ac4082098e18603c30d0c67.png" alt=""></a>
+          <div class="details__content">
+            <a href="videoDetails.html">
+              ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên
+            </a>
+            <div class="details__content__text">
+              29N lượt xem 1 tháng trước
+            </div>
+          </div>
+        </div>
+        <div class="details">
+          <a href="videoDetails.html"><img src="/img/99e807c2c0e7a75d9d8244a865188a61.png" alt=""></a>
+          <div class="details__content">
+            <a href="videoDetails.html">
+              ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên
+            </a>
+            <div class="details__content__text">
+              29N lượt xem 1 tháng trước
+            </div>
+          </div>
+        </div>
+        <div class="details">
+          <a href="videoDetails.html"><img src="/img/1bc5bef670f79e11642ae8f1988ea715.png" alt=""></a>
+          <div class="details__content">
+            <a href="videoDetails.html">
+              ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên
+            </a>
+            <div class="details__content__text">
+              29N lượt xem 1 tháng trước
+            </div>
+          </div>
+        </div>
+        <div class="details">
+          <a href="videoDetails.html"><img src="/img/10ea4013a4b4b37a9a383bdb3abbc74d.png" alt=""></a>
+          <div class="details__content">
+            <a href="videoDetails.html">
+              ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên
+            </a>
+            <div class="details__content__text">
+              29N lượt xem 1 tháng trước
+            </div>
+          </div>
+        </div>
+        <div class="details">
+          <a href="videoDetails.html"><img src="/img/351c2c929dacb214f4048451929c86dc.png" alt=""></a>
+          <div class="details__content">
+            <a href="videoDetails.html">
+              ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên
+            </a>
+            <div class="details__content__text">
+              29N lượt xem 1 tháng trước
+            </div>
+          </div>
+        </div>
+        <div class="details">
+          <a href="videoDetails.html"><img src="/img/52846a4acbe6e512a5314251e3553b1f.png" alt=""></a>
+          <div class="details__content">
+            <a href="videoDetails.html">
+              ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên
+            </a>
+            <div class="details__content__text">
+              29N lượt xem 1 tháng trước
+            </div>
+          </div>
+        </div>
+        <div class="details">
+          <a href="videoDetails.html"><img src="/img/265426cfeda9459165400d539dc8e92f.png" alt=""></a>
+          <div class="details__content">
+            <a href="videoDetails.html">
+              ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên
+            </a>
+            <div class="details__content__text">
+              29N lượt xem 1 tháng trước
+            </div>
+          </div>
+        </div>
+        <div class="details">
+          <a href="videoDetails.html"><img src="/img/3105358c1ed8eccaaf1cf7762be533ec.png" alt=""></a>
+          <div class="details__content">
+            <a href="videoDetails.html">
+              ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên
+            </a>
+            <div class="details__content__text">
+              29N lượt xem 1 tháng trước
+            </div>
+          </div>
+        </div>
+        <div class="details">
+          <a href="videoDetails.html"><img src="/img/b362956068e676e25057d34359a77373.png" alt=""></a>
+          <div class="details__content">
+            <a href="videoDetails.html">
+              ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên
+            </a>
+            <div class="details__content__text">
+              29N lượt xem 1 tháng trước
+            </div>
+          </div>
+        </div>
+        <div class="details">
+          <a href="videoDetails.html"><img src="/img/3cd8b5419b205b3761baad63df7358b6.png" alt=""></a>
+          <div class="details__content">
+            <a href="videoDetails.html">
+              ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên
+            </a>
+            <div class="details__content__text">
+              29N lượt xem 1 tháng trước
+            </div>
+          </div>
+        </div>
+        <div class="details">
+          <a href="videoDetails.html"><img src="/img/7e11aa4ab0fab2bf26b4ba08a4c3a537.png" alt=""></a>
+          <div class="details__content">
+            <a href="videoDetails.html">
+              ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên
+            </a>
+            <div class="details__content__text">
+              29N lượt xem 1 tháng trước
+            </div>
+          </div>
+        </div>
+        <div class="details">
+          <a href="videoDetails.html"><img src="/img/38a09af3facb91d2a85786ae8b64d93a.png" alt=""></a>
+          <div class="details__content">
+            <a href="videoDetails.html">
+              ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên
+            </a>
+            <div class="details__content__text">
+              29N lượt xem 1 tháng trước
+            </div>
+          </div>
+        </div>
+        <div class="details">
+          <a href="videoDetails.html"><img src="/img/e11d849134100ea5bf8deb9732159a02.png" alt=""></a>
+          <div class="details__content">
+            <a href="videoDetails.html">
+              ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên
+            </a>
+            <div class="details__content__text">
+              29N lượt xem 1 tháng trước
+            </div>
+          </div>
+        </div>
+        <div class="details">
+          <a href="videoDetails.html"><img src="/img/4c43610bf6d65ab94845b16da7e76c61.png" alt=""></a>
+          <div class="details__content">
+            <a href="videoDetails.html">
+              ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên
+            </a>
+            <div class="details__content__text">
+              29N lượt xem 1 tháng trước
+            </div>
+          </div>
+        </div>
+        <div class="details">
+          <a href="videoDetails.html"><img src="/img/3340f84766e5f3dca2d8bd9c732db0ee.png" alt=""></a>
+          <div class="details__content">
+            <a href="videoDetails.html">
+              ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên
+            </a>
+            <div class="details__content__text">
+              29N lượt xem 1 tháng trước
+            </div>
+          </div>
+        </div>
+        <div class="details">
+          <a href="videoDetails.html"><img src="/img/ef93eb61545140238ab17f585e1c840a.png" alt=""></a>
+          <div class="details__content">
+            <a href="videoDetails.html">
+              ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên
+            </a>
+            <div class="details__content__text">
+              29N lượt xem 1 tháng trước
+            </div>
+          </div>
+        </div>
+        <div class="details">
+          <a href="videoDetails.html"><img src="/img/e58045bf863e53666870be898604e651.png" alt=""></a>
+          <div class="details__content">
+            <a href="videoDetails.html">
+              ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên
+            </a>
+            <div class="details__content__text">
+              29N lượt xem 1 tháng trước
+            </div>
+          </div>
+        </div>
+        <div class="details">
+          <a href="videoDetails.html"><img src="/img/7c7343172f9ac1719ac9c5ddb78c9fe1.png" alt=""></a>
+          <div class="details__content">
+            <a href="videoDetails.html">
+              ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên
+            </a>
+            <div class="details__content__text">
+              29N lượt xem 1 tháng trước
+            </div>
+          </div>
+        </div>
+        <div class="details">
+          <a href="videoDetails.html"><img src="/img/22b689ca15b204e64fa02dbbe738d567.png" alt=""></a>
+          <div class="details__content">
+            <a href="videoDetails.html">
+              ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên
+            </a>
+            <div class="details__content__text">
+              29N lượt xem 1 tháng trước
+            </div>
+          </div>
+        </div>
+        <div class="details">
+          <a href="videoDetails.html"><img src="/img/90abc910122ac63f0f2efd8689d03c55.png" alt=""></a>
+          <div class="details__content">
+            <a href="videoDetails.html">
+              ASUS Vivobook S 15 OLED Bape Edition: Chiếc laptop khoác trên
+            </a>
+            <div class="details__content__text">
+              29N lượt xem 1 tháng trước
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  
+    <footer class="footer footer--mt30">
+      <div class="footer__intro">
+        <a href="javascript:void(0)">
           <h2>CÔNG TY TRUNG THÀNH ĐẠT COMPUTER</h2>
-          <div class="footer__intro__items">
-            <i class="fa-solid fa-phone"></i>
-            <a href="#">0901345678</a>
-          </div>
-          <div class="footer__intro__items">
-            <i class="fa-solid fa-house"></i>
-            <a href="#">http://diachicuarkhach.com</a>
-          </div>
-          <div class="footer__intro__items">
-            <i class="fa-regular fa-envelope"></i>
-            <a href="#">info@thongtinkhachhang.com</a>
-          </div>
-          <div class="footer__intro__items">
-            <i class="fa-regular fa-clock"></i>
-            <a href="#">8:00 - 22:00</a>
-          </div>
-          
+        </a>
+        <div class="footer__intro__items">
+          <i class="fa-solid fa-phone"></i>
+          <span>0901345678</span>
         </div>
-        <div class="footer__support">
-          <h2>Hỗ trợ nhanh</h2>
-          <div class="footer__support__items">
-            <i class="fa-solid fa-gears"></i><a href="#">Dịch vụ</a>
-          </div>
-          <div class="footer__support__items">
-            <i class="fa-solid fa-question"></i><a href="#">Câu hỏi thường gặp</a>
-          </div>
-          
+        <div class="footer__intro__items">
+          <i class="fa-solid fa-house"></i>
+          <a href="javascript:void(0)">http://diachicuarkhach.com</a>
         </div>
-        <div class="footer__img"><img src="/img/fce0b8f070a0595a0b34ce619b9ee747.png" alt=""></div>
-      </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lity/2.4.1/lity.min.js"></script>
-    <script src="js/main.js"></script>
-    
+        <div class="footer__intro__items">
+          <i class="fa-regular fa-envelope"></i>
+          <a href="javascript:void(0)">info@thongtinkhachhang.com</a>
+        </div>
+        <div class="footer__intro__items">
+          <i class="fa-regular fa-clock"></i>
+          <span>8:00 - 22:00</span>
+        </div>
+      </div>
+      <div class="footer__support">
+        <h2>Hỗ trợ nhanh</h2>
+        <div class="footer__support__items">
+          <i class="fa-solid fa-gears"></i><a href="javascript:void(0)">Dịch vụ</a>
+        </div>
+        <div class="footer__support__items">
+          <i class="fa-solid fa-question"></i><a href="javascript:void(0)">Câu hỏi thường gặp</a>
+        </div>
+      </div>
+      <div class="footer__img"><img src="/img/fce0b8f070a0595a0b34ce619b9ee747.png" alt=""></div>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lity/2.4.1/lity.min.js"></script>
+  <script src="js/main.js"></script>
+
 </body>
+
 </html>
