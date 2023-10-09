@@ -18,18 +18,16 @@
 		@content;
 	}
 }
+@mixin mobile {
+  @media (max-width: 430px) {
+    @content;
+  }
+}
+
 @mixin media($keys...) {
   @each $key in $keys {
     @if ($key == sm-mobile) {
       @include sm-mobile {
-        @content
-      }
-    } @else if ($key == mobile) {
-      @include mobile {
-        @content
-      }
-    } @else if ($key == tablet) {
-      @include tablet {
         @content
       }
     }
