@@ -1,75 +1,188 @@
-.map{
+.address {
+  position: relative;
+  display: flex;
+  margin-top: 30px;
+  // padding: 30px 20px;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+  img {
+    width: 100%;
+    object-fit: cover;
+    height: 494px;
+  }
+  // background: url("../../img/0b6ef4634881383992908b86518d2b9d.png") lightgray -50px 0px / 104.01% 100% no-repeat;
+  &__details {
+    position: absolute;
+    top: 30px;
+    left: 20px;
     display: flex;
-    padding: 30px 20px;
+    width: 349px;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: flex-start;
-    gap: 10px;
-    align-self: stretch;
-    background: url("/Img/map.jpg"), lightgray -77px 0px / 104.01% 100% no-repeat;
-
-    &__address{
-        display: flex;
-        width: 349px;
-        // height: 451px;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-start;
-        border-radius: 8px;
-        border: 1px solid #303030;
-        background: #FFF;
-
-        &__title{
-            display: flex;
-            border-radius: 8px;
-            background: #162E4D;
-            color: white;
-            padding: 15px 20px;
-            align-items: flex-start;
-            gap: 10px;
-            align-self: stretch;
-            font-family: fw-500;
-            font-size: 18px;
-        }
-
-        &__departmentsList{
-            display: flex;
-            height: 399px;
-            flex-direction: column;
-            align-items: flex-start;
-            flex-shrink: 0;
-            align-self: stretch;
-
-            &__departments{
-                display: flex;
-                padding: 15px 20px;
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 10px;
-                align-self: stretch;
-                background-color: white;
-
-                &__title{
-                    color: #303030;
-                    font-family: fw-500;
-                    font-size: 18px;
-                    font-style: normal;
-                    font-weight: 700;
-                    line-height: normal;
-                    text-transform: capitalize;
-                }
-                &__descript{
-                    color:#303030;
-                    font-family: fw-500;
-                    font-size: 14px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: normal;
-                    text-transform: capitalize;
-                    align-self: stretch;
-                }
-
-            }
-
-        }
-
+    border-radius: 8px;
+    border: 1px solid $black-color;
+    background: $white-color;
+    &__header {
+      display: flex;
+      padding: 15px 20px;
+      align-items: flex-start;
+      gap: 10px;
+      align-self: stretch;
+      border-radius: 8px;
+      background: $main-color-blue;
+      color: $white-color;
+      font-family: "fw-400";
+      font-size: 18px;
+      font-style: normal;
+      line-height: normal;
     }
+    &__body {
+      display: flex;
+      height: fit-content;
+      flex-direction: column;
+      align-items: flex-start;
+      flex-shrink: 0;
+      align-self: stretch;
+      &__item {
+        display: flex;
+        padding: 15px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        align-self: stretch;
+        &--header {
+          color: $black-color;
+          font-family: "fw-700";
+          font-size: 18px;
+          font-style: normal;
+          line-height: normal;
+          text-transform: capitalize;
+        }
+        &--content {
+          align-self: stretch;
+          color: $black-color;
+          font-family: "fw-400";
+          font-size: 14px;
+          font-style: normal;
+          line-height: normal;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+  &--nom {
+    margin-top: 0;
+  }
+  @include lg-mobile {
+    margin-top: 20px;
+    height: 489px;
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+    &__details {
+      width: 390px;
+      left: 50%;
+		  transform: translateX(-50%);
+    }
+    &__details {
+      &__header {
+        justify-content: space-between;
+        &::after {
+          content: "\f078";
+          font-family: FontAwesome;
+          font-weight: normal;
+          font-style: normal;
+          font-size: 12px;
+          font-weight: 900;
+          line-height: 18px;
+          color: $white-color;
+        }
+      }
+    }
+  }
+  @include md-mobile {
+    margin-top: 20px;
+    img {
+      width: 100%;
+      height: 473px;
+      object-fit: cover;
+    }
+    &__details {
+      width: 325px;
+      left: 50%;
+		  transform: translateX(-50%);
+    }
+    &__details {
+      &__header {
+        justify-content: space-between;
+        font-size: 14px;
+        &::after {
+          content: "\f078";
+          font-family: FontAwesome;
+          font-weight: normal;
+          font-style: normal;
+          font-size: 12px;
+          font-weight: 900;
+          line-height: 18px;
+          color: $white-color;
+        }
+      }
+      &__body {
+        &__item {
+          &--header {
+            font-size: 14px;
+          }
+          &--content {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  @include sm-mobile {
+    margin-top: 20px;
+    img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+    }
+    &__details {
+      top: 20px;
+      width: 250px;
+      left: 50%;
+		  transform: translateX(-50%);
+    }
+    &__details {
+      &__header {
+        justify-content: space-between;
+        padding: 10px 15px;
+        font-size: 14px;
+        &::after {
+          content: "\f078";
+          font-family: FontAwesome;
+          font-weight: normal;
+          font-style: normal;
+          font-size: 12px;
+          font-weight: 900;
+          line-height: 18px;
+          color: $white-color;
+        }
+      }
+      &__body {
+        padding: 10px 15px;
+        &__item {
+          padding: 0;
+          &--header {
+            font-size: 14px;
+          }
+          &--content {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
 }

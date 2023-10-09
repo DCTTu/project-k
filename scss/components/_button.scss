@@ -1,9 +1,41 @@
 .btn {
-  &--seeDetails {
-    padding: 10px;
+  &--more {
+    display: flex;
+    padding: 20px 0px;
     justify-content: center;
     align-items: center;
     gap: 10px;
+    align-self: stretch;
+    border-radius: 8px;
+    border: 1px solid $black-color;
+    color: $black-color;
+    font-family: "fw-700";
+    font-size: 24px;
+    font-style: normal;
+    line-height: normal;
+    text-decoration: none;
+    cursor: pointer;
+
+    i {
+      color: $black-color;
+      font-family: Font Awesome 6 Free;
+      font-size: 8px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: normal;
+    }
+
+    &--m40 {
+      margin: 0 40px;
+    }
+  }
+
+  &--seeDetails {
+    margin: 0;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    // gap: 10px;
     align-self: stretch;
     border: none;
     border-radius: 8px;
@@ -13,14 +45,14 @@
     font-family: "fw-400";
     font-size: 14px;
     font-style: normal;
-    line-height: 20px; 
-    i {
-      color: $black-color;
-      font-family: Font Awesome 6 Free;
-      font-size: 8px;
-      font-style: normal;
-      font-weight: 900;
-      line-height: normal;
+    line-height: 20px;
+    text-decoration: none;
+  }
+  @include sm-mobile {
+    &--seeDetails {
+      font-size: 13px;
+      padding: 7px;
+      border-radius: 6px;
     }
   }
 }

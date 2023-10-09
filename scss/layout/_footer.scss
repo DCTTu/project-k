@@ -14,6 +14,10 @@
     align-items: flex-start;
     gap: 20px;
 
+    a {
+      text-decoration: none;
+    }
+
     h2 {
       margin: 0;
       color: $white-color;
@@ -29,7 +33,8 @@
       align-items: center;
       gap: 20px;
 
-      a {
+      a,
+      span {
         color: $white-color;
         font-family: "fw-500";
         font-size: 18px;
@@ -105,5 +110,78 @@
 
   &--mt30 {
     margin-top: 30px;
+  }
+  @include media(lg-mobile, md-mobile) {
+    padding: 60px 20px;
+    flex-direction: column;
+    gap: 20px;
+    &__intro {
+      width: 100%;
+      a {
+        h2 {
+          font-size: 18px;
+        }
+      }
+      &__items {
+        i, span, a {
+          font-size: 14px;
+        }
+      }
+    }
+    &__support {
+      width: 100%;
+      h2 {
+        font-size: 18px;
+      }
+      &__items {
+        i, a {
+          font-size: 14px;
+        }
+      }
+    }
+    &__img {
+      width: 100%;
+    }
+    &--mt30 {
+      margin-top: 20px;
+    }
+  }
+  @include sm-mobile {
+    padding: 60px 20px;
+    flex-direction: column;
+    gap: 20px;
+    &__intro {
+      width: 100%;
+      a {
+        h2 {
+          font-size: 18px;
+        }
+      }
+      &__items {
+        i, span, a {
+          font-size: 14px;
+        }
+      }
+    }
+    &__support {
+      width: 100%;
+      h2 {
+        font-size: 18px;
+      }
+      &__items {
+        i, a {
+          font-size: 14px;
+        }
+      }
+    }
+    &__img {
+      width: 100%;
+      img {
+        height: 146px;
+      }
+    }
+    &--mt30 {
+      margin-top: 20px;
+    }
   }
 }
