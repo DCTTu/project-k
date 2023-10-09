@@ -20,7 +20,14 @@
   }
   &__sticky {
     position: sticky;
-    top: 0;
+    top: -1px;
     z-index: 1;
+    padding: 0;
+  }
+  @include mobile {
+    flex-direction: column;
+    a {
+      font-size: 14px;
+    }
   }
 }
