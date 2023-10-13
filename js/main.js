@@ -69,6 +69,14 @@ if (width <=600) {
   $(".filter__box:last").append("tất cả");
   $(".filter__box:last").append("<i class='fa-solid fa-chevron-down'></i>");
 }
+
+$(document).ready(function(){
+  $('.slideShow').slick({
+    autoplay: true,
+    arrows: false,
+    dots: true
+  });
+});
 showIndexSideBar();
 showNavbar();
 showAddressDetails();

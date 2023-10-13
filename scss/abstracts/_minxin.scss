@@ -17,7 +17,13 @@
 }
 
 @mixin sm-tablet {
-	@media (min-width: 601px) {
+	@media (min-width: 601px) and (max-width: 990px) {
+		@content;
+	}
+}
+
+@mixin md-tablet {
+	@media (min-width: 991px) and (max-width: 1335px) {
 		@content;
 	}
 }
@@ -47,6 +53,7 @@
         @content
       }
     } @else if ($key == md-mobile) {
+
       @include md-mobile {
         @content
       }

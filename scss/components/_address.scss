@@ -185,4 +185,29 @@
       }
     }
   }
+  @include sm-tablet {
+    img {
+      height: 350px;
+    }
+    &__details {
+      width: 253px;
+      top: 20px;
+      &__header {
+        padding: 7px;
+        font-size: 13px;
+      }
+      &__body {
+        &__item {
+          padding: 5px;
+          gap: 5px;
+          &--header {
+            font-size: 13px;
+          }
+          &--content {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
 }

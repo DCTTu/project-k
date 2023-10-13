@@ -55,4 +55,10 @@
       border-radius: 6px;
     }
   }
+  @include sm-tablet {
+    &--seeDetails {
+      padding: 3px;
+      font-size: 13px;
+    }
+  }
 }
