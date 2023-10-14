@@ -1,0 +1,140 @@
+.videoPage {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+
+  .category-video {
+    display: flex;
+    padding: 0px 40px;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+
+    &__background {
+      display: flex;
+      padding: 10px 30px;
+      align-items: flex-start;
+      gap: 10px;
+      border-radius: 100px;
+      border: 1px solid $main-color-blue;
+      background-color: $main-color-blue;
+
+      a {
+        color: $white-color;
+        font-family: "fw-700";
+        font-size: 18px;
+        font-style: normal;
+        line-height: normal;
+        text-decoration: none;
+      }
+    }
+
+    &__background1 {
+      display: flex;
+      padding: 10px 30px;
+      align-items: flex-start;
+      gap: 10px;
+      border-radius: 100px;
+      border: 1px solid $main-color-blue;
+      background-color: $white-color;
+
+      a {
+        color: #303030;
+        font-family: fw-500;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-decoration: none;
+      }
+    }
+  }
+
+
+
+  .category-video {
+    &__background:hover {
+      background-color: white;
+
+      a {
+        color: var(--bleck, #303030);
+      }
+    }
+  }
+
+  .videos {
+    &__details {
+      a {
+        img:hover {
+          transform: scale(1.1);
+          transition: transform .2s;
+        }
+      }
+    }
+  }
+}
+
+.videos {
+  display: flex;
+  width: 100%;
+  padding: 0px 38px;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: flex-start;
+  row-gap: 40px;
+  flex-wrap: wrap;
+
+  .details {
+    width: 24.078%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+
+    a {
+      width: 100%;
+      img {
+        width: 100%;
+        height: 264px;
+        object-fit: cover;
+      }
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+      align-self: stretch;
+      a {
+        align-self: stretch;
+        color: $black-color;
+        font-family: "fw-700";
+        font-size: 24px;
+        font-style: normal;
+        line-height: normal;
+        align-self: stretch;
+        text-decoration: none;
+      }
+      &__text {
+        align-self: stretch;
+        color: $black-color;
+        font-family: "fw-400";
+        font-size: 16px;
+        font-style: normal;
+        line-height: normal;
+      }
+    }
+
+    p {
+      color: $black-color;
+      font-family: "fw-400";
+      font-size: 16px;
+      font-style: normal;
+      line-height: normal;
+      align-self: stretch;
+    }
+  }
+}

@@ -1,0 +1,160 @@
+.videoIsViewing {
+  width: 100%;
+  display: flex;
+  padding: 0px 40px;
+  margin-top: 30px;
+  align-items: flex-start;
+  gap: 20px;
+  align-self: stretch;
+
+  &__main {
+    display: flex;
+    width: 57.663%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+
+    img {
+      width: 100%;
+    }
+
+    h2 {
+      color: $black-color;
+      font-family: "fw-700";
+      font-size: 24px;
+      font-style: normal;
+      line-height: normal;
+      align-self: stretch;
+      margin: 0;
+    }
+
+    p {
+      color: $black-color;
+      font-family: "fw-400";
+      font-size: 14px;
+      font-style: normal;
+      line-height: normal;
+      align-self: stretch;
+      margin: 0;
+    }
+  }
+
+  &__timeLines {
+    flex: 1 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    align-self: stretch;
+
+    &__details {
+      display: flex;
+      width: 100%;
+      align-items: flex-start;
+      gap: 20px;
+
+      a {
+        width: 38.998%;
+        img {
+          width: 100%;
+        }
+      }
+
+      .title {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        flex: 1 0 0;
+        align-self: stretch;
+
+        a {
+          width: 100%;
+          text-decoration: none;
+          h2 {
+            color: $black-color;
+            font-family: "fw-700";
+            font-size: 18px;
+            font-style: normal;
+            line-height: normal;
+            align-self: stretch;
+            margin: 0;
+          }
+        }
+
+        p {
+          color: $black-color;
+          font-family: "fw-400";
+          font-size: 16px;
+          font-style: normal;
+          line-height: normal;
+          flex: 1 0 0;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+.moreVideo-title {
+  display: flex;
+  padding: 30px 40px;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+
+  h2 {
+    color: $black-color;
+    font-family: "fw-700";
+    font-size: 24px;
+    font-style: normal;
+    line-height: normal;
+    flex: 1 0 0;
+    margin: 0;
+  }
+}
+
+.videos {
+  display: flex;
+  width: 100%;
+  padding: 0px 38px;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: flex-start;
+  row-gap: 40px;
+  flex-wrap: wrap;
+
+  &__details {
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+
+    a {
+      color: var(--bleck, #303030);
+      font-family: fw-500;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      align-self: stretch;
+
+      img {
+        width: 344px;
+        height: 264px;
+        object-fit: cover;
+      }
+    }
+
+    p {
+      color: var(--bleck, #303030);
+      font-family: fw-500;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      align-self: stretch;
+    }
+  }
+}
