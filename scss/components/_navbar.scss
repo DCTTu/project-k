@@ -21,7 +21,67 @@
   &__sticky {
     position: sticky;
     top: -1px;
-    z-index: 1;
+    z-index: 2;
     padding: 0;
+  }
+  @include lg-mobile {
+    margin-top: 20px;
+    padding: 0;
+    flex-direction: column;
+    a.navbar--drop {
+      padding-top: 20px;
+    }
+    a {
+      padding: 0 20px 20px 20px;
+      font-size: 18px;
+    }
+    a:not(.navbar--drop) {
+      display: none;
+    }
+  }
+  @include md-mobile {
+    margin-top: 20px;
+    padding: 0;
+    flex-direction: column;
+    a.navbar--drop {
+      padding-top: 15px;
+    }
+    a {
+      padding: 0 15px 15px 15px;
+      font-size: 14px;
+    }
+    a:not(.navbar--drop) {
+      display: none;
+    }
+  }
+  @include sm-mobile {
+    margin-top: 20px;
+    padding: 0;
+    flex-direction: column;
+    a.navbar--drop {
+      padding-top: 15px;
+    }
+    a {
+      padding: 0 15px 15px 15px;
+      font-size: 14px;
+    }
+    a:not(.navbar--drop) {
+      display: none;
+    }
+  }
+  @include sm-tablet {
+    margin-top: 20px;
+    padding: 0;
+    flex-direction: column;
+    a.navbar--drop {
+      padding-top: 20px;
+    }
+    a {
+      padding: 0 20px 20px 20px;
+      font-size: 18px;
+    }
+    a:not(.navbar--drop) {
+      display: none;
+    }
   }
 }

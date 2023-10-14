@@ -19,4 +19,27 @@
     line-height: normal;
     text-decoration: none;
   }
+  @include media(lg-mobile, md-mobile) {
+    &__item {
+      padding: 10px 15px;
+      font-size: 14px;
+    }
+  }
+  @include sm-mobile {
+    &__item {
+      padding: 8px 12px;
+      font-size: 13px;
+    }
+  }
+  @include sm-tablet {
+    a {
+      padding: 7px 10px;
+      font-size: 13px;
+    }
+  }
+  @include md-tablet {
+    a {
+      padding: 10px 15px;
+    }
+  }
 }
