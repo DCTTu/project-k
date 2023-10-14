@@ -5,7 +5,6 @@
   justify-content: space-between;
   align-self: stretch;
   gap: 17.391%;
-
   .logo {
     color: $black-color;
     font-family: "fw-400";
@@ -14,7 +13,6 @@
     line-height: normal;
     text-decoration: none;
   }
-
   .search {
     display: flex;
     padding: 20px 30px;
@@ -23,19 +21,16 @@
     border-radius: 8px;
     border: 1px solid $black-color;
     flex: 1 0 0;
-
     input {
       flex: 1 0 0;
       outline: none;
       border: none;
       background-color: $main-background-color;
     }
-
     i {
       cursor: pointer;
     }
   }
-
   .hotline {
     display: flex;
     flex-direction: column;
@@ -47,14 +42,12 @@
     font-size: 24px;
     font-style: normal;
     line-height: normal;
-
     &__number {
       color: $black-color;
       font-family: "fw-400";
       font-size: 28px;
       font-style: normal;
       line-height: normal;
-
       i {
         color: $black-color;
         font-family: Font Awesome 6 Free;
@@ -62,63 +55,6 @@
         font-style: normal;
         font-weight: 900;
         line-height: normal;
-      }
-    }
-  }
-
-  @include media(lg-mobile, md-mobile, sm-mobile) {
-    display: flex;
-    padding: 20px;
-    align-items: flex-start;
-    gap: 10px;
-    align-self: stretch;
-    .logo {
-      flex: 1 0 0;
-      color: $black-color;
-      font-family: "fw-400";
-      font-size: 28px;
-      font-style: normal;
-      line-height: normal;
-    }
-    .search {
-      display: none;
-    }
-    .hotline {
-      font-size: 18px;
-      &__number {
-        font-size: 14px;
-  
-        i {
-          font-size: 14px;
-        }
-      }
-    }
-  }
-
-  @include sm-tablet {
-    display: flex;
-    padding: 20px;
-    align-items: flex-start;
-    gap: 10%;;
-    align-self: stretch;
-    .logo {
-      color: $black-color;
-      font-family: "fw-400";
-      font-size: 28px;
-      font-style: normal;
-      line-height: normal;
-    }
-    .search {
-      // display: none;
-    }
-    .hotline {
-      font-size: 18px;
-      &__number {
-        font-size: 14px;
-  
-        i {
-          font-size: 14px;
-        }
       }
     }
   }

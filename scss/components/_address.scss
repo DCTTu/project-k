@@ -1,30 +1,30 @@
 .address {
-  position: relative;
-  display: flex;
   margin-top: 30px;
-  // padding: 30px 20px;
+  position: relative;
   align-items: flex-start;
   gap: 10px;
-  align-self: stretch;
+  width: 100%;
+  &--nm {
+    margin-top: 0;
+  }
   img {
     width: 100%;
+    height: 491px;
     object-fit: cover;
-    height: 494px;
   }
-  // background: url("../../img/0b6ef4634881383992908b86518d2b9d.png") lightgray -50px 0px / 104.01% 100% no-repeat;
-  &__details {
+  .addressDetails {
     position: absolute;
     top: 30px;
     left: 20px;
-    display: flex;
     width: 349px;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
     border-radius: 8px;
     border: 1px solid $black-color;
     background: $white-color;
-    &__header {
+    .header {
       display: flex;
       padding: 15px 20px;
       align-items: flex-start;
@@ -38,175 +38,28 @@
       font-style: normal;
       line-height: normal;
     }
-    &__body {
+    .item {
       display: flex;
-      height: fit-content;
+      padding: 15px 20px;
       flex-direction: column;
       align-items: flex-start;
-      flex-shrink: 0;
+      gap: 10px;
       align-self: stretch;
-      &__item {
-        display: flex;
-        padding: 15px 20px;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-        align-self: stretch;
-        &--header {
-          color: $black-color;
-          font-family: "fw-700";
-          font-size: 18px;
-          font-style: normal;
-          line-height: normal;
-          text-transform: capitalize;
-        }
-        &--content {
-          align-self: stretch;
-          color: $black-color;
-          font-family: "fw-400";
-          font-size: 14px;
-          font-style: normal;
-          line-height: normal;
-          text-transform: capitalize;
-        }
-      }
-    }
-  }
-  &--nom {
-    margin-top: 0;
-  }
-  @include lg-mobile {
-    margin-top: 20px;
-    height: 489px;
-    img {
-      width: 100%;
-      object-fit: cover;
-    }
-    &__details {
-      width: 390px;
-      left: 50%;
-		  transform: translateX(-50%);
-    }
-    &__details {
       &__header {
-        justify-content: space-between;
-        &::after {
-          content: "\f078";
-          font-family: FontAwesome;
-          font-weight: normal;
-          font-style: normal;
-          font-size: 12px;
-          font-weight: 900;
-          line-height: 18px;
-          color: $white-color;
-        }
+        color: $black-color;
+        font-family: "fw-700";
+        font-size: 18px;
+        font-style: normal;
+        line-height: normal;
+        text-transform: capitalize;
       }
-    }
-  }
-  @include md-mobile {
-    margin-top: 20px;
-    img {
-      width: 100%;
-      height: 473px;
-      object-fit: cover;
-    }
-    &__details {
-      width: 325px;
-      left: 50%;
-		  transform: translateX(-50%);
-    }
-    &__details {
-      &__header {
-        justify-content: space-between;
+      &__content {
+        color: $black-color;
+        font-family: "fw-400";
         font-size: 14px;
-        &::after {
-          content: "\f078";
-          font-family: FontAwesome;
-          font-weight: normal;
-          font-style: normal;
-          font-size: 12px;
-          font-weight: 900;
-          line-height: 18px;
-          color: $white-color;
-        }
-      }
-      &__body {
-        &__item {
-          &--header {
-            font-size: 14px;
-          }
-          &--content {
-            font-size: 14px;
-          }
-        }
-      }
-    }
-  }
-  @include sm-mobile {
-    margin-top: 20px;
-    img {
-      width: 100%;
-      height: 400px;
-      object-fit: cover;
-    }
-    &__details {
-      top: 20px;
-      width: 250px;
-      left: 50%;
-		  transform: translateX(-50%);
-    }
-    &__details {
-      &__header {
-        justify-content: space-between;
-        padding: 10px 15px;
-        font-size: 14px;
-        &::after {
-          content: "\f078";
-          font-family: FontAwesome;
-          font-weight: normal;
-          font-style: normal;
-          font-size: 12px;
-          font-weight: 900;
-          line-height: 18px;
-          color: $white-color;
-        }
-      }
-      &__body {
-        padding: 10px 15px;
-        &__item {
-          padding: 0;
-          &--header {
-            font-size: 14px;
-          }
-          &--content {
-            font-size: 13px;
-          }
-        }
-      }
-    }
-  }
-  @include sm-tablet {
-    img {
-      height: 350px;
-    }
-    &__details {
-      width: 253px;
-      top: 20px;
-      &__header {
-        padding: 7px;
-        font-size: 13px;
-      }
-      &__body {
-        &__item {
-          padding: 5px;
-          gap: 5px;
-          &--header {
-            font-size: 13px;
-          }
-          &--content {
-            font-size: 13px;
-          }
-        }
+        font-style: normal;
+        line-height: normal;
+        text-transform: capitalize;
       }
     }
   }

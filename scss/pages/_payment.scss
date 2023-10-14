@@ -1,0 +1,517 @@
+.mainPayment {
+  .modeOfPayment {
+    display: flex;
+    padding: 0px 40px;
+    margin-top: 30px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+    align-self: stretch;
+
+    &__title {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+      align-self: stretch;
+
+      p {
+        color: $black-color;
+        font-family: "fw-400";
+        font-size: 18px;
+        font-style: normal;
+        line-height: normal;
+        margin: 0;
+      }
+
+      h2 {
+        align-self: stretch;
+        color: $black-color;
+        font-family: "fw-700";
+        font-size: 28px;
+        font-style: normal;
+        line-height: normal;
+        margin: 0;
+      }
+    }
+
+    .paymentMutipleChoices-1 {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: flex-start;
+      align-content: space-between;
+      flex-wrap: wrap;
+
+      .paymentChoice {
+        display: flex;
+        width: 32.717%;
+        padding: 30px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        flex-shrink: 0;
+        border-radius: 15px;
+        background: $white-color;
+        box-shadow: $shadow-box;
+
+        svg {
+          width: 100%;
+        }
+
+        a {
+          color: $black-color;
+          font-family: "fw-400";
+          font-size: 18px;
+          font-style: italic;
+          line-height: normal;
+          text-decoration: none;
+        }
+
+
+        p {
+          color: $black-color;
+          font-family: "fw-400";
+          font-size: 18px;
+          font-style: normal;
+          line-height: normal;
+          margin: 0;
+        }
+
+        .paymentChoice-title {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          align-self: stretch;
+
+          h2 {
+            flex: 1 0 0;
+            color: $main-color-blue;
+            font-family: "fw-700";
+            font-size: 28px;
+            font-style: normal;
+            line-height: normal;
+            margin: 0;
+          }
+
+          img {
+            width: 54px;
+            height: 41.929px;
+            flex-shrink: 0;
+            object-fit: cover;
+          }
+        }
+      }
+
+    }
+
+    .paymentMutipleChoices-2 {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: flex-start;
+      align-content: space-between;
+      column-gap: 41px;
+      flex-wrap: wrap;
+
+      .paymentChoice {
+        display: flex;
+        width: 32.717%;
+        padding: 30px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        flex-shrink: 0;
+        border-radius: 15px;
+        background: $white-color;
+        box-shadow: $shadow-box;
+
+        svg {
+          width: 100%;
+        }
+
+        a {
+          color: $black-color;
+          font-family: "fw-400";
+          font-size: 18px;
+          font-style: italic;
+          line-height: normal;
+          text-decoration: none;
+        }
+
+
+        p {
+          color: $black-color;
+          font-family: "fw-400";
+          font-size: 18px;
+          font-style: normal;
+          line-height: normal;
+          margin: 0;
+        }
+
+        .paymentChoice-title {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          align-self: stretch;
+
+          h2 {
+            flex: 1 0 0;
+            color: $main-color-blue;
+            font-family: "fw-700";
+            font-size: 28px;
+            font-style: normal;
+            line-height: normal;
+            margin: 0;
+          }
+
+          img {
+            width: 54px;
+            height: 41.929px;
+            flex-shrink: 0;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+
+  }
+
+  .byCash {
+    display: flex;
+    padding: 0px 40px;
+    margin-top: 30px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+    align-self: stretch;
+
+    &__title {
+      display: flex;
+      flex-direction: column;
+      padding: 30px;
+      align-items: flex-start;
+      gap: 20px;
+      align-self: stretch;
+      border-radius: 15px;
+      background: $white-color;
+      h2 {
+        margin: 0;
+        color: $black-color;
+        font-family: "fw-700";
+        font-size: 28px;
+        font-style: normal;
+        line-height: normal;
+      }
+      p {
+        margin: 0;
+        color: $black-color;
+        font-family: "fw-400";
+        font-size: 18px;
+        font-style: normal;
+        line-height: normal;
+      }
+    }
+  }
+
+  .wireTransfer {
+    display: flex;
+    padding: 0px 40px;
+    margin-top: 30px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+    align-self: stretch;
+
+    .wireTransferDetail {
+      display: flex;
+      padding: 30px;
+      align-items: flex-start;
+      gap: 40px;
+      align-self: stretch;
+      border-radius: 15px;
+      background: $white-color;
+
+      .thumbnail-wireTransfer {
+        width: 40%;
+        height: 557px;
+
+        .img {
+          width: 77%;
+          height: 557px;
+          flex-shrink: 0;
+          // background: url(/Img/image\ 34.png);
+
+          .wireTransfer-thumbnail-background {
+            position: absolute;
+            margin: -510px 220px;
+            display: flex;
+            width: 240px;
+            height: 483px;
+            padding: 10px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-shrink: 0;
+            border-radius: 30px;
+            background: rgba(37, 37, 37, 0.60);
+
+            .wireTransfer-img {
+              display: flex;
+              padding: 30px;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              gap: 20px;
+              border-radius: 15px;
+              background: $white-color;
+
+              i {
+                color: #1ABD00;
+                text-align: center;
+                font-family: Font Awesome 6 Free;
+                font-size: 80px;
+                font-style: normal;
+                font-weight: 900;
+                line-height: normal;
+              }
+
+              .text-status {
+                color: #1ABD00;
+                text-align: center;
+                font-family: fw-500;
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+              }
+
+              .ok {
+                color: var(--bleck, #303030);
+                text-align: center;
+                font-family: fw-500;
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+              }
+            }
+          }
+        }
+      }
+
+      .descript-wireTransfer {
+
+        .logo {
+          display: flex;
+          padding: 20px;
+          margin-top: 20px;
+          align-items: center;
+          gap: 40px;
+          align-self: stretch;
+          border-radius: 15px;
+          border: 2px solid var(--bleck, #303030);
+
+          &__img {
+            width: 20%;
+          }
+
+          &__illustration {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+            flex: 1 0 0;
+            h2 {
+              margin: 0;
+              color: $black-color;
+              font-family: "fw-700";
+              font-size: 32px;
+              font-style: normal;
+              line-height: normal;
+            }
+            p {
+              margin: 0;
+              color: $black-color;
+              font-family: "fw-400";
+              font-size: 24px;
+              font-style: normal;
+              line-height: 32px; 
+            }
+          }
+        }
+
+        .scan {
+          width: 220px;
+          display: flex;
+          padding: 20px;
+          align-items: center;
+          gap: 40px;
+          border-radius: 15px;
+          border: 2px solid var(--bleck, #303030);
+        }
+
+        h2 {
+          margin: 20px 0;
+          color: $black-color;
+          font-family: "fw-700";
+          font-size: 28px;
+          font-style: normal;
+          line-height: normal;
+        }
+
+        p {
+          margin: 0;
+          color: $black-color;
+          font-family: "fw-400";
+          font-size: 18px;
+          font-style: normal;
+          line-height: normal;
+        }
+      }
+    }
+  }
+
+  .momo {
+    display: flex;
+    padding: 0px 40px;
+    margin-top: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    align-self: stretch;
+
+    &__detail {
+      display: flex;
+      padding: 30px;
+      align-items: center;
+      gap: 40px;
+      align-self: stretch;
+      border-radius: 15px;
+      background: $white-color;
+
+      &__descript {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        flex: 1 0 0;
+        h2 {
+          margin: 0;
+          color: $black-color;
+          font-family: "fw-700";
+          font-size: 28px;
+          font-style: normal;
+          line-height: normal;
+        }
+        p, b {
+          color: $black-color;
+          font-family: "fw-400";
+          font-size: 18px;
+          font-style: normal;
+          line-height: 28px; 
+        }
+      }
+    }
+  }
+
+  .zaloPay {
+    display: flex;
+    padding: 0px 40px;
+    margin-top: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    align-self: stretch;
+
+    &__detail {
+      display: flex;
+      padding: 30px;
+      align-items: center;
+      gap: 40px;
+      align-self: stretch;
+      border-radius: 15px;
+      background: $white-color;
+
+      &__descript {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        flex: 1 0 0;
+        h2 {
+          margin: 0;
+          color: $black-color;
+          font-family: "fw-700";
+          font-size: 28px;
+          font-style: normal;
+          line-height: normal;
+        }
+        p, b {
+          color: $black-color;
+          font-family: "fw-400";
+          font-size: 18px;
+          font-style: normal;
+          line-height: 28px; 
+        }
+      }
+    }
+  }
+
+  .exchangeOfGoods {
+    display: flex;
+    padding: 0px 40px;
+    margin-top: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    align-self: stretch;
+
+    &__detail {
+      display: flex;
+      padding: 30px;
+      align-items: center;
+      gap: 40px;
+      align-self: stretch;
+      border-radius: 15px;
+      background: $white-color;
+      &__descript {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        flex: 1 0 0;
+        h2 {
+          margin: 0;
+          color: $black-color;
+          font-family: "fw-700";
+          font-size: 28px;
+          font-style: normal;
+          line-height: normal;
+        }
+        p, b {
+          color: $black-color;
+          font-family: "fw-400";
+          font-size: 18px;
+          font-style: normal;
+          line-height: 28px; 
+        }
+      }
+    }
+  }
+
+  @include md-desk {
+    .modeOfPayment {
+      .paymentMutipleChoices-1 {
+        .paymentChoice {
+          .paymentChoice-title {
+            height: 56px;
+          }
+        } 
+      } 
+    }
+  }
+}

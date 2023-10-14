@@ -1,0 +1,217 @@
+.warrantyPolicy-title {
+  display: flex;
+  padding: 0px 40px;
+  margin-top: 30px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+
+  h2 {
+    margin: 0;
+    color: $black-color;
+    font-family: "fw-700";
+    font-size: 28px;
+    font-style: normal;
+    line-height: normal;
+    align-self: stretch;
+  }
+
+  p {
+    margin: 0;
+    align-self: stretch;
+    color: $black-color;
+    font-family: "fw-400";
+    font-size: 14px;
+    font-style: normal;
+    line-height: normal;
+  }
+}
+
+.warrantyPolicy-main {
+  display: flex;
+  padding: 0px 40px;
+  margin-top: 30px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+
+  h2 {
+    margin: 0;
+    color: $black-color;
+    font-family: "fw-700";
+    font-size: 24px;
+    font-style: normal;
+    line-height: normal;
+    align-self: stretch;
+  }
+
+  .bold {
+    color: $black-color;
+    font-family: "fw-700";
+    font-size: 18px;
+    font-style: normal;
+    line-height: normal;
+    align-self: stretch;
+    &--16 {
+      @extend .bold;
+      font-size: 16px;
+    }
+  }
+
+  ul {
+    margin: 0;
+    padding-left: 17px;
+    li {
+      color: $black-color;
+      font-family: "fw-400";
+      font-size: 14px;
+      font-style: normal;
+      line-height: normal;
+      align-self: stretch;
+    }
+  }
+
+  p {
+    margin: 0;
+    color: $black-color;
+    font-family: "fw-400";
+    font-size: 14px;
+    font-style: normal;
+    line-height: normal;
+    align-self: stretch;
+  }
+
+  .warrantyPolicy {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    align-content: space-between;
+    gap: 41px;
+
+    &__type1 {
+      display: flex;
+      padding: 30px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+      flex: 1 0 0;
+      border-radius: 15px;
+      background: $white-color;
+      box-shadow: $shadow-box;
+
+      h2 {
+        margin: 0;
+        color: $main-color-blue;
+        font-family: "fw-700";
+        font-size: 28px;
+        font-style: normal;
+        line-height: normal;
+        flex: 1 0 0;
+      }
+
+      p {
+        margin: 0;
+        color: $black-color;
+        font-family: "fw-400";
+        font-size: 18px;
+        font-style: normal;
+        line-height: 28px;
+        align-self: stretch;
+      }
+
+      ul {
+        li {
+          color: $black-color;
+          font-family: "fw-400";
+          font-size: 18px;
+          font-style: normal;
+          line-height: 28px;
+          align-self: stretch;
+        }
+      }
+
+      svg {
+        width: 100%;
+      }
+    }
+
+    &__type2 {
+      display: flex;
+      padding: 30px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+      flex: 1 0 0;
+      border-radius: 15px;
+      background: $white-color;
+      box-shadow: $shadow-box;
+
+      h2 {
+        margin: 0;
+        color: $main-color-blue;
+        font-family: "fw-700";
+        font-size: 28px;
+        font-style: normal;
+        line-height: normal;
+        flex: 1 0 0;
+      }
+
+      p {
+        margin: 0;
+        color: $black-color;
+        font-family: "fw-400";
+        font-size: 18px;
+        font-style: normal;
+        line-height: 28px;
+        align-self: stretch;
+      }
+
+      ul {
+        li {
+          color: $black-color;
+          font-family: "fw-400";
+          font-size: 18px;
+          font-style: normal;
+          line-height: 28px;
+          align-self: stretch;
+        }
+      }
+
+      svg {
+        width: 100%;
+      }
+    }
+  }
+
+  .brands {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+
+    h2 {
+      align-self: stretch;
+      color: $black-color;
+      font-family: "fw-700";
+      font-size: 24px;
+      font-style: normal;
+      line-height: normal;
+    }
+
+    &__details {
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      gap: 30px;
+      align-self: stretch;
+
+      img {
+        width: 10%;
+        flex: 1 0 0;
+      }
+    }
+  }
+}

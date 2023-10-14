@@ -48,17 +48,4 @@
     line-height: 20px;
     text-decoration: none;
   }
-  @include sm-mobile {
-    &--seeDetails {
-      font-size: 13px;
-      padding: 7px;
-      border-radius: 6px;
-    }
-  }
-  @include sm-tablet {
-    &--seeDetails {
-      padding: 3px;
-      font-size: 13px;
-    }
-  }
 }

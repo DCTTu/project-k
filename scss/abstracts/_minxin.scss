@@ -16,54 +16,12 @@
 	}
 }
 
-@mixin sm-tablet {
-	@media (min-width: 601px) and (max-width: 990px) {
-		@content;
-	}
-}
-
-@mixin md-tablet {
-	@media (min-width: 991px) and (max-width: 1335px) {
-		@content;
-	}
-}
-
-@mixin lg-mobile {
-	@media (min-width: 414px) and (max-width: 600px) {
-		@content;
-	}
-}
-
-@mixin md-mobile {
-	@media (min-width: 360px) and (max-width: 413px) {
-		@content;
-	}
-}
-
-@mixin sm-mobile {
-	@media (max-width: 359px) {
-		@content;
-	}
-}
-
 @mixin media($keys...) {
   @each $key in $keys {
-    @if ($key == lg-mobile) {
-      @include lg-mobile {
+    @if ($key == md-desk) {
+      @include md-desk {
         @content
       }
-    } @else if ($key == md-mobile) {
-
-      @include md-mobile {
-        @content
-      }
-    }	@else if ($key == sm-mobile) {
-      @include sm-mobile {
-        @content
-      }
-    } @else if ($key == sm-tablet) {
-      @include sm-tablet {
-			}
-		}
-	}
+    }
+  }
 }
