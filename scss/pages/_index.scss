@@ -160,7 +160,58 @@
       }
     }
   }
-  @include sm-desk {
+}
+
+//css stick carousel
+ul {
+  list-style-type: none;
+}
+.slick-dots {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 0 20px;
+}
+.slick-dots button {
+  font-size: 0;
+  width: 15px;
+  height: 15px;
+  border-radius: 100rem;
+  background-color: #eee;
+  border: none;
+  outline: none;
+  transition: all 0.2s linear;
+}
+.slick-dots .slick-active button {
+  background-color: #2cccff;
+}
+
+//responsive
+@include media(sm-mobile, md-mobile, lg-mobile) {
+  .index {
+    &__slideshow {
+      margin-top: 20px;
+      height: 200px;
+      object-fit: cover;
+    }
+  }
+
+  .slick-dots {
+    margin: 0;
+    padding: 0 0 10px 0;
+    gap: 10px;
+    button {
+      width: 8px;
+      height: 11px;
+    }
+  }
+}
+@include sm-desk {
+  .index {
     &__slideshow {
       object-position: 0 -400px;
       height: 400px;
@@ -188,7 +239,9 @@
       }
     }
   }
-  @include md-desk {
+}
+@include md-desk {
+  .index {
     &__produce {
       &__listProduct {
         .displayProduct {
@@ -212,7 +265,9 @@
       }
     }
   }
-  @include lg-desk {
+}
+@include lg-desk {
+  .index {
     &__slideshow {
       object-position: 0 -460px;
     }
@@ -240,11 +295,9 @@
       }
     }
   }
-  @include lg-mobile {
-    &__slideshow {
-      margin-top: 20px;
-      height: 121px;
-    }
+}
+@include lg-mobile {
+  .index {
     &__produce {
       position: relative;
       margin-top: 20px;
@@ -328,11 +381,9 @@
       }
     }
   }
-  @include md-mobile {
-    &__slideshow {
-      margin-top: 20px;
-      height: 121px;
-    }
+}
+@include md-mobile {
+  .index {
     &__produce {
       position: relative;
       margin-top: 20px;
@@ -424,11 +475,9 @@
       }
     }
   }
-  @include sm-mobile {
-    &__slideshow {
-      margin-top: 20px;
-      height: 121px;
-    }
+}
+@include sm-mobile {
+  .index {
     &__produce {
       position: relative;
       margin-top: 20px;
@@ -530,7 +579,9 @@
       }
     }
   }
-  @include sm-tablet {
+}
+@include sm-tablet {
+  .index {
     &__slideshow {
       margin-top: 20px;
       height: 278px;
@@ -596,7 +647,9 @@
       }
     }
   }
-  @include md-tablet {
+}
+@include md-tablet {
+  .index {
     &__produce {
       padding: 0 10px;
       gap: 10px;
@@ -650,33 +703,4 @@
       }
     }
   }
-}
-
-ul {
-  list-style-type: none;
-}
-
-.slick-dots {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, 0);
-  display: flex !important;
-  align-items: center;
-  justify-content: center;
-  gap: 0 20px;
-}
-.slick-dots button {
-  font-size: 0;
-  width: 15px;
-  height: 15px;
-  border-radius: 100rem;
-  background-color: #eee;
-  border: none;
-  outline: none;
-  transition: all 0.2s linear;
-}
-
-.slick-dots .slick-active button {
-  background-color: #2cccff;
 }

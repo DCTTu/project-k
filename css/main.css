@@ -1136,6 +1136,85 @@ body {
   line-height: 20px;
   text-decoration: line-through;
 }
+
+ul {
+  list-style-type: none;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 0 20px;
+}
+
+.slick-dots button {
+  font-size: 0;
+  width: 15px;
+  height: 15px;
+  border-radius: 100rem;
+  background-color: #eee;
+  border: none;
+  outline: none;
+  transition: all 0.2s linear;
+}
+
+.slick-dots .slick-active button {
+  background-color: #2cccff;
+}
+
+@media (max-width: 359px) {
+  .index__slideshow {
+    margin-top: 20px;
+    height: 200px;
+    object-fit: cover;
+  }
+  .slick-dots {
+    margin: 0;
+    padding: 0 0 10px 0;
+    gap: 10px;
+  }
+  .slick-dots button {
+    width: 8px;
+    height: 11px;
+  }
+}
+@media (min-width: 360px) and (max-width: 413px) {
+  .index__slideshow {
+    margin-top: 20px;
+    height: 200px;
+    object-fit: cover;
+  }
+  .slick-dots {
+    margin: 0;
+    padding: 0 0 10px 0;
+    gap: 10px;
+  }
+  .slick-dots button {
+    width: 8px;
+    height: 11px;
+  }
+}
+@media (min-width: 414px) and (max-width: 600px) {
+  .index__slideshow {
+    margin-top: 20px;
+    height: 200px;
+    object-fit: cover;
+  }
+  .slick-dots {
+    margin: 0;
+    padding: 0 0 10px 0;
+    gap: 10px;
+  }
+  .slick-dots button {
+    width: 8px;
+    height: 11px;
+  }
+}
 @media (min-width: 1336px) and (max-width: 1450px) {
   .index__slideshow {
     object-position: 0 -400px;
@@ -1189,10 +1268,6 @@ body {
   }
 }
 @media (min-width: 414px) and (max-width: 600px) {
-  .index__slideshow {
-    margin-top: 20px;
-    height: 121px;
-  }
   .index__produce {
     position: relative;
     margin-top: 20px;
@@ -1268,10 +1343,6 @@ body {
   }
 }
 @media (min-width: 360px) and (max-width: 413px) {
-  .index__slideshow {
-    margin-top: 20px;
-    height: 121px;
-  }
   .index__produce {
     position: relative;
     margin-top: 20px;
@@ -1353,10 +1424,6 @@ body {
   }
 }
 @media (max-width: 359px) {
-  .index__slideshow {
-    margin-top: 20px;
-    height: 121px;
-  }
   .index__produce {
     position: relative;
     margin-top: 20px;
@@ -1553,37 +1620,6 @@ body {
     line-height: 12px;
   }
 }
-
-ul {
-  list-style-type: none;
-}
-
-.slick-dots {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, 0);
-  display: flex !important;
-  align-items: center;
-  justify-content: center;
-  gap: 0 20px;
-}
-
-.slick-dots button {
-  font-size: 0;
-  width: 15px;
-  height: 15px;
-  border-radius: 100rem;
-  background-color: #eee;
-  border: none;
-  outline: none;
-  transition: all 0.2s linear;
-}
-
-.slick-dots .slick-active button {
-  background-color: #2cccff;
-}
-
 .news__top {
   display: flex;
   padding: 0px 40px;
