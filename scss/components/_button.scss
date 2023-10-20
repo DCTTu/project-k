@@ -29,29 +29,35 @@
         background-color:#c5c5c5 ;
         text-decoration-line: none;
     }
-.btn {
-  &--seeDetails {
-    padding: 10px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    align-self: stretch;
-    border: none;
-    border-radius: 8px;
-    background: $main-color-blue;
-    color: $white-color;
-    text-align: center;
-    font-family: "fw-400";
-    font-size: 14px;
-    font-style: normal;
-    line-height: 20px; 
-    i {
-      color: $black-color;
-      font-family: Font Awesome 6 Free;
-      font-size: 8px;
-      font-style: normal;
-      font-weight: 900;
-      line-height: normal;
+}
+
+@include mobile{
+    .seeMore{
+        width: 100%;
+        display: flex;
+        padding: 20px 0px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        align-self: stretch;
+        border-radius: 8px;
+        border: 1px solid var(--bleck, #303030);
+    
+        p{
+            color: var(--bleck, #303030);
+            font-family: fw-500;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+        i{
+            color: var(--bleck, #303030);
+            font-size: 8px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: normal;
+            margin-top: -10px;
+        }
     }
-  }
 }
