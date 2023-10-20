@@ -2,7 +2,7 @@
     display: flex;
     padding: 0px 20px;
     align-items: flex-start;
-    gap: 10px;
+    gap: 0px;
     align-self: stretch;
     background-color: $main-background-color;
 
@@ -10,7 +10,7 @@
         display: flex;
         padding: 10px 0px;
         align-items: flex-start;
-        gap: 10px;
+        gap: 0px;
         color: #303030;
         font-family: fw-500;
         font-size: 18px;
@@ -19,7 +19,7 @@
         line-height: normal;
         
         &:not(:last-child)::after{
-            margin: 0 50px;
+            margin: 0 20px;
             content: ">";
         }
     }
