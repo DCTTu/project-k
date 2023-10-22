@@ -296,6 +296,18 @@
   }
 }
 
+@include sm-mobile {
+  .videoPage {
+    .category-video {
+      &__background {
+        a {
+          font-size: 15px;
+        }
+      } 
+    }
+  } 
+}
+
 @include media(sm-tablet, md-tablet, lg-tablet) {
   .videoPage {
     .category-video {
