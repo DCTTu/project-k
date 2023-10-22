@@ -2651,14 +2651,6 @@ ul {
   .videoPage .category-video__background {
     padding: 7px;
   }
-  .videoPage .category-video__background a {
-    color: #FFFFFF;
-    font-family: "fw-700";
-    font-size: 18px;
-    font-style: normal;
-    line-height: normal;
-    text-decoration: none;
-  }
   .videoPage .category-video__background1 {
     padding: 7px;
   }
@@ -2690,14 +2682,6 @@ ul {
   }
   .videoPage .category-video__background {
     padding: 7px;
-  }
-  .videoPage .category-video__background a {
-    color: #FFFFFF;
-    font-family: "fw-700";
-    font-size: 18px;
-    font-style: normal;
-    line-height: normal;
-    text-decoration: none;
   }
   .videoPage .category-video__background1 {
     padding: 7px;
@@ -2731,14 +2715,6 @@ ul {
   .videoPage .category-video__background {
     padding: 7px;
   }
-  .videoPage .category-video__background a {
-    color: #FFFFFF;
-    font-family: "fw-700";
-    font-size: 18px;
-    font-style: normal;
-    line-height: normal;
-    text-decoration: none;
-  }
   .videoPage .category-video__background1 {
     padding: 7px;
   }
@@ -2763,8 +2739,15 @@ ul {
     gap: 20px;
   }
 }
-@media (max-width: 359px) {
+@media (min-width: 360px) and (max-width: 413px) {
+  .videoPage .category-video {
+    width: 100%;
+    padding: 0px 20px;
+  }
   .videoPage .category-video__background a {
+    font-size: 15px;
+  }
+  .videoPage .category-video__background1 a {
     font-size: 15px;
   }
 }
