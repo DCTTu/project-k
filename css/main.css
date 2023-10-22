@@ -87,6 +87,15 @@ body {
     display: none !important;
   }
 }
+.videos .details a .overlay, .videoIsViewing__main .overlay,
+.videoIsViewing__timeLines__details a .overlay {
+  transition: 0.3s all;
+}
+.videos .details a .overlay:hover, .videoIsViewing__main .overlay:hover,
+.videoIsViewing__timeLines__details a .overlay:hover {
+  opacity: 1;
+}
+
 .address {
   position: relative;
   margin-top: 30px;
@@ -310,6 +319,9 @@ body {
   line-height: normal;
   text-decoration: none;
   cursor: pointer;
+}
+.btn--more:hover {
+  background-color: rgba(48, 48, 48, 0.4);
 }
 .btn--more i {
   color: #303030;
@@ -2569,12 +2581,33 @@ ul {
   gap: 20px;
 }
 .videos .details a {
+  position: relative;
   width: 100%;
 }
 .videos .details a img {
   width: 100%;
   height: 264px;
   object-fit: cover;
+}
+.videos .details a .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 264px;
+  background: rgba(8, 8, 8, 0.801);
+  text-align: center;
+  opacity: 0;
+}
+.videos .details a .overlay::after {
+  content: "\f04b";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 100px;
+  line-height: 264px;
+  color: #FFFFFF;
 }
 .videos .details__content {
   display: flex;
@@ -2610,6 +2643,182 @@ ul {
   align-self: stretch;
 }
 
+@media (max-width: 359px) {
+  .videoPage .category-video {
+    width: 100%;
+    padding: 0px 20px;
+  }
+  .videoPage .category-video__background {
+    padding: 7px;
+  }
+  .videoPage .category-video__background a {
+    color: #FFFFFF;
+    font-family: "fw-700";
+    font-size: 18px;
+    font-style: normal;
+    line-height: normal;
+    text-decoration: none;
+  }
+  .videoPage .category-video__background1 {
+    padding: 7px;
+  }
+  .videoPage .category-video__background1 a {
+    color: #303030;
+    font-family: "fw-500";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+  }
+  .videos {
+    flex-direction: column;
+    padding: 0px 20px;
+  }
+  .videos .details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+}
+@media (min-width: 360px) and (max-width: 413px) {
+  .videoPage .category-video {
+    width: 100%;
+    padding: 0px 20px;
+  }
+  .videoPage .category-video__background {
+    padding: 7px;
+  }
+  .videoPage .category-video__background a {
+    color: #FFFFFF;
+    font-family: "fw-700";
+    font-size: 18px;
+    font-style: normal;
+    line-height: normal;
+    text-decoration: none;
+  }
+  .videoPage .category-video__background1 {
+    padding: 7px;
+  }
+  .videoPage .category-video__background1 a {
+    color: #303030;
+    font-family: "fw-500";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+  }
+  .videos {
+    flex-direction: column;
+    padding: 0px 20px;
+  }
+  .videos .details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+}
+@media (min-width: 414px) and (max-width: 600px) {
+  .videoPage .category-video {
+    width: 100%;
+    padding: 0px 20px;
+  }
+  .videoPage .category-video__background {
+    padding: 7px;
+  }
+  .videoPage .category-video__background a {
+    color: #FFFFFF;
+    font-family: "fw-700";
+    font-size: 18px;
+    font-style: normal;
+    line-height: normal;
+    text-decoration: none;
+  }
+  .videoPage .category-video__background1 {
+    padding: 7px;
+  }
+  .videoPage .category-video__background1 a {
+    color: #303030;
+    font-family: "fw-500";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+  }
+  .videos {
+    flex-direction: column;
+    padding: 0px 20px;
+  }
+  .videos .details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+}
+@media (min-width: 601px) and (max-width: 990px) {
+  .videoPage .category-video {
+    display: flex;
+    padding: 0px 40px;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+  }
+  .videoPage .category-video__background {
+    display: flex;
+    padding: 10px 30px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 100px;
+    border: 1px solid #162E4D;
+    background-color: #162E4D;
+  }
+  .videoPage .category-video__background1 {
+    display: flex;
+    padding: 10px 30px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 100px;
+    border: 1px solid #162E4D;
+    background-color: #FFFFFF;
+  }
+  .videos {
+    display: flex;
+    width: 100%;
+    padding: 0px 30px;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+  }
+  .videos .details {
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .videos .details a img {
+    height: 182px;
+  }
+  .videos .details a .overlay {
+    height: 182px;
+  }
+  .videos .details a .overlay::after {
+    font-size: 50px;
+    line-height: 182px;
+  }
+  .videos .details__content a {
+    font-size: 14px;
+  }
+}
 .videoIsViewing {
   width: 100%;
   display: flex;
@@ -2620,6 +2829,7 @@ ul {
   align-self: stretch;
 }
 .videoIsViewing__main {
+  position: relative;
   display: flex;
   width: 57.663%;
   flex-direction: column;
@@ -2663,9 +2873,30 @@ ul {
 }
 .videoIsViewing__timeLines__details a {
   width: 38.998%;
+  position: relative;
 }
 .videoIsViewing__timeLines__details a img {
   width: 100%;
+}
+.videoIsViewing__timeLines__details a .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(8, 8, 8, 0.801);
+  text-align: center;
+  opacity: 0;
+}
+.videoIsViewing__timeLines__details a .overlay::after {
+  content: "\f04b";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 50px;
+  line-height: normal;
+  color: #FFFFFF;
 }
 .videoIsViewing__timeLines__details .title {
   display: flex;

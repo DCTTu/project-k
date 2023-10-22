@@ -15,7 +15,9 @@
     line-height: normal;
     text-decoration: none;
     cursor: pointer;
-
+    &:hover {
+      background-color:rgba($color: $black-color, $alpha: 0.4) ;
+    }
     i {
       color: $black-color;
       font-family: Font Awesome 6 Free;

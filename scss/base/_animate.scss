@@ -1,0 +1,8 @@
+.videos .details a .overlay, .videoIsViewing__main .overlay, 
+.videoIsViewing__timeLines__details a .overlay
+{
+  transition: .3s all;
+  &:hover {
+    opacity: 1;
+  }
+}
