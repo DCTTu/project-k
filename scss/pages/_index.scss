@@ -33,7 +33,7 @@
             gap: 10px;
             align-self: stretch;
             border-radius: 8px;
-            background: $main-color-blue;
+            background: $main-blue-color;
             color: $white-color;
             font-family: "fw-400";
             font-size: 18px;
@@ -53,6 +53,9 @@
             line-height: normal;
             text-transform: capitalize;
             text-decoration: none;
+            &:hover {
+              color: $blue-color;
+            }
           }
         }
       }
@@ -76,7 +79,7 @@
           align-items: center;
           gap: 10px;
           border-radius: 8px;
-          background: $main-color-blue;
+          background: $main-blue-color;
           color: $white-color;
           font-family: "fw-400";
           font-size: 18px;
@@ -108,6 +111,7 @@
         gap: 10px;
         border-radius: 8px;
         border: 1px solid $black-color;
+        text-decoration: none;
         a {
           width: 100%;
         }
@@ -115,6 +119,10 @@
           width: 100%;
           height: 240px;
           object-fit: cover;
+          transition: transform 0.4s;
+          &:hover {
+            transform: scale(1.05);
+          }
         }
         .productInfo {
           display: flex;
@@ -127,10 +135,9 @@
             font-size: 14px;
             font-style: normal;
             line-height: 20px;
-            height: 80px;
             display: -webkit-box;
             -webkit-box-orient: vertical;
-            -webkit-line-clamp: 4;
+            -webkit-line-clamp: 2;
             overflow: hidden;
           }
           &__price {
@@ -157,6 +164,7 @@
             }
           }
         }
+        &:hover {box-shadow: $shadow-box-card;}
       }
     }
   }
@@ -185,9 +193,13 @@ ul {
   border: none;
   outline: none;
   transition: all 0.2s linear;
+  &:hover {
+    cursor: pointer;
+    background-color: $blue-color;
+  }
 }
 .slick-dots .slick-active button {
-  background-color: #2cccff;
+  background-color: $blue-color;
 }
 
 //responsive
@@ -223,7 +235,7 @@ ul {
         }
         .productCard {
           img {
-            height: auto;
+            height: 205px;
           }
           .productInfo__des {
             font-size: 13.6px;
@@ -249,7 +261,7 @@ ul {
         }
         .productCard {
           img {
-            height: auto;
+            height: 232px;
           }
           .productInfo__des {
             font-size: 13.6px;
@@ -274,11 +286,11 @@ ul {
     &__produce {
       &__listProduct {
         .displayProduct {
-          grid-template-columns: repeat(5, minmax(0, 1fr));
+          grid-template-columns: repeat(4, minmax(0, 1fr));
         }
         .productCard {
           img {
-            height: auto;
+            height: 254px;
           }
           .productInfo__des {
             font-size: 13.6px;
@@ -313,7 +325,7 @@ ul {
         align-items: center;
         gap: 10px;
         border-radius: 0px 15px 15px 0px;
-        background: $main-color-blue;
+        background: $main-blue-color;
         z-index: 1;
         &::after {
           content: "\f054";
@@ -399,7 +411,7 @@ ul {
         align-items: center;
         gap: 10px;
         border-radius: 0px 15px 15px 0px;
-        background: $main-color-blue;
+        background: $main-blue-color;
         z-index: 1;
         &::after {
           content: "\f054";
@@ -493,7 +505,7 @@ ul {
         align-items: center;
         gap: 10px;
         border-radius: 0px 15px 15px 0px;
-        background: $main-color-blue;
+        background: $main-blue-color;
         z-index: 1;
         &::after {
           content: "\f054";

@@ -1,21 +1,10 @@
 .address {
   position: relative;
-  display: flex;
   margin-top: 30px;
-  // padding: 30px 20px;
-  align-items: flex-start;
-  gap: 10px;
-  align-self: stretch;
-  img {
-    width: 100%;
-    object-fit: cover;
-    height: 494px;
-  }
-  // background: url("../../img/0b6ef4634881383992908b86518d2b9d.png") lightgray -50px 0px / 104.01% 100% no-repeat;
-  &__details {
+  .details {
     position: absolute;
-    top: 30px;
-    left: 20px;
+    top: 10px;
+    left: 10px;
     display: flex;
     width: 349px;
     flex-direction: column;
@@ -31,7 +20,7 @@
       gap: 10px;
       align-self: stretch;
       border-radius: 8px;
-      background: $main-color-blue;
+      background: $main-blue-color;
       color: $white-color;
       font-family: "fw-400";
       font-size: 18px;
@@ -45,15 +34,15 @@
       align-items: flex-start;
       flex-shrink: 0;
       align-self: stretch;
-      &__item {
+      .item {
         display: flex;
         padding: 15px 20px;
         flex-direction: column;
         align-items: flex-start;
         gap: 10px;
         align-self: stretch;
+        color: $black-color;
         &--header {
-          color: $black-color;
           font-family: "fw-700";
           font-size: 18px;
           font-style: normal;
@@ -62,18 +51,29 @@
         }
         &--content {
           align-self: stretch;
-          color: $black-color;
           font-family: "fw-400";
           font-size: 14px;
           font-style: normal;
           line-height: normal;
           text-transform: capitalize;
         }
+        &:hover {
+          cursor: pointer;
+          color: $blue-color;
+        }
+        &--npt {
+          padding-top: 0;
+        }
       }
     }
   }
   &--nom {
     margin-top: 0;
+  }
+
+  iframe {
+    width: 100%;
+    height: 494px;
   }
   @include lg-mobile {
     margin-top: 20px;

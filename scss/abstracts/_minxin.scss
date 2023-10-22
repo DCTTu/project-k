@@ -63,6 +63,7 @@
       }
     } @else if ($key == sm-tablet) {
       @include sm-tablet {
+				@content
 			}
 		}
 	}

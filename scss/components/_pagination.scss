@@ -1,45 +1,64 @@
-.pagination {
+.pagination{
   display: flex;
   padding: 0px 20px;
+  margin-bottom: 20px;
   justify-content: center;
   align-items: flex-start;
   gap: 10px;
   align-self: stretch;
-  &__item {
-    display: flex;
-    padding: 15px 20px;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 10px;
-    background: $main-color-blue;
-    color: $white-color;
-    font-family: "fw-400";
-    font-size: 18px;
-    font-style: normal;
-    line-height: normal;
-    text-decoration: none;
-  }
-  @include media(lg-mobile, md-mobile) {
-    &__item {
-      padding: 10px 15px;
-      font-size: 14px;
-    }
-  }
-  @include sm-mobile {
-    &__item {
-      padding: 8px 12px;
-      font-size: 13px;
-    }
-  }
-  @include sm-tablet {
+  user-select: none;
+  li{
+    display: inline-block;
+    margin: 0px;
     a {
-      padding: 7px 10px;
-      font-size: 13px;
+      display: flex;
+      padding: 15px 20px;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 10px;
+      color: $white-color;
+      font-family: "fw-400";
+      font-size: 18px;
+      font-style: normal;
+      line-height: normal;
+      text-decoration: none;
     }
   }
-  @include md-tablet {
-    a {
-      padding: 10px 15px;
+}
+
+.previous-page, .next-page{
+  background: $main-blue-color;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.previous-page:hover{
+  transform: translateX(-5px);
+}
+
+.next-page:hover{
+  transform: translateX(5px);
+}
+
+.current-page, .dots{
+  background: #ccc;
+  cursor: pointer;
+}
+
+.active{
+  background: $main-blue-color;
+}
+
+.disable{
+  background: #ccc;
+}
+
+@include media (sm-mobile, md-mobile, lg-mobile) {
+  .pagination{ 
+    li {
+      a{ 
+        padding: 3px 8px;
+      }
     }
   }
 }
