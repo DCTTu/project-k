@@ -29,17 +29,15 @@
       margin: 0 40px;
     }
   }
-
   &--seeDetails {
     margin: 0;
     padding: 10px;
     justify-content: center;
     align-items: center;
-    // gap: 10px;
     align-self: stretch;
     border: none;
     border-radius: 8px;
-    background: $main-color-blue;
+    background: $main-blue-color;
     color: $white-color;
     text-align: center;
     font-family: "fw-400";
@@ -47,6 +45,9 @@
     font-style: normal;
     line-height: 20px;
     text-decoration: none;
+    &:hover {
+      background-color: rgba($color: $main-blue-color, $alpha: 0.8);
+    }
   }
   @include sm-mobile {
     &--seeDetails {
