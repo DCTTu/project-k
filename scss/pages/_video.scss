@@ -356,13 +356,13 @@
       gap: 20px;
       a {
         img {
-          height: 182px;
+          height: 100px;
         }
         .overlay {
-          height: 182px;
+          height: 100px;
           &::after {
             font-size: 50px;
-            line-height: 182px;
+            line-height: 100px;
           }
         }
       }
