@@ -7,8 +7,8 @@ showNavbar = () => {
 
 //create hide/show address info
 showAddressDetails = () => {
-  $(".address__details__header").on("click", function () {
-      $(".address__details__body").toggle();
+  $(".details__header").on("click", function () {
+      $(".details__body").toggle();
   });
 } 
 
@@ -19,10 +19,24 @@ showIndexSideBar = () => {
   });
 }
 
+//change content filter 
+changeNameItem = () => {
+  $(".filter__box:first").text("Danh mục: Laptop");
+  $(".filter__box:first").append("<i class='fa-solid fa-chevron-down'></i>");
+  $(".filter__box:last").text("");
+  $(".filter__box:last").append("<i class='fa-solid fa-filter'></i>");
+  $(".filter__box:last").append("tất cả");
+  $(".filter__box:last").append("<i class='fa-solid fa-chevron-down'></i>");
+  $(".details__header").append("<i class='fa-solid fa-chevron-down'></i>");
+  $(".details__header").css("justify-content", "space-between");
+}
+
 let width = screen.width;
 if (width <= 600) {
   showNavbar();
   showIndexSideBar();
+  changeNameItem();
+  showAddressDetails();
 }
 
 //add sticky navbar

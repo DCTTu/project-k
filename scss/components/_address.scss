@@ -70,141 +70,168 @@
   &--nom {
     margin-top: 0;
   }
-
   iframe {
     width: 100%;
     height: 494px;
   }
-  @include lg-mobile {
-    margin-top: 20px;
-    height: 489px;
-    img {
-      width: 100%;
-      object-fit: cover;
-    }
-    &__details {
-      width: 390px;
-      left: 50%;
-		  transform: translateX(-50%);
-    }
-    &__details {
+  // @include lg-mobile {
+  //   margin-top: 20px;
+  //   height: 489px;
+  //   img {
+  //     width: 100%;
+  //     object-fit: cover;
+  //   }
+  //   &__details {
+  //     width: 390px;
+  //     left: 50%;
+	// 	  transform: translateX(-50%);
+  //   }
+  //   &__details {
+  //     &__header {
+  //       justify-content: space-between;
+  //       &::after {
+  //         content: "\f078";
+  //         font-family: FontAwesome;
+  //         font-weight: normal;
+  //         font-style: normal;
+  //         font-size: 12px;
+  //         font-weight: 900;
+  //         line-height: 18px;
+  //         color: $white-color;
+  //       }
+  //     }
+  //   }
+  // }
+  // @include md-mobile {
+  //   margin-top: 20px;
+  //   img {
+  //     width: 100%;
+  //     height: 473px;
+  //     object-fit: cover;
+  //   }
+  //   &__details {
+  //     width: 325px;
+  //     left: 50%;
+	// 	  transform: translateX(-50%);
+  //   }
+  //   &__details {
+  //     &__header {
+  //       justify-content: space-between;
+  //       font-size: 14px;
+  //       &::after {
+  //         content: "\f078";
+  //         font-family: FontAwesome;
+  //         font-weight: normal;
+  //         font-style: normal;
+  //         font-size: 12px;
+  //         font-weight: 900;
+  //         line-height: 18px;
+  //         color: $white-color;
+  //       }
+  //     }
+  //     &__body {
+  //       &__item {
+  //         &--header {
+  //           font-size: 14px;
+  //         }
+  //         &--content {
+  //           font-size: 14px;
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+  // @include sm-mobile {
+  //   margin-top: 20px;
+  //   img {
+  //     width: 100%;
+  //     height: 400px;
+  //     object-fit: cover;
+  //   }
+  //   &__details {
+  //     top: 20px;
+  //     width: 250px;
+  //     left: 50%;
+	// 	  transform: translateX(-50%);
+  //   }
+  //   &__details {
+  //     &__header {
+  //       justify-content: space-between;
+  //       padding: 10px 15px;
+  //       font-size: 14px;
+  //       &::after {
+  //         content: "\f078";
+  //         font-family: FontAwesome;
+  //         font-weight: normal;
+  //         font-style: normal;
+  //         font-size: 12px;
+  //         font-weight: 900;
+  //         line-height: 18px;
+  //         color: $white-color;
+  //       }
+  //     }
+  //     &__body {
+  //       padding: 10px 15px;
+  //       &__item {
+  //         padding: 0;
+  //         &--header {
+  //           font-size: 14px;
+  //         }
+  //         &--content {
+  //           font-size: 13px;
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+  // @include sm-tablet {
+  //   img {
+  //     height: 350px;
+  //   }
+  //   &__details {
+  //     width: 253px;
+  //     top: 20px;
+  //     &__header {
+  //       padding: 7px;
+  //       font-size: 13px;
+  //     }
+  //     &__body {
+  //       &__item {
+  //         padding: 5px;
+  //         gap: 5px;
+  //         &--header {
+  //           font-size: 13px;
+  //         }
+  //         &--content {
+  //           font-size: 13px;
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+}
+
+//responsive
+@include md-mobile {
+  .address {
+    .details {
+      width: 95%;
       &__header {
-        justify-content: space-between;
-        &::after {
-          content: "\f078";
-          font-family: FontAwesome;
-          font-weight: normal;
-          font-style: normal;
-          font-size: 12px;
-          font-weight: 900;
-          line-height: 18px;
-          color: $white-color;
-        }
-      }
-    }
-  }
-  @include md-mobile {
-    margin-top: 20px;
-    img {
-      width: 100%;
-      height: 473px;
-      object-fit: cover;
-    }
-    &__details {
-      width: 325px;
-      left: 50%;
-		  transform: translateX(-50%);
-    }
-    &__details {
-      &__header {
-        justify-content: space-between;
-        font-size: 14px;
-        &::after {
-          content: "\f078";
-          font-family: FontAwesome;
-          font-weight: normal;
-          font-style: normal;
-          font-size: 12px;
-          font-weight: 900;
-          line-height: 18px;
-          color: $white-color;
+        padding: 16px 20px;
+        align-items: center;
+        font-size: 16px;
+        i {
+          font-size: 16px;
         }
       }
       &__body {
-        &__item {
+        .item {
+          padding: 10px 15px;
+          &--npt {
+            padding-top: 0;
+          }
           &--header {
-            font-size: 14px;
-          }
-          &--content {
-            font-size: 14px;
-          }
-        }
-      }
-    }
-  }
-  @include sm-mobile {
-    margin-top: 20px;
-    img {
-      width: 100%;
-      height: 400px;
-      object-fit: cover;
-    }
-    &__details {
-      top: 20px;
-      width: 250px;
-      left: 50%;
-		  transform: translateX(-50%);
-    }
-    &__details {
-      &__header {
-        justify-content: space-between;
-        padding: 10px 15px;
-        font-size: 14px;
-        &::after {
-          content: "\f078";
-          font-family: FontAwesome;
-          font-weight: normal;
-          font-style: normal;
-          font-size: 12px;
-          font-weight: 900;
-          line-height: 18px;
-          color: $white-color;
-        }
-      }
-      &__body {
-        padding: 10px 15px;
-        &__item {
-          padding: 0;
-          &--header {
-            font-size: 14px;
-          }
-          &--content {
-            font-size: 13px;
-          }
-        }
-      }
-    }
-  }
-  @include sm-tablet {
-    img {
-      height: 350px;
-    }
-    &__details {
-      width: 253px;
-      top: 20px;
-      &__header {
-        padding: 7px;
-        font-size: 13px;
-      }
-      &__body {
-        &__item {
-          padding: 5px;
-          gap: 5px;
-          &--header {
-            font-size: 13px;
-          }
-          &--content {
-            font-size: 13px;
+            font-size: 16px;
           }
         }
       }

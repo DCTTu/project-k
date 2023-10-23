@@ -308,87 +308,104 @@ ul {
     }
   }
 }
-@include lg-mobile {
+// @include lg-mobile {
+//   .index {
+//     &__produce {
+//       position: relative;
+//       margin-top: 20px;
+//       padding: 0;
+//       .dropdown {
+//         position: absolute;
+//         top: 83px;
+//         width: fit-content;
+//         display: inline-flex;
+//         padding: 30px 10px;
+//         flex-direction: column;
+//         justify-content: center;
+//         align-items: center;
+//         gap: 10px;
+//         border-radius: 0px 15px 15px 0px;
+//         background: $main-blue-color;
+//         z-index: 1;
+//         &::after {
+//           content: "\f054";
+//           font-family: FontAwesome;
+//           font-weight: normal;
+//           font-style: normal;
+//           font-size: 18px;
+//           font-weight: 900;
+//           line-height: normal;
+//           color: $white-color;
+//         }
+//         &__menu {
+//           position: absolute;
+//           top: 0;
+//           left: 38px;
+//           width: 500%;
+//           height: 400px;
+//           overflow: scroll;
+//           background-color: $white-color;
+//           z-index: 2;
+//         }
+//         &__fixed {
+//           position: fixed;
+//           top: 120px;
+//         }
+//       }
+//       // padding: 0;
+//       &__listProduct {
+//         padding: 0 20px;
+//         .filter {
+//           &__box {
+//             // display: none;
+//             font-size: 14px;
+//           }
+//         }
+//         .displayProduct {
+//           // display: none;
+//           padding: 0;
+//           grid-template-columns: repeat(2, minmax(0, 1fr));
+//           .productCard {
+//             padding: 20px 10px;
+//             a {
+//               text-decoration: none;
+//               img {
+//                 height: 137px;
+//               }
+//             }
+//             .productInfo {
+//               &__des {
+//                 font-size: 12px;
+//                 line-height: 16px;
+//                 height: 64px;
+//               }
+//               &__price {
+//                 &--new {
+//                   font-size: 12px;
+//                 }
+//                 &--old {
+//                   font-size: 8px;
+//                 }
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+@include media(sm-mobile, md-mobile, lg-mobile) {
   .index {
     &__produce {
-      position: relative;
-      margin-top: 20px;
-      padding: 0;
-      .dropdown {
-        position: absolute;
-        top: 83px;
-        width: fit-content;
-        display: inline-flex;
-        padding: 30px 10px;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        border-radius: 0px 15px 15px 0px;
-        background: $main-blue-color;
-        z-index: 1;
-        &::after {
-          content: "\f054";
-          font-family: FontAwesome;
-          font-weight: normal;
-          font-style: normal;
-          font-size: 18px;
-          font-weight: 900;
-          line-height: normal;
-          color: $white-color;
-        }
-        &__menu {
-          position: absolute;
-          top: 0;
-          left: 38px;
-          width: 500%;
-          height: 400px;
-          overflow: scroll;
-          background-color: $white-color;
-          z-index: 2;
-        }
-        &__fixed {
-          position: fixed;
-          top: 120px;
-        }
-      }
-      // padding: 0;
       &__listProduct {
-        padding: 0 20px;
         .filter {
           &__box {
-            // display: none;
             font-size: 14px;
+            padding: 15px 20px;
           }
         }
-        .displayProduct {
-          // display: none;
-          padding: 0;
-          grid-template-columns: repeat(2, minmax(0, 1fr));
-          .productCard {
-            padding: 20px 10px;
-            a {
-              text-decoration: none;
-              img {
-                height: 137px;
-              }
-            }
-            .productInfo {
-              &__des {
-                font-size: 12px;
-                line-height: 16px;
-                height: 64px;
-              }
-              &__price {
-                &--new {
-                  font-size: 12px;
-                }
-                &--old {
-                  font-size: 8px;
-                }
-              }
-            }
-          }
+        .productCard {
+          padding: 20px 10px;
         }
       }
     }
@@ -397,89 +414,38 @@ ul {
 @include md-mobile {
   .index {
     &__produce {
-      position: relative;
       margin-top: 20px;
       padding: 0;
+      gap: 0;
       .dropdown {
-        position: absolute;
-        top: 83px;
-        width: fit-content;
-        display: inline-flex;
-        padding: 26px 6px;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        border-radius: 0px 15px 15px 0px;
-        background: $main-blue-color;
-        z-index: 1;
-        &::after {
-          content: "\f054";
-          font-family: FontAwesome;
-          font-weight: normal;
-          font-style: normal;
-          font-size: 14px;
-          font-weight: 900;
-          line-height: normal;
-          color: $white-color;
-        }
+        width: 0;
         &__menu {
-          position: absolute;
-          top: 0;
-          left: 25px;
-          width: 11rem;
-          height: 400px;
-          overflow: scroll;
-          background-color: $white-color;
-          z-index: 2;
-          .list {
-            &__header, &__item {
-              font-size: 14px;
-              padding: 10px 20px;
-            }
-          }
-        }
-        &__fixed {
-          position: fixed;
-          top: 95px;
+          display: none;
         }
       }
-      // padding: 0;
       &__listProduct {
-        padding: 0 15px;
+        gap: 15px;
         .filter {
-          &__box {
-            // display: none;
-            font-size: 14px;
-          }
+          padding: 0 10px;
         }
         .displayProduct {
-          // display: none;
-          padding: 0;
+          padding: 0 10px;
           grid-template-columns: repeat(2, minmax(0, 1fr));
           row-gap: 10px;
           column-gap: 10px;
-          .productCard {
-            padding: 20px 10px;
-            a {
-              text-decoration: none;
-              img {
-                height: 137px;
+        }
+        .productCard {
+          img {
+            height: 140px;
+          }
+          .productInfo {
+            gap: 10px;
+            &__price {
+              &--new {
+                font-size: 10px;
               }
-            }
-            .productInfo {
-              &__des {
-                font-size: 12px;
-                line-height: 16px;
-                height: 64px;
-              }
-              &__price {
-                &--new {
-                  font-size: 10.7px;
-                }
-                &--old {
-                  font-size: 8px;
-                }
+              &--old {
+                font-size: 8px;
               }
             }
           }
@@ -488,110 +454,110 @@ ul {
     }
   }
 }
-@include sm-mobile {
-  .index {
-    &__produce {
-      position: relative;
-      margin-top: 20px;
-      padding: 0;
-      .dropdown {
-        position: absolute;
-        top: 47px;
-        width: fit-content;
-        display: inline-flex;
-        padding: 20px 5px;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        border-radius: 0px 15px 15px 0px;
-        background: $main-blue-color;
-        z-index: 1;
-        &::after {
-          content: "\f054";
-          font-family: FontAwesome;
-          font-weight: normal;
-          font-style: normal;
-          font-size: 14px;
-          font-weight: 900;
-          line-height: normal;
-          color: $white-color;
-        }
-        &__menu {
-          position: absolute;
-          top: 0;
-          left: 23px;
-          width: 10rem;
-          height: 400px;
-          overflow: scroll;
-          background-color: $white-color;
-          z-index: 2;
-          .list {
-            &__header, &__item {
-              font-size: 13px;
-              padding: 10px 20px;
-            }
-          }
-        }
-        &__fixed {
-          position: fixed;
-          top: 95px;
-        }
-      }
-      // padding: 0;
-      &__listProduct {
-        padding: 0 10px;
-        gap: 15px;
-        .filter {
-          &__box {
-            // display: none;
-            font-size: 14px;
-            padding: 5px;
-            border-radius: 5px;
-          }
-        }
-        .displayProduct {
-          // display: none;
-          padding: 0;
-          grid-template-columns: repeat(2, minmax(0, 1fr));
-          row-gap: 5px;
-          column-gap: 5px;
-          .productCard {
-            padding: 7px;
-            gap: 5px;
-            border-radius: 6px;
-            a {
-              text-decoration: none;
-              img {
-                height: 95px;
-              }
-            }
-            .productInfo {
-              gap: 5px;
-              &__des {
-                font-size: 12px;
-                line-height: 16px;
-                height: 64px;
-              }
-              &__price {
-                flex-direction: column;
-                gap: 5px;
-                &--new {
-                  font-size: 10.7px;
-                  line-height: 10.7px;
-                }
-                &--old {
-                  font-size: 8px;
-                  line-height: 8px;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
+// @include sm-mobile {
+//   .index {
+//     &__produce {
+//       position: relative;
+//       margin-top: 20px;
+//       padding: 0;
+//       .dropdown {
+//         position: absolute;
+//         top: 47px;
+//         width: fit-content;
+//         display: inline-flex;
+//         padding: 20px 5px;
+//         flex-direction: column;
+//         justify-content: center;
+//         align-items: center;
+//         gap: 10px;
+//         border-radius: 0px 15px 15px 0px;
+//         background: $main-blue-color;
+//         z-index: 1;
+//         &::after {
+//           content: "\f054";
+//           font-family: FontAwesome;
+//           font-weight: normal;
+//           font-style: normal;
+//           font-size: 14px;
+//           font-weight: 900;
+//           line-height: normal;
+//           color: $white-color;
+//         }
+//         &__menu {
+//           position: absolute;
+//           top: 0;
+//           left: 23px;
+//           width: 10rem;
+//           height: 400px;
+//           overflow: scroll;
+//           background-color: $white-color;
+//           z-index: 2;
+//           .list {
+//             &__header, &__item {
+//               font-size: 13px;
+//               padding: 10px 20px;
+//             }
+//           }
+//         }
+//         &__fixed {
+//           position: fixed;
+//           top: 95px;
+//         }
+//       }
+//       // padding: 0;
+//       &__listProduct {
+//         padding: 0 10px;
+//         gap: 15px;
+//         .filter {
+//           &__box {
+//             // display: none;
+//             font-size: 14px;
+//             padding: 5px;
+//             border-radius: 5px;
+//           }
+//         }
+//         .displayProduct {
+//           // display: none;
+//           padding: 0;
+//           grid-template-columns: repeat(2, minmax(0, 1fr));
+//           row-gap: 5px;
+//           column-gap: 5px;
+//           .productCard {
+//             padding: 7px;
+//             gap: 5px;
+//             border-radius: 6px;
+//             a {
+//               text-decoration: none;
+//               img {
+//                 height: 95px;
+//               }
+//             }
+//             .productInfo {
+//               gap: 5px;
+//               &__des {
+//                 font-size: 12px;
+//                 line-height: 16px;
+//                 height: 64px;
+//               }
+//               &__price {
+//                 flex-direction: column;
+//                 gap: 5px;
+//                 &--new {
+//                   font-size: 10.7px;
+//                   line-height: 10.7px;
+//                 }
+//                 &--old {
+//                   font-size: 8px;
+//                   line-height: 8px;
+//                 }
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
 @include sm-tablet {
   .index {
     &__slideshow {
