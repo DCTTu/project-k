@@ -64,13 +64,30 @@
 //   }
 // }
 
-@include md-mobile {
+@include media(sm-mobile, md-mobile, lg-mobile) {
   .pagination{
     padding: 0;
     li {
       a {
-        padding: 4px 9px;
         font-size: 14px;
+      }
+    }
+  }
+}
+@include media (md-mobile, lg-mobile) {
+  .pagination{
+    li {
+      a {
+        padding: 4px 9px;
+      }
+    }
+  }
+}
+@include sm-mobile {
+  .pagination{
+    li {
+      a {
+        padding: 1px 4px;
       }
     }
   }

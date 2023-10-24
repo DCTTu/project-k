@@ -376,7 +376,7 @@
   }
 }
 
-@include media (sm-tablet, md-tablet, lg-tablet) {
+@include media (sm-tablet, sm-tablet, lg-tablet) {
   .videoIsViewing {
     width: 100%;
     display: flex;

@@ -15,7 +15,14 @@ showAddressDetails = () => {
 //create hide/show menu product
 showIndexSideBar = () => {
   $(".dropdown").on("click", function () {
-    $(".dropdown__menu").toggle();
+    $(".menu").show();
+    document.body.style.overflow = "hidden";
+  });
+}
+hideIndexSideBar = () => {
+  $(".close").on("click", function () {
+    $(".menu").hide();
+    document.body.style.overflow = "scroll";
   });
 }
 
@@ -32,11 +39,30 @@ changeNameItem = () => {
 }
 
 let width = screen.width;
-if (width <= 600) {
+if (width < 1024) {
   showNavbar();
-  showIndexSideBar();
-  changeNameItem();
+}
+if (width <= 800) {
+  //add sticky dropdown menu
+  $(window).scroll(function () { 
+    let headerHeight = $(".header").outerHeight();
+    let bannerHeight = $(".navbar").outerHeight();
+    let rowHeight = $(".index__produce").outerHeight();
+    let height = headerHeight + bannerHeight + rowHeight;
+    if (($(window).scrollTop() > 616) && ($(window).scrollTop() < height)) {
+        $(".dropdown").addClass("dropdown__fixed");
+        $(".dropdown").addClass("dropdown__fixed");
+    } else {
+        $(".dropdown").removeClass("dropdown__fixed");
+        $(".dropdown").removeClass("dropdown__fixed");
+    }
+  });
   showAddressDetails();
+  showIndexSideBar();
+  hideIndexSideBar();
+}
+if (width <= 600) {
+  changeNameItem();
 }
 
 //add sticky navbar
@@ -52,49 +78,11 @@ let addSticky = () => {
         $(".main").css("margin-top", "0");
         $(".navbar").removeClass("navbar__sticky");
       }
-      let headerHeight = $(".header").outerHeight();
-      let bannerHeight = $(".navbar").outerHeight();
-      let rowHeight = $(".index__produce").outerHeight();
-      let height = headerHeight + bannerHeight + rowHeight;
-      let width = screen.width;
-      if (width <=739) {
-        if (($(window).scrollTop() > 349) && ($(window).scrollTop() < height)) {
-          $(".dropdown").addClass("dropdown__fixed");
-          $(".dropdown").addClass("dropdown__fixed");
-        } else {
-          $(".dropdown").removeClass("dropdown__fixed");
-          $(".dropdown").removeClass("dropdown__fixed");
-        }
-      }
+
     });
   });
 }
 addSticky();
-
-//handle events on different devices
-let responsive = () => {
-  let width = screen.width;
-  if (width >=600) {
-    window.removeEventListener("click", showIndexSideBar());
-    $(".dropdown__menu").css("display", "block");
-    $(".filter__box:first").text("Danh mục sản phẩm : Laptop");
-    $(".filter__box:last").text("Lọc kết quả: tất cả");
-    $(".filter__box:last").append("<i class='fa-solid fa-chevron-down'></i>");
-  }
-  else {
-    $(".dropdown__menu").css("display", "none");
-    $(".filter__box:first").text("Danh mục: Laptop");
-    $(".filter__box:first").append("<i class='fa-solid fa-chevron-down'></i>");
-    $(".filter__box:last").text("");
-    $(".filter__box:last").append("<i class='fa-solid fa-filter'></i>");
-    $(".filter__box:last").append("tất cả");
-    $(".filter__box:last").append("<i class='fa-solid fa-chevron-down'></i>");
-    //event on mobile 
-    showIndexSideBar();
-    showNavbar();
-    showAddressDetails();
-  }
-}
 
 //change address 
 $('.item').on('click', function(){
