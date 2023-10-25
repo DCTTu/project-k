@@ -8,7 +8,7 @@
   align-self: stretch;
   &__item {
     display: flex;
-    padding: 10px 20px;
+    padding: 10px 0px;
     align-items: flex-start;
     color: $black-color;
     font-family: "fw-700";
@@ -16,9 +16,28 @@
     font-style: normal;
     line-height: normal;
     text-decoration: none;
+    &:first-child {
+      padding: 10px 0 10px 20px;
+    }
     &:not(:last-child)::after{
       content: ">";
-      padding-left: 50px;
+      padding-left: 15px;
+    }
+  }
+}
+
+//for mobile 
+@include md-mobile {
+  .breadcrumb {
+    margin-top: 20px;
+  }
+}
+@include sm-mobile {
+  .breadcrumb {
+    &__item  {
+      &:first-child {
+        padding: 10px 0;
+      }
     }
   }
 }

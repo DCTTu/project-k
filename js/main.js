@@ -26,6 +26,37 @@ hideIndexSideBar = () => {
   });
 }
 
+//create hide/show side menu news 
+showSideMenuNewsTop = () => {
+  $(".newsTop").on("click", function () {
+    $(".news__top__right").show();
+    document.body.style.overflow = "hidden";
+  });
+}
+hideSideMenuNewsTop = () => {
+  $(".newsTopClose").on("click", function () {
+    $(".news__top__right").hide();
+    document.body.style.overflow = "scroll";
+  });
+}
+showSideMenuNewsBottom = () => {
+  $(".newsBottom").on("click", function () {
+    $(".news__bottom__right").show();
+    document.body.style.overflow = "hidden";
+  });
+}
+hideSideMenuNewsBottom = () => {
+  $(".newsBottomClose").on("click", function () {
+    $(".news__bottom__right").hide();
+    document.body.style.overflow = "scroll";
+  });
+}
+
+showSideMenuNewsTop();
+hideSideMenuNewsTop();
+showSideMenuNewsBottom();
+hideSideMenuNewsBottom();
+
 //change content filter 
 changeNameItem = () => {
   $(".filter__box:first").text("Danh mục: Laptop");
@@ -45,13 +76,24 @@ if (width <= 1023) {
     let headerHeight = $(".header").outerHeight();
     let bannerHeight = $(".navbar").outerHeight();
     let rowHeight = $(".index__produce").outerHeight();
+    let mainHeight = $(".main").outerHeight();
     let height = headerHeight + bannerHeight + rowHeight;
+    let height_2 = headerHeight + bannerHeight + mainHeight;
     if (($(window).scrollTop() > 616) && ($(window).scrollTop() < height)) {
-        $(".dropdown").addClass("dropdown__fixed");
         $(".dropdown").addClass("dropdown__fixed");
     } else {
         $(".dropdown").removeClass("dropdown__fixed");
-        $(".dropdown").removeClass("dropdown__fixed");
+    }
+
+    if (($(window).scrollTop() > 371) && ($(window).scrollTop() < height_2)) {
+      $(".newsTop").addClass("dropdownNewsTopFixed");
+    } else {
+        $(".newsTop").removeClass("dropdownNewsTopFixed");
+    }
+    if (($(window).scrollTop() > 914) && ($(window).scrollTop() < height_2)) {
+      $(".newsBottom").addClass("dropdownNewsBottomFixed");
+    } else {
+        $(".newsBottom").removeClass("dropdownNewsBottomFixed");
     }
   });
   showNavbar();
@@ -197,3 +239,68 @@ $(function(){
 });
 
 
+// @include sm-mobile {
+//   .news {
+//     &__top {
+//       &__left {
+//         img {
+//           height: 250px;
+//         }
+//         .title {
+//           font-size: 18px;
+//         }
+//       }
+//       &__center {
+//         .item {
+//           a:first-child {
+//             width: 124%;
+//           }
+//           img {
+//             height: 70px;
+//           }
+//           &__title {
+//             font-size: 14px;
+//           }
+//         }
+//       }
+//     }
+//     &__bottom {
+//       &__left {
+//         .top {
+//           &__item {
+//             gap: 0px;
+//             img {
+//               height: 70px;
+//             }
+//             &__title {
+//               font-size: 12px;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+//   .dropdownNews {
+//     top: 2px;
+//     padding: 25px 7px;
+//   }
+//   .listPosts {
+//     a.image {
+//       img {
+//         height: 70px;
+//       }
+//     }
+
+//     &__content {
+//       gap: 10px;
+//       &__title {
+//         font-size: 14px;
+//       }
+//       &__text {
+//         span,i {
+//           font-size: 12px;
+//         }
+//       }
+//     }
+//   }
+// }

@@ -52,6 +52,9 @@
     }
   }
   @include sm-mobile {
+    &--more {
+      font-size: 14px;
+    }
     &--seeDetails {
       font-size: 13px;
       padding: 7px;
