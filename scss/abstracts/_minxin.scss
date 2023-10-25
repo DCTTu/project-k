@@ -1,51 +1,61 @@
-@mixin sm-desk {
-	@media (min-width: 1336px) and (max-width: 1450px) {
+//mobile 
+@mixin sm-mobile {
+	@media (max-width: 359px) {
 		@content;
 	}
 }
-
-@mixin md-desk {
-	@media (min-width: 1450px) and (max-width: 1550px) {
+@mixin md-mobile {
+	@media (min-width: 360px) and (max-width: 413px) {
 		@content;
 	}
 }
-
-@mixin lg-desk {
-	@media (min-width: 1550px) and (max-width: 1758px) {
-		@content;
-	}
-}
-
-@mixin sm-tablet {
-	@media (min-width: 601px) and (max-width: 741px) {
-		@content;
-	}
-}
-
-@mixin md-tablet {
-	@media (min-width: 741px) and (max-width: 881px) {
-		@content;
-	}
-}
-
 @mixin lg-mobile {
 	@media (min-width: 414px) and (max-width: 600px) {
 		@content;
 	}
 }
 
-@mixin md-mobile {
-	@media (min-width: 360px) and (max-width: 413px) {
+//tablet
+@mixin sm-tablet {
+	@media (min-width: 601px) and (max-width: 741px) {
+		@content;
+	}
+}
+@mixin md-tablet {
+	@media (min-width: 742px) and (max-width: 881px) {
+		@content;
+	}
+}
+@mixin lg-tablet {
+	@media (min-width: 882px) and (max-width: 1023px) {
 		@content;
 	}
 }
 
-@mixin sm-mobile {
-	@media (max-width: 359px) {
+//desktop
+@mixin smm-desk {
+	@media (min-width: 1024px) and (max-width: 1335px) {
 		@content;
 	}
 }
 
+@mixin sm-desk {
+	@media (min-width: 1336px) and (max-width: 1450px) {
+		@content;
+	}
+}
+@mixin md-desk {
+	@media (min-width: 1451px) and (max-width: 1550px) {
+		@content;
+	}
+}
+@mixin lg-desk {
+	@media (min-width: 1551px) and (max-width: 1758px) {
+		@content;
+	}
+}
+
+//mix
 @mixin media($keys...) {
   @each $key in $keys {
     @if ($key == lg-mobile) {
@@ -67,6 +77,26 @@
 			}
 		} @else if ($key == md-tablet) {
       @include md-tablet {
+				@content
+			}
+		} @else if ($key == lg-tablet) {
+      @include lg-tablet {
+				@content
+			}
+		} @else if ($key == smm-desk) {
+      @include smm-desk {
+				@content
+			}
+		} @else if ($key == sm-desk) {
+      @include sm-desk {
+				@content
+			}
+		} @else if ($key == md-desk) {
+      @include md-desk {
+				@content
+			}
+		} @else if ($key == lg-desk) {
+      @include lg-desk {
 				@content
 			}
 		}

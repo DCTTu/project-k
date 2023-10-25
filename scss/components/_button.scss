@@ -58,4 +58,9 @@
       border-radius: 6px;
     }
   }
+  @include lg-tablet {
+    &--seeDetails {
+      font-size: 18px;
+    }
+  }
 }

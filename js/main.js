@@ -39,10 +39,7 @@ changeNameItem = () => {
 }
 
 let width = screen.width;
-if (width < 1024) {
-  showNavbar();
-}
-if (width <= 800) {
+if (width <= 1023) {
   //add sticky dropdown menu
   $(window).scroll(function () { 
     let headerHeight = $(".header").outerHeight();
@@ -57,6 +54,7 @@ if (width <= 800) {
         $(".dropdown").removeClass("dropdown__fixed");
     }
   });
+  showNavbar();
   showAddressDetails();
   showIndexSideBar();
   hideIndexSideBar();

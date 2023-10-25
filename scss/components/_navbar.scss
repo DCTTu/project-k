@@ -28,6 +28,8 @@
     padding: 0;
   }
 }
+
+//mobile and tablet
 @include media(lg-mobile, md-mobile, sm-mobile, sm-tablet, md-tablet) {
   .navbar {
     a.navbar--drop {
@@ -52,6 +54,8 @@
     }
   }
 }
+
+//mobile
 @include md-mobile {
   .navbar {
     margin-top: 20px;
@@ -84,5 +88,13 @@
     a:not(.navbar--drop) {
       display: none;
     }
+  }
+}
+
+//tablet
+@include lg-tablet {
+  .navbar {
+    padding: 20px 0;
+    margin-top: 10px;
   }
 }

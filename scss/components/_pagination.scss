@@ -53,17 +53,7 @@
   background: #ccc;
 }
 
-// @include media (sm-mobile, md-mobile, lg-mobile) {
-//   .pagination{
-//     display: none; 
-//     // li {
-//     //   a{ 
-//     //     padding: 3px 8px;
-//     //   }
-//     // }
-//   }
-// }
-
+//for mobile
 @include media(sm-mobile, md-mobile, lg-mobile) {
   .pagination{
     padding: 0;
@@ -88,6 +78,17 @@
     li {
       a {
         padding: 1px 4px;
+      }
+    }
+  }
+}
+
+//for desktop
+@include smm-desk {
+  .pagination {
+    li {
+      a {
+        padding: 10px 15px;
       }
     }
   }

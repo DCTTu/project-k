@@ -1,4 +1,5 @@
 .index {
+  // slider
   &__slideshow {
     margin-top: 30px;
     width: 100%;
@@ -6,6 +7,7 @@
     object-fit: cover;
   }
 
+  //product display
   &__produce {
     display: flex;
     padding: 0px 20px;
@@ -14,14 +16,13 @@
     gap: 20px;
     align-self: stretch;
 
+    //show menu
     .close {
       display: none;
     }
-
     .dropdown {
       display: none;
     }
-
     .menu {
       display: flex;
       flex-direction: column;
@@ -73,6 +74,7 @@
       }
     }
 
+    //show product
     &__listProduct {
       display: flex;
       flex-direction: column;
@@ -80,13 +82,11 @@
       align-items: flex-start;
       flex: 1 0 0;
       background: $white-color;
-
       .filter {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
         align-self: stretch;
-
         &__box {
           display: flex;
           padding: 15px 20px;
@@ -100,7 +100,6 @@
           font-size: 18px;
           font-style: normal;
           line-height: normal;
-
           i {
             color: $white-color;
             font-family: Font Awesome 6 Free;
@@ -111,7 +110,6 @@
           }
         }
       }
-
       .displayProduct {
         padding: 0 20px;
         display: grid;
@@ -121,6 +119,7 @@
         column-gap: 20px;
       }
 
+      // product card
       .productCard {
         display: flex;
         padding: 20px;
@@ -130,28 +129,23 @@
         border-radius: 8px;
         border: 1px solid $black-color;
         text-decoration: none;
-
         a {
           width: 100%;
         }
-
         img {
           width: 100%;
-          height: 240px;
+          height: 260px;
           object-fit: cover;
           transition: transform 0.4s;
-
           &:hover {
             transform: scale(1.05);
           }
         }
-
         .productInfo {
           display: flex;
           flex-direction: column;
           gap: 20px;
           align-self: stretch;
-
           &__des {
             color: $black-color;
             font-family: "fw-400";
@@ -163,13 +157,11 @@
             -webkit-line-clamp: 2;
             overflow: hidden;
           }
-
           &__price {
             display: flex;
             align-items: flex-start;
             gap: 10px;
             align-self: stretch;
-
             &--new {
               color: $red-color;
               font-family: "fw-700";
@@ -177,7 +169,6 @@
               font-style: normal;
               line-height: 20px;
             }
-
             &--old {
               flex: 1 0 0;
               color: $red-color;
@@ -190,7 +181,6 @@
             }
           }
         }
-
         &:hover {
           box-shadow: $shadow-box-card;
         }
@@ -203,7 +193,6 @@
 ul {
   list-style-type: none;
 }
-
 .slick-dots {
   position: absolute;
   bottom: 0;
@@ -222,7 +211,6 @@ ul {
     border: none;
     outline: none;
     transition: all 0.2s linear;
-  
     &:hover {
       cursor: pointer;
       background-color: $blue-color;
@@ -257,116 +245,8 @@ ul {
   }
 }
 
-@include sm-tablet {
-  .slick-dots button {
-    width: 10px;
-    height: 12px;
-  }
-}
-
-@include sm-desk {
-  .index {
-    &__slideshow {
-      object-position: 0 -400px;
-      height: 400px;
-    }
-
-    &__produce {
-      &__listProduct {
-        .displayProduct {
-          grid-template-columns: repeat(4, minmax(0, 1fr));
-        }
-
-        .productCard {
-          img {
-            height: 205px;
-          }
-
-          .productInfo__des {
-            font-size: 13.6px;
-          }
-
-          .productInfo {
-            &__price {
-              &--new {
-                font-size: 15px;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-@include md-desk {
-  .index {
-    &__produce {
-      &__listProduct {
-        .displayProduct {
-          grid-template-columns: repeat(4, minmax(0, 1fr));
-        }
-
-        .productCard {
-          img {
-            height: 232px;
-          }
-
-          .productInfo__des {
-            font-size: 13.6px;
-          }
-
-          .productInfo {
-            &__price {
-              &--new {
-                font-size: 18px;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-@include lg-desk {
-  .index {
-    &__slideshow {
-      object-position: 0 -460px;
-    }
-
-    &__produce {
-      &__listProduct {
-        .displayProduct {
-          grid-template-columns: repeat(4, minmax(0, 1fr));
-        }
-
-        .productCard {
-          img {
-            height: 254px;
-          }
-
-          .productInfo__des {
-            font-size: 13.6px;
-          }
-
-          .productInfo {
-            &__price {
-              align-items: baseline;
-
-              &--new {
-                font-size: 13px;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
 //for tablet & mobile
-@include media(sm-mobile, md-mobile, lg-mobile, sm-tablet, md-tablet) {
+@include media(sm-mobile, md-mobile, lg-mobile, sm-tablet, md-tablet, lg-tablet) {
   .index {
     &__produce {
       margin-top: 20px;
@@ -374,15 +254,6 @@ ul {
       position: relative;
       &__listProduct {
         gap: 15px;
-        .filter {
-          padding: 0 10px;
-          &__box {
-            font-size: 14px;
-          }
-        }
-        .displayProduct {
-          padding: 0 10px;
-        }
       }
       .menu {
         display: none;
@@ -421,7 +292,6 @@ ul {
       .dropdown {
         border: none;
         position: absolute;
-        top: 77px;
         width: fit-content;
         display: inline-flex;
         padding: 30px 10px;
@@ -450,7 +320,31 @@ ul {
     }
   }
 }
-@include media(md-mobile, lg-mobile, sm-tablet, md-tablet) {
+@include media(sm-mobile, md-mobile, lg-mobile, sm-tablet, md-tablet) {
+  .index {
+    &__produce {
+      margin-top: 20px;
+      padding: 0;
+      position: relative;
+      &__listProduct {
+        gap: 15px;
+        .filter {
+          padding: 0 10px;
+          &__box {
+            font-size: 14px;
+          }
+        }
+        .displayProduct {
+          padding: 0 10px;
+        }
+      }
+      .dropdown {
+        top: 77px;
+      }
+    }
+  }
+}
+@include media(md-mobile, lg-mobile, sm-tablet, md-tablet, lg-tablet) {
   .index {
     &__produce {
       &__listProduct {
@@ -572,11 +466,15 @@ ul {
         }
         .productCard {
           padding: 20px;
-          img {
-            height: 250px;
-          }
         }
       }
+    }
+  }
+}
+@include media (md-tablet, lg-tablet) {
+  .index {
+    &__slideshow {
+      height: 400px;
     }
   }
 }
@@ -588,6 +486,9 @@ ul {
     &__produce {
       &__listProduct {
         .productCard {
+          img {
+            height: 250px;
+          }
           .productInfo {
             &__price {
               &--new {
@@ -602,15 +503,19 @@ ul {
       }
     }
   }
+  .slick-dots button {
+    width: 10px;
+    height: 12px;
+  }
 }
 @include md-tablet {
   .index {
-    &__slideshow {
-      height: 400px;
-    }
     &__produce {
       &__listProduct {
         .productCard {
+          img {
+            height: 300px;
+          }
           .productInfo {
             &__price {
               &--new {
@@ -626,5 +531,188 @@ ul {
     }
   }
 }
+@include lg-tablet {
+  .index {
+    &__produce {
+      &__listProduct {
+        gap: 20px;
+        margin-top: 10px;
+        .filter {
+          padding: 20px;
+          &__box {
+            font-size: 18px;
+          }
+        }
+        .productCard {
+          img {
+            height: 400px;
+          }
+          .productInfo {
+            &__des {
+              font-size: 18px;
+            }
+            &__price {
+              &--new {
+                font-size: 22px;
+              }
+              &--old {
+                font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+      .dropdown {
+        top: 133px;
+      }
+    }
+  }
+}
 
+//for desktop
+@include media(smm-desk, sm-desk, md-desk, lg-desk) {
+  .index {
+    &__produce {
+      &__listProduct {
+        .displayProduct {
+          grid-template-columns: repeat(4, minmax(0, 1fr));
+        }
+      }
+    }
+  }
+}
+@include smm-desk {
+  .index {
+    &__slideshow {
+      height: 450px;
+    }
+    &__produce {
+      padding: 0 15px;
+      gap: 15px;
+      .menu {
+        .list {
+          &__header, &__item {
+            padding: 10px 5px;
+          }
+        }
+      }
+      &__listProduct {
+        .filter {
+          &__box {
+            padding: 10px 5px;
+          }
+        }
+        .displayProduct {
+          padding: 0 15px;
+          column-gap: 15px;
+          row-gap: 15px;
+          .productCard {
+            padding: 20px 10px;
+            img {
+              height: 200px;
+            }
+            .productInfo {
+              &__price {
+                &--new {
+                  font-size: 12px;
+                }
+                &--old {
+                  font-size: 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@include sm-desk {
+  .index {
+    &__slideshow {
+      object-position: 0 -400px;
+      height: 400px;
+    }
 
+    &__produce {
+      &__listProduct {
+
+        .productCard {
+          img {
+            height: 205px;
+          }
+
+          .productInfo__des {
+            font-size: 13.6px;
+          }
+
+          .productInfo {
+            &__price {
+              &--new {
+                font-size: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@include md-desk {
+  .index {
+    &__produce {
+      &__listProduct {
+
+        .productCard {
+          img {
+            height: 232px;
+          }
+
+          .productInfo__des {
+            font-size: 13.6px;
+          }
+
+          .productInfo {
+            &__price {
+              &--new {
+                font-size: 18px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@include lg-desk {
+  .index {
+    &__slideshow {
+      object-position: 0 -460px;
+    }
+
+    &__produce {
+      &__listProduct {
+
+        .productCard {
+          img {
+            height: 254px;
+          }
+
+          .productInfo__des {
+            font-size: 13.6px;
+          }
+
+          .productInfo {
+            &__price {
+              align-items: baseline;
+
+              &--new {
+                font-size: 13px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
