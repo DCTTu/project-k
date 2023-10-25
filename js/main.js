@@ -90,7 +90,7 @@ if (width <= 1023) {
     } else {
         $(".newsTop").removeClass("dropdownNewsTopFixed");
     }
-    if (($(window).scrollTop() > 914) && ($(window).scrollTop() < height_2)) {
+    if (($(window).scrollTop() > 725) && ($(window).scrollTop() < height_2)) {
       $(".newsBottom").addClass("dropdownNewsBottomFixed");
     } else {
         $(".newsBottom").removeClass("dropdownNewsBottomFixed");
@@ -238,69 +238,3 @@ $(function(){
   });
 });
 
-
-// @include sm-mobile {
-//   .news {
-//     &__top {
-//       &__left {
-//         img {
-//           height: 250px;
-//         }
-//         .title {
-//           font-size: 18px;
-//         }
-//       }
-//       &__center {
-//         .item {
-//           a:first-child {
-//             width: 124%;
-//           }
-//           img {
-//             height: 70px;
-//           }
-//           &__title {
-//             font-size: 14px;
-//           }
-//         }
-//       }
-//     }
-//     &__bottom {
-//       &__left {
-//         .top {
-//           &__item {
-//             gap: 0px;
-//             img {
-//               height: 70px;
-//             }
-//             &__title {
-//               font-size: 12px;
-//             }
-//           }
-//         }
-//       }
-//     }
-//   }
-//   .dropdownNews {
-//     top: 2px;
-//     padding: 25px 7px;
-//   }
-//   .listPosts {
-//     a.image {
-//       img {
-//         height: 70px;
-//       }
-//     }
-
-//     &__content {
-//       gap: 10px;
-//       &__title {
-//         font-size: 14px;
-//       }
-//       &__text {
-//         span,i {
-//           font-size: 12px;
-//         }
-//       }
-//     }
-//   }
-// }
