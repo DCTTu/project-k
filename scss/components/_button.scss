@@ -51,7 +51,64 @@
       background-color: rgba($color: $main-blue-color, $alpha: 0.8);
     }
   }
-  @include sm-mobile {
+  &--dropdown {
+    border: none;
+    position: absolute;
+    width: fit-content;
+    padding: 30px 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 0px 15px 15px 0px;
+    background: $main-blue-color;
+    z-index: 1;
+    &::after {
+      content: "\f054";
+      font-family: FontAwesome;
+      font-weight: normal;
+      font-style: normal;
+      font-size: 14px;
+      font-weight: 900;
+      line-height: normal;
+      color: $white-color;
+    }
+    &__fixed {
+      position: fixed;
+      top: 100px;
+    }
+  }
+  &--close {
+    border: none;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: fit-content;
+    display: inline-flex;
+    padding: 30px 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 15px 0 0 15px;
+    background: $main-blue-color;
+    z-index: 1;
+    &::after {
+      content: "\f053";
+      font-family: FontAwesome;
+      font-weight: normal;
+      font-style: normal;
+      font-size: 14px;
+      font-weight: 900;
+      line-height: normal;
+      color: $white-color;
+    }
+  }
+}
+
+//for mobile
+@include sm-mobile {
+  .btn {
     &--more {
       font-size: 14px;
     }
@@ -61,7 +118,11 @@
       border-radius: 6px;
     }
   }
-  @include lg-tablet {
+}
+
+//for tablet
+@include lg-tablet {
+  .btn {
     &--seeDetails {
       font-size: 18px;
     }

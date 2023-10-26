@@ -101,6 +101,7 @@
         img {
           width: 135px;
           height: 83px;
+          object-fit: cover;
         }
         &__title {
           flex: 1 0 0;
@@ -317,12 +318,6 @@
     }
   }
 }
-.dropdownNews {
-  display: none;
-}
-.closeNews {
-  display: none;
-}
 
 //for mobile
 @include media (sm-mobile, md-mobile, lg-mobile) {
@@ -394,7 +389,7 @@
         background-color: $white-color;
         overflow: scroll;
         .sidebar {
-          &:not(:first-child) {
+          &:not(:nth-child(2)) {
             margin-top: 20px;
           }
           &__item {
@@ -404,64 +399,15 @@
       }
     }
   }
-
-  //show menu bar
-  .dropdownNews {
-    border: none;
-    position: absolute;
-    width: fit-content;
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 0px 15px 15px 0px;
-    background: $main-blue-color;
-    z-index: 1;
-    &::after {
-      content: "\f054";
-      font-family: FontAwesome;
-      font-weight: normal;
-      font-style: normal;
-      font-size: 14px;
-      font-weight: 900;
-      line-height: normal;
-      color: $white-color;
+  .btn {
+    &--fixedTop {
+      position: fixed;
+      top: 100px !important;
     }
-  }
-  .closeNews {
-    border: none;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    width: fit-content;
-    display: inline-flex;
-    padding: 30px 10px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 15px 0 0 15px;
-    background: $main-blue-color;
-    z-index: 1;
-    &::after {
-      content: "\f053";
-      font-family: FontAwesome;
-      font-weight: normal;
-      font-style: normal;
-      font-size: 14px;
-      font-weight: 900;
-      line-height: normal;
-      color: $white-color;
+    &--fixedBottom {
+      position: fixed;
+      top: 200px !important;
     }
-  }
-  .dropdownNewsTopFixed {
-    position: fixed;
-    top: 100px !important;
-  }
-  .dropdownNewsBottomFixed {
-    position: fixed;
-    top: 200px !important;
   }
 }
 @include media (md-mobile, lg-mobile) {
@@ -501,21 +447,21 @@
       }
     }
   }
-  .dropdownNews {
-    top: 15px;
-    padding: 30px 10px;
-  }
   .listPosts {
     a.image {
       img {
         height: 100px;
       }
     }
-
     &__content {
       &__title {
         font-size: 18px;
       }
+    }
+  }
+  .btn {
+    &--dropdown.news {
+      top: 12px;
     }
   }
 }
@@ -543,6 +489,19 @@
           }
         }
       }
+      &__right {
+        .head {
+          &__text {
+            font-size: 24px;
+          }
+        }
+        .item {
+          img {
+            width: 64px;
+            height: 64px;
+          }
+        }
+      }
     }
     &__bottom {
       &__left {
@@ -559,9 +518,14 @@
       }
     }
   }
-  .dropdownNews {
-    top: 7px;
-    padding: 20px 7px;
+  .btn {
+    &--dropdown.news {
+      top: 7px;
+      padding: 20px 7px;
+    }
+    &--close.news {
+      padding: 20px 7px;
+    }
   }
   .listPosts {
     a.image {
@@ -577,6 +541,19 @@
         span, i {
           font-size: 14px;
         }
+      }
+    }
+  }
+  .sidebar {
+    &__header {
+      &__title {
+        font-size: 24px;
+      }
+    }
+    &__item {
+      img {
+        height: 64px;
+        width: 64px;
       }
     }
   }

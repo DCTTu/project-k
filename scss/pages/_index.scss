@@ -15,14 +15,6 @@
     align-items: flex-start;
     gap: 20px;
     align-self: stretch;
-
-    //show menu
-    .close {
-      display: none;
-    }
-    .dropdown {
-      display: none;
-    }
     .menu {
       display: flex;
       flex-direction: column;
@@ -223,6 +215,13 @@ ul {
   }
 }
 
+//dropdown button 
+.btn {
+  &--dropdown, &--close {
+    display: none;
+  }
+}
+
 //responsive
 @include media(sm-mobile, md-mobile, lg-mobile) {
   .index {
@@ -264,60 +263,15 @@ ul {
         overflow-y: scroll;
         z-index: 2;
       }
-      .close {
-        border: none;
-        position: fixed;
-        bottom: 0;
-        right: 0;
-        width: fit-content;
-        display: inline-flex;
-        padding: 30px 10px;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        border-radius: 15px 0 0 15px;
-        background: $main-blue-color;
-        z-index: 1;
-        &::after {
-          content: "\f053";
-          font-family: FontAwesome;
-          font-weight: normal;
-          font-style: normal;
-          font-size: 14px;
-          font-weight: 900;
-          line-height: normal;
-          color: $white-color;
-        }
-      }
-      .dropdown {
-        border: none;
-        position: absolute;
-        width: fit-content;
-        display: inline-flex;
-        padding: 30px 10px;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        border-radius: 0px 15px 15px 0px;
-        background: $main-blue-color;
-        z-index: 1;
-        &::after {
-          content: "\f054";
-          font-family: FontAwesome;
-          font-weight: normal;
-          font-style: normal;
-          font-size: 14px;
-          font-weight: 900;
-          line-height: normal;
-          color: $white-color;
-        }
-        &__fixed {
-          position: fixed;
-          top: 100px;
-        }
-      }
+    }
+  }
+  .btn {
+    &--dropdown, &--close {
+      display: inline-flex;
+    }
+    &--fixed {
+      position: fixed;
+      top: 100px;
     }
   }
 }
@@ -339,9 +293,11 @@ ul {
           padding: 0 10px;
         }
       }
-      .dropdown {
-        top: 77px;
-      }
+    }
+  }
+  .btn {
+    &--dropdown.index {
+      top: 77px;
     }
   }
 }
@@ -563,9 +519,11 @@ ul {
           }
         }
       }
-      .dropdown {
-        top: 133px;
-      }
+    }
+  }
+  .btn {
+    &--dropdown {
+      top: 133px;
     }
   }
 }

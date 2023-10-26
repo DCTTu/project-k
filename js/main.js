@@ -14,13 +14,13 @@ showAddressDetails = () => {
 
 //create hide/show menu product
 showIndexSideBar = () => {
-  $(".dropdown").on("click", function () {
+  $(".btn--dropdown").on("click", function () {
     $(".menu").show();
     document.body.style.overflow = "hidden";
   });
 }
 hideIndexSideBar = () => {
-  $(".close").on("click", function () {
+  $(".btn--close").on("click", function () {
     $(".menu").hide();
     document.body.style.overflow = "scroll";
   });
@@ -73,27 +73,31 @@ let width = screen.width;
 if (width <= 1023) {
   //add sticky dropdown menu
   $(window).scroll(function () { 
+    console.log($(window).scrollTop());
     let headerHeight = $(".header").outerHeight();
     let bannerHeight = $(".navbar").outerHeight();
     let rowHeight = $(".index__produce").outerHeight();
     let mainHeight = $(".main").outerHeight();
+    let newsBottom = $(".news__bottom").outerHeight();
     let height = headerHeight + bannerHeight + rowHeight;
-    let height_2 = headerHeight + bannerHeight + mainHeight;
     if (($(window).scrollTop() > 616) && ($(window).scrollTop() < height)) {
-        $(".dropdown").addClass("dropdown__fixed");
+        $(".btn--dropdown").addClass("btn--fixed");
     } else {
-        $(".dropdown").removeClass("dropdown__fixed");
+        $(".btn--dropdown").removeClass("btn--fixed");
     }
 
-    if (($(window).scrollTop() > 371) && ($(window).scrollTop() < height_2)) {
-      $(".newsTop").addClass("dropdownNewsTopFixed");
+    //scroll news dropdown
+    let height_2 = headerHeight + bannerHeight + mainHeight;
+    let dropdown_1 = height_2 - newsBottom - 100;
+    if (($(window).scrollTop() > 371) && ($(window).scrollTop() < height_2 - 100)) {
+      $(".newsTop").addClass("btn--fixedTop");
     } else {
-        $(".newsTop").removeClass("dropdownNewsTopFixed");
+        $(".newsTop").removeClass("btn--fixedTop");
     }
-    if (($(window).scrollTop() > 725) && ($(window).scrollTop() < height_2)) {
-      $(".newsBottom").addClass("dropdownNewsBottomFixed");
+    if (($(window).scrollTop() > dropdown_1) && ($(window).scrollTop() < height_2 - 100)) {
+      $(".newsBottom").addClass("btn--fixedBottom");
     } else {
-        $(".newsBottom").removeClass("dropdownNewsBottomFixed");
+        $(".newsBottom").removeClass("btn--fixedBottom");
     }
   });
   showNavbar();
