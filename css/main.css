@@ -4402,263 +4402,780 @@ ul {
     object-fit: cover;
   }
 }
-.mainPayment .modeOfPayment {
-  width: 100%;
-  padding: 0;
-  gap: 30px;
+@media (min-width: 601px) and (max-width: 741px) {
+  .mainPayment .modeOfPayment {
+    width: 100%;
+    padding: 0;
+    gap: 30px;
+  }
+  .mainPayment .modeOfPayment__title {
+    gap: 0;
+  }
+  .mainPayment .modeOfPayment__title p {
+    width: 100%;
+    font-size: 14px;
+  }
+  .mainPayment .modeOfPayment__title h2 {
+    width: 100%;
+    font-size: 18px;
+  }
+  .mainPayment .modeOfPayment .paymentMutipleChoices-1 {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .mainPayment .modeOfPayment .paymentMutipleChoices-1 .paymentChoice {
+    width: 100%;
+  }
+  .mainPayment .modeOfPayment .paymentMutipleChoices-1 .paymentChoice a {
+    font-size: 14px;
+  }
+  .mainPayment .modeOfPayment .paymentMutipleChoices-1 .paymentChoice p {
+    align-self: stretch;
+    font-size: 14px;
+  }
+  .mainPayment .modeOfPayment .paymentMutipleChoices-1 .paymentChoice .paymentChoice-title {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    align-self: stretch;
+  }
+  .mainPayment .modeOfPayment .paymentMutipleChoices-1 .paymentChoice .paymentChoice-title h2 {
+    font-size: 20px;
+  }
+  .mainPayment .modeOfPayment .paymentMutipleChoices-2 {
+    flex-direction: column;
+    column-gap: 0;
+    gap: 10px;
+  }
+  .mainPayment .modeOfPayment .paymentMutipleChoices-2 .paymentChoice {
+    width: 100%;
+  }
+  .mainPayment .modeOfPayment .paymentMutipleChoices-2 .paymentChoice a {
+    font-size: 14px;
+  }
+  .mainPayment .modeOfPayment .paymentMutipleChoices-2 .paymentChoice p {
+    font-size: 14px;
+  }
+  .mainPayment .modeOfPayment .paymentMutipleChoices-2 .paymentChoice .paymentChoice-title h2 {
+    font-size: 20px;
+  }
+  .mainPayment .byCash {
+    width: 100%;
+    display: flex;
+    padding: 0px;
+    gap: 20px;
+  }
+  .mainPayment .byCash__title {
+    padding: 20px;
+    gap: 10px;
+  }
+  .mainPayment .byCash__title h2 {
+    margin: 0;
+    color: #303030;
+    font-family: "fw-700";
+    font-size: 28px;
+    font-style: normal;
+    line-height: normal;
+  }
+  .mainPayment .byCash__title p {
+    margin: 0;
+    color: #303030;
+    font-family: "fw-400";
+    font-size: 18px;
+    font-style: normal;
+    line-height: normal;
+  }
+  .mainPayment .wireTransfer {
+    width: 100%;
+    padding: 0px;
+    margin-top: 30px;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail {
+    padding: 0;
+    gap: 20px;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer {
+    width: 30%;
+    padding: 20px;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img {
+    width: 190px;
+    height: 257px;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img img {
+    width: 100%;
+    height: 237px;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img .wireTransfer-thumbnail-background {
+    margin: -227px 0 0 88px;
+    width: 98px;
+    height: 218px;
+    border-radius: 20px;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img .wireTransfer-thumbnail-background .wireTransfer-img {
+    width: 100%;
+    height: 85%;
+    padding: 10px;
+    gap: 10px;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img .wireTransfer-thumbnail-background .wireTransfer-img i {
+    margin-top: 20px;
+    font-size: 40px;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img .wireTransfer-thumbnail-background .wireTransfer-img .text-status {
+    font-size: 14px;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img .wireTransfer-thumbnail-background .wireTransfer-img .ok {
+    margin-top: -20px;
+    font-size: 14px;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer {
+    width: 70%;
+    padding-bottom: 10px;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer .logo__img {
+    width: 30%;
+    height: 100px;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer .logo__illustration h2 {
+    margin: 0;
+    color: #303030;
+    font-family: "fw-700";
+    font-size: 32px;
+    font-style: normal;
+    line-height: normal;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer .logo__illustration p {
+    margin: 0;
+    color: #303030;
+    font-family: "fw-400";
+    font-size: 24px;
+    font-style: normal;
+    line-height: 32px;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer .scan {
+    width: 140px;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer .scan img {
+    width: 100px;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer h2 {
+    margin: 20px 0;
+    color: #303030;
+    font-family: "fw-700";
+    font-size: 28px;
+    font-style: normal;
+    line-height: normal;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer p {
+    margin: 0;
+    color: #303030;
+    font-family: "fw-400";
+    font-size: 18px;
+    font-style: normal;
+    line-height: normal;
+  }
+  .mainPayment .momo {
+    width: 100%;
+    padding: 0px 20px;
+    gap: 20px;
+  }
+  .mainPayment .momo__detail {
+    padding: 10px;
+    gap: 10px;
+  }
+  .mainPayment .momo__detail__descript h2 {
+    margin: 0;
+    color: #303030;
+    font-family: "fw-700";
+    font-size: 28px;
+    font-style: normal;
+    line-height: normal;
+  }
+  .mainPayment .momo__detail__descript p, .mainPayment .momo__detail__descript b {
+    color: #303030;
+    font-family: "fw-400";
+    font-size: 18px;
+    font-style: normal;
+    line-height: 28px;
+  }
+  .mainPayment .momo__detail img {
+    width: 20%;
+    object-fit: cover;
+  }
+  .mainPayment .zaloPay {
+    width: 100%;
+    padding: 0px 20px;
+    gap: 20px;
+  }
+  .mainPayment .zaloPay__detail {
+    padding: 10px;
+    gap: 10px;
+  }
+  .mainPayment .zaloPay__detail__descript h2 {
+    margin: 0;
+    color: #303030;
+    font-family: "fw-700";
+    font-size: 28px;
+    font-style: normal;
+    line-height: normal;
+  }
+  .mainPayment .zaloPay__detail__descript p, .mainPayment .zaloPay__detail__descript b {
+    color: #303030;
+    font-family: "fw-400";
+    font-size: 18px;
+    font-style: normal;
+    line-height: 28px;
+  }
+  .mainPayment .zaloPay__detail img {
+    width: 20%;
+    object-fit: cover;
+  }
+  .mainPayment .exchangeOfGoods {
+    width: 100%;
+    padding: 0px 20px;
+    gap: 20px;
+  }
+  .mainPayment .exchangeOfGoods__detail {
+    padding: 10px;
+    gap: 10px;
+  }
+  .mainPayment .exchangeOfGoods__detail__descript h2 {
+    margin: 0;
+    color: #303030;
+    font-family: "fw-700";
+    font-size: 28px;
+    font-style: normal;
+    line-height: normal;
+  }
+  .mainPayment .exchangeOfGoods__detail__descript p, .mainPayment .exchangeOfGoods__detail__descript b {
+    color: #303030;
+    font-family: "fw-400";
+    font-size: 18px;
+    font-style: normal;
+    line-height: 28px;
+  }
+  .mainPayment .exchangeOfGoods__detail img {
+    width: 20%;
+    object-fit: cover;
+  }
 }
-.mainPayment .modeOfPayment__title {
-  gap: 0;
+@media (min-width: 742px) and (max-width: 881px) {
+  .mainPayment .modeOfPayment {
+    width: 100%;
+    padding: 0;
+    gap: 30px;
+  }
+  .mainPayment .modeOfPayment__title {
+    gap: 0;
+  }
+  .mainPayment .modeOfPayment__title p {
+    width: 100%;
+    font-size: 14px;
+  }
+  .mainPayment .modeOfPayment__title h2 {
+    width: 100%;
+    font-size: 18px;
+  }
+  .mainPayment .modeOfPayment .paymentMutipleChoices-1 {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .mainPayment .modeOfPayment .paymentMutipleChoices-1 .paymentChoice {
+    width: 100%;
+  }
+  .mainPayment .modeOfPayment .paymentMutipleChoices-1 .paymentChoice a {
+    font-size: 14px;
+  }
+  .mainPayment .modeOfPayment .paymentMutipleChoices-1 .paymentChoice p {
+    align-self: stretch;
+    font-size: 14px;
+  }
+  .mainPayment .modeOfPayment .paymentMutipleChoices-1 .paymentChoice .paymentChoice-title {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    align-self: stretch;
+  }
+  .mainPayment .modeOfPayment .paymentMutipleChoices-1 .paymentChoice .paymentChoice-title h2 {
+    font-size: 20px;
+  }
+  .mainPayment .modeOfPayment .paymentMutipleChoices-2 {
+    flex-direction: column;
+    column-gap: 0;
+    gap: 10px;
+  }
+  .mainPayment .modeOfPayment .paymentMutipleChoices-2 .paymentChoice {
+    width: 100%;
+  }
+  .mainPayment .modeOfPayment .paymentMutipleChoices-2 .paymentChoice a {
+    font-size: 14px;
+  }
+  .mainPayment .modeOfPayment .paymentMutipleChoices-2 .paymentChoice p {
+    font-size: 14px;
+  }
+  .mainPayment .modeOfPayment .paymentMutipleChoices-2 .paymentChoice .paymentChoice-title h2 {
+    font-size: 20px;
+  }
+  .mainPayment .byCash {
+    width: 100%;
+    display: flex;
+    padding: 0px;
+    gap: 20px;
+  }
+  .mainPayment .byCash__title {
+    padding: 20px;
+    gap: 10px;
+  }
+  .mainPayment .byCash__title h2 {
+    margin: 0;
+    color: #303030;
+    font-family: "fw-700";
+    font-size: 28px;
+    font-style: normal;
+    line-height: normal;
+  }
+  .mainPayment .byCash__title p {
+    margin: 0;
+    color: #303030;
+    font-family: "fw-400";
+    font-size: 18px;
+    font-style: normal;
+    line-height: normal;
+  }
+  .mainPayment .wireTransfer {
+    width: 100%;
+    padding: 0px;
+    margin-top: 30px;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail {
+    padding: 0;
+    gap: 20px;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer {
+    width: 30%;
+    padding: 20px;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img {
+    width: 190px;
+    height: 257px;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img img {
+    width: 100%;
+    height: 237px;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img .wireTransfer-thumbnail-background {
+    margin: -227px 0 0 88px;
+    width: 98px;
+    height: 218px;
+    border-radius: 20px;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img .wireTransfer-thumbnail-background .wireTransfer-img {
+    width: 100%;
+    height: 85%;
+    padding: 10px;
+    gap: 10px;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img .wireTransfer-thumbnail-background .wireTransfer-img i {
+    margin-top: 20px;
+    font-size: 40px;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img .wireTransfer-thumbnail-background .wireTransfer-img .text-status {
+    font-size: 14px;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img .wireTransfer-thumbnail-background .wireTransfer-img .ok {
+    margin-top: -20px;
+    font-size: 14px;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer {
+    width: 70%;
+    padding-bottom: 10px;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer .logo__img {
+    width: 30%;
+    height: 100px;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer .logo__illustration h2 {
+    margin: 0;
+    color: #303030;
+    font-family: "fw-700";
+    font-size: 32px;
+    font-style: normal;
+    line-height: normal;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer .logo__illustration p {
+    margin: 0;
+    color: #303030;
+    font-family: "fw-400";
+    font-size: 24px;
+    font-style: normal;
+    line-height: 32px;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer .scan {
+    width: 140px;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer .scan img {
+    width: 100px;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer h2 {
+    margin: 20px 0;
+    color: #303030;
+    font-family: "fw-700";
+    font-size: 28px;
+    font-style: normal;
+    line-height: normal;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer p {
+    margin: 0;
+    color: #303030;
+    font-family: "fw-400";
+    font-size: 18px;
+    font-style: normal;
+    line-height: normal;
+  }
+  .mainPayment .momo {
+    width: 100%;
+    padding: 0px 20px;
+    gap: 20px;
+  }
+  .mainPayment .momo__detail {
+    padding: 10px;
+    gap: 10px;
+  }
+  .mainPayment .momo__detail__descript h2 {
+    margin: 0;
+    color: #303030;
+    font-family: "fw-700";
+    font-size: 28px;
+    font-style: normal;
+    line-height: normal;
+  }
+  .mainPayment .momo__detail__descript p, .mainPayment .momo__detail__descript b {
+    color: #303030;
+    font-family: "fw-400";
+    font-size: 18px;
+    font-style: normal;
+    line-height: 28px;
+  }
+  .mainPayment .momo__detail img {
+    width: 20%;
+    object-fit: cover;
+  }
+  .mainPayment .zaloPay {
+    width: 100%;
+    padding: 0px 20px;
+    gap: 20px;
+  }
+  .mainPayment .zaloPay__detail {
+    padding: 10px;
+    gap: 10px;
+  }
+  .mainPayment .zaloPay__detail__descript h2 {
+    margin: 0;
+    color: #303030;
+    font-family: "fw-700";
+    font-size: 28px;
+    font-style: normal;
+    line-height: normal;
+  }
+  .mainPayment .zaloPay__detail__descript p, .mainPayment .zaloPay__detail__descript b {
+    color: #303030;
+    font-family: "fw-400";
+    font-size: 18px;
+    font-style: normal;
+    line-height: 28px;
+  }
+  .mainPayment .zaloPay__detail img {
+    width: 20%;
+    object-fit: cover;
+  }
+  .mainPayment .exchangeOfGoods {
+    width: 100%;
+    padding: 0px 20px;
+    gap: 20px;
+  }
+  .mainPayment .exchangeOfGoods__detail {
+    padding: 10px;
+    gap: 10px;
+  }
+  .mainPayment .exchangeOfGoods__detail__descript h2 {
+    margin: 0;
+    color: #303030;
+    font-family: "fw-700";
+    font-size: 28px;
+    font-style: normal;
+    line-height: normal;
+  }
+  .mainPayment .exchangeOfGoods__detail__descript p, .mainPayment .exchangeOfGoods__detail__descript b {
+    color: #303030;
+    font-family: "fw-400";
+    font-size: 18px;
+    font-style: normal;
+    line-height: 28px;
+  }
+  .mainPayment .exchangeOfGoods__detail img {
+    width: 20%;
+    object-fit: cover;
+  }
 }
-.mainPayment .modeOfPayment__title p {
-  width: 100%;
-  font-size: 14px;
+@media (min-width: 882px) and (max-width: 1023px) {
+  .mainPayment .modeOfPayment {
+    width: 100%;
+    padding: 0;
+    gap: 30px;
+  }
+  .mainPayment .modeOfPayment__title {
+    gap: 0;
+  }
+  .mainPayment .modeOfPayment__title p {
+    width: 100%;
+    font-size: 14px;
+  }
+  .mainPayment .modeOfPayment__title h2 {
+    width: 100%;
+    font-size: 18px;
+  }
+  .mainPayment .modeOfPayment .paymentMutipleChoices-1 {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .mainPayment .modeOfPayment .paymentMutipleChoices-1 .paymentChoice {
+    width: 100%;
+  }
+  .mainPayment .modeOfPayment .paymentMutipleChoices-1 .paymentChoice a {
+    font-size: 14px;
+  }
+  .mainPayment .modeOfPayment .paymentMutipleChoices-1 .paymentChoice p {
+    align-self: stretch;
+    font-size: 14px;
+  }
+  .mainPayment .modeOfPayment .paymentMutipleChoices-1 .paymentChoice .paymentChoice-title {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    align-self: stretch;
+  }
+  .mainPayment .modeOfPayment .paymentMutipleChoices-1 .paymentChoice .paymentChoice-title h2 {
+    font-size: 20px;
+  }
+  .mainPayment .modeOfPayment .paymentMutipleChoices-2 {
+    flex-direction: column;
+    column-gap: 0;
+    gap: 10px;
+  }
+  .mainPayment .modeOfPayment .paymentMutipleChoices-2 .paymentChoice {
+    width: 100%;
+  }
+  .mainPayment .modeOfPayment .paymentMutipleChoices-2 .paymentChoice a {
+    font-size: 14px;
+  }
+  .mainPayment .modeOfPayment .paymentMutipleChoices-2 .paymentChoice p {
+    font-size: 14px;
+  }
+  .mainPayment .modeOfPayment .paymentMutipleChoices-2 .paymentChoice .paymentChoice-title h2 {
+    font-size: 20px;
+  }
+  .mainPayment .byCash {
+    width: 100%;
+    display: flex;
+    padding: 0px;
+    gap: 20px;
+  }
+  .mainPayment .byCash__title {
+    padding: 20px;
+    gap: 10px;
+  }
+  .mainPayment .byCash__title h2 {
+    margin: 0;
+    color: #303030;
+    font-family: "fw-700";
+    font-size: 28px;
+    font-style: normal;
+    line-height: normal;
+  }
+  .mainPayment .byCash__title p {
+    margin: 0;
+    color: #303030;
+    font-family: "fw-400";
+    font-size: 18px;
+    font-style: normal;
+    line-height: normal;
+  }
+  .mainPayment .wireTransfer {
+    width: 100%;
+    padding: 0px;
+    margin-top: 30px;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail {
+    padding: 0;
+    gap: 20px;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer {
+    width: 30%;
+    padding: 20px;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img {
+    width: 190px;
+    height: 257px;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img img {
+    width: 100%;
+    height: 237px;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img .wireTransfer-thumbnail-background {
+    margin: -227px 0 0 88px;
+    width: 98px;
+    height: 218px;
+    border-radius: 20px;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img .wireTransfer-thumbnail-background .wireTransfer-img {
+    width: 100%;
+    height: 85%;
+    padding: 10px;
+    gap: 10px;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img .wireTransfer-thumbnail-background .wireTransfer-img i {
+    margin-top: 20px;
+    font-size: 40px;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img .wireTransfer-thumbnail-background .wireTransfer-img .text-status {
+    font-size: 14px;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img .wireTransfer-thumbnail-background .wireTransfer-img .ok {
+    margin-top: -20px;
+    font-size: 14px;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer {
+    width: 70%;
+    padding-bottom: 10px;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer .logo__img {
+    width: 30%;
+    height: 100px;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer .logo__illustration h2 {
+    margin: 0;
+    color: #303030;
+    font-family: "fw-700";
+    font-size: 32px;
+    font-style: normal;
+    line-height: normal;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer .logo__illustration p {
+    margin: 0;
+    color: #303030;
+    font-family: "fw-400";
+    font-size: 24px;
+    font-style: normal;
+    line-height: 32px;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer .scan {
+    width: 140px;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer .scan img {
+    width: 100px;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer h2 {
+    margin: 20px 0;
+    color: #303030;
+    font-family: "fw-700";
+    font-size: 28px;
+    font-style: normal;
+    line-height: normal;
+  }
+  .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer p {
+    margin: 0;
+    color: #303030;
+    font-family: "fw-400";
+    font-size: 18px;
+    font-style: normal;
+    line-height: normal;
+  }
+  .mainPayment .momo {
+    width: 100%;
+    padding: 0px 20px;
+    gap: 20px;
+  }
+  .mainPayment .momo__detail {
+    padding: 10px;
+    gap: 10px;
+  }
+  .mainPayment .momo__detail__descript h2 {
+    margin: 0;
+    color: #303030;
+    font-family: "fw-700";
+    font-size: 28px;
+    font-style: normal;
+    line-height: normal;
+  }
+  .mainPayment .momo__detail__descript p, .mainPayment .momo__detail__descript b {
+    color: #303030;
+    font-family: "fw-400";
+    font-size: 18px;
+    font-style: normal;
+    line-height: 28px;
+  }
+  .mainPayment .momo__detail img {
+    width: 20%;
+    object-fit: cover;
+  }
+  .mainPayment .zaloPay {
+    width: 100%;
+    padding: 0px 20px;
+    gap: 20px;
+  }
+  .mainPayment .zaloPay__detail {
+    padding: 10px;
+    gap: 10px;
+  }
+  .mainPayment .zaloPay__detail__descript h2 {
+    margin: 0;
+    color: #303030;
+    font-family: "fw-700";
+    font-size: 28px;
+    font-style: normal;
+    line-height: normal;
+  }
+  .mainPayment .zaloPay__detail__descript p, .mainPayment .zaloPay__detail__descript b {
+    color: #303030;
+    font-family: "fw-400";
+    font-size: 18px;
+    font-style: normal;
+    line-height: 28px;
+  }
+  .mainPayment .zaloPay__detail img {
+    width: 20%;
+    object-fit: cover;
+  }
+  .mainPayment .exchangeOfGoods {
+    width: 100%;
+    padding: 0px 20px;
+    gap: 20px;
+  }
+  .mainPayment .exchangeOfGoods__detail {
+    padding: 10px;
+    gap: 10px;
+  }
+  .mainPayment .exchangeOfGoods__detail__descript h2 {
+    margin: 0;
+    color: #303030;
+    font-family: "fw-700";
+    font-size: 28px;
+    font-style: normal;
+    line-height: normal;
+  }
+  .mainPayment .exchangeOfGoods__detail__descript p, .mainPayment .exchangeOfGoods__detail__descript b {
+    color: #303030;
+    font-family: "fw-400";
+    font-size: 18px;
+    font-style: normal;
+    line-height: 28px;
+  }
+  .mainPayment .exchangeOfGoods__detail img {
+    width: 20%;
+    object-fit: cover;
+  }
 }
-.mainPayment .modeOfPayment__title h2 {
-  width: 100%;
-  font-size: 18px;
-}
-.mainPayment .modeOfPayment .paymentMutipleChoices-1 {
-  flex-direction: column;
-  gap: 10px;
-}
-.mainPayment .modeOfPayment .paymentMutipleChoices-1 .paymentChoice {
-  width: 100%;
-}
-.mainPayment .modeOfPayment .paymentMutipleChoices-1 .paymentChoice a {
-  font-size: 14px;
-}
-.mainPayment .modeOfPayment .paymentMutipleChoices-1 .paymentChoice p {
-  align-self: stretch;
-  font-size: 14px;
-}
-.mainPayment .modeOfPayment .paymentMutipleChoices-1 .paymentChoice .paymentChoice-title {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  align-self: stretch;
-}
-.mainPayment .modeOfPayment .paymentMutipleChoices-1 .paymentChoice .paymentChoice-title h2 {
-  font-size: 20px;
-}
-.mainPayment .modeOfPayment .paymentMutipleChoices-2 {
-  flex-direction: column;
-  column-gap: 0;
-  gap: 10px;
-}
-.mainPayment .modeOfPayment .paymentMutipleChoices-2 .paymentChoice {
-  width: 100%;
-}
-.mainPayment .modeOfPayment .paymentMutipleChoices-2 .paymentChoice a {
-  font-size: 14px;
-}
-.mainPayment .modeOfPayment .paymentMutipleChoices-2 .paymentChoice p {
-  font-size: 14px;
-}
-.mainPayment .modeOfPayment .paymentMutipleChoices-2 .paymentChoice .paymentChoice-title h2 {
-  font-size: 20px;
-}
-.mainPayment .byCash {
-  width: 100%;
-  display: flex;
-  padding: 0px;
-  gap: 20px;
-}
-.mainPayment .byCash__title {
-  padding: 20px;
-  gap: 10px;
-}
-.mainPayment .byCash__title h2 {
-  margin: 0;
-  color: #303030;
-  font-family: "fw-700";
-  font-size: 28px;
-  font-style: normal;
-  line-height: normal;
-}
-.mainPayment .byCash__title p {
-  margin: 0;
-  color: #303030;
-  font-family: "fw-400";
-  font-size: 18px;
-  font-style: normal;
-  line-height: normal;
-}
-.mainPayment .wireTransfer {
-  width: 100%;
-  padding: 0px;
-  margin-top: 30px;
-}
-.mainPayment .wireTransfer .wireTransferDetail {
-  padding: 0;
-  gap: 20px;
-}
-.mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer {
-  width: 30%;
-  padding: 20px;
-}
-.mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img {
-  width: 190px;
-  height: 257px;
-}
-.mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img img {
-  width: 100%;
-  height: 237px;
-}
-.mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img .wireTransfer-thumbnail-background {
-  margin: -227px 0 0 88px;
-  width: 98px;
-  height: 218px;
-  border-radius: 20px;
-}
-.mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img .wireTransfer-thumbnail-background .wireTransfer-img {
-  width: 100%;
-  height: 85%;
-  padding: 10px;
-  gap: 10px;
-}
-.mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img .wireTransfer-thumbnail-background .wireTransfer-img i {
-  margin-top: 20px;
-  font-size: 40px;
-}
-.mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img .wireTransfer-thumbnail-background .wireTransfer-img .text-status {
-  font-size: 14px;
-}
-.mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img .wireTransfer-thumbnail-background .wireTransfer-img .ok {
-  margin-top: -20px;
-  font-size: 14px;
-}
-.mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer {
-  width: 70%;
-  padding-bottom: 10px;
-}
-.mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer .logo__img {
-  width: 30%;
-  height: 100px;
-}
-.mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer .logo__illustration h2 {
-  margin: 0;
-  color: #303030;
-  font-family: "fw-700";
-  font-size: 32px;
-  font-style: normal;
-  line-height: normal;
-}
-.mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer .logo__illustration p {
-  margin: 0;
-  color: #303030;
-  font-family: "fw-400";
-  font-size: 24px;
-  font-style: normal;
-  line-height: 32px;
-}
-.mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer .scan {
-  width: 140px;
-}
-.mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer .scan img {
-  width: 100px;
-}
-.mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer h2 {
-  margin: 20px 0;
-  color: #303030;
-  font-family: "fw-700";
-  font-size: 28px;
-  font-style: normal;
-  line-height: normal;
-}
-.mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer p {
-  margin: 0;
-  color: #303030;
-  font-family: "fw-400";
-  font-size: 18px;
-  font-style: normal;
-  line-height: normal;
-}
-.mainPayment .momo {
-  width: 100%;
-  padding: 0px 20px;
-  gap: 20px;
-}
-.mainPayment .momo__detail {
-  padding: 10px;
-  gap: 10px;
-}
-.mainPayment .momo__detail__descript h2 {
-  margin: 0;
-  color: #303030;
-  font-family: "fw-700";
-  font-size: 28px;
-  font-style: normal;
-  line-height: normal;
-}
-.mainPayment .momo__detail__descript p, .mainPayment .momo__detail__descript b {
-  color: #303030;
-  font-family: "fw-400";
-  font-size: 18px;
-  font-style: normal;
-  line-height: 28px;
-}
-.mainPayment .momo__detail img {
-  width: 20%;
-  object-fit: cover;
-}
-.mainPayment .zaloPay {
-  width: 100%;
-  padding: 0px 20px;
-  gap: 20px;
-}
-.mainPayment .zaloPay__detail {
-  padding: 10px;
-  gap: 10px;
-}
-.mainPayment .zaloPay__detail__descript h2 {
-  margin: 0;
-  color: #303030;
-  font-family: "fw-700";
-  font-size: 28px;
-  font-style: normal;
-  line-height: normal;
-}
-.mainPayment .zaloPay__detail__descript p, .mainPayment .zaloPay__detail__descript b {
-  color: #303030;
-  font-family: "fw-400";
-  font-size: 18px;
-  font-style: normal;
-  line-height: 28px;
-}
-.mainPayment .zaloPay__detail img {
-  width: 20%;
-  object-fit: cover;
-}
-.mainPayment .exchangeOfGoods {
-  width: 100%;
-  padding: 0px 20px;
-  gap: 20px;
-}
-.mainPayment .exchangeOfGoods__detail {
-  padding: 10px;
-  gap: 10px;
-}
-.mainPayment .exchangeOfGoods__detail__descript h2 {
-  margin: 0;
-  color: #303030;
-  font-family: "fw-700";
-  font-size: 28px;
-  font-style: normal;
-  line-height: normal;
-}
-.mainPayment .exchangeOfGoods__detail__descript p, .mainPayment .exchangeOfGoods__detail__descript b {
-  color: #303030;
-  font-family: "fw-400";
-  font-size: 18px;
-  font-style: normal;
-  line-height: 28px;
-}
-.mainPayment .exchangeOfGoods__detail img {
-  width: 20%;
-  object-fit: cover;
-}
-
 .videoPage {
   margin-top: 30px;
   display: flex;
