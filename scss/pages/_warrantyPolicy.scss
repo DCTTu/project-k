@@ -27,7 +27,6 @@
     line-height: normal;
   }
 }
-
 .warrantyPolicy-main {
   display: flex;
   padding: 0px 40px;
@@ -55,7 +54,12 @@
     line-height: normal;
     align-self: stretch;
     &--16 {
-      @extend .bold;
+      color: $black-color;
+      font-family: "fw-700";
+      font-size: 18px;
+      font-style: normal;
+      line-height: normal;
+      align-self: stretch;
       font-size: 16px;
     }
   }
@@ -211,6 +215,81 @@
       img {
         width: 10%;
         flex: 1 0 0;
+      }
+    }
+  }
+}
+
+@include media(sm-mobile, md-mobile, lg-mobile) {
+  .warrantyPolicy-title {
+    padding: 0px 10px;
+    h2 {
+      font-size: 18px;
+    }
+  }
+  .warrantyPolicy-main {
+    padding: 0px 20px;
+    h2 {
+      font-size: 18px;
+    }
+    .bold {
+      color: $black-color;
+      font-family: "fw-700";
+      font-size: 18px;
+      font-style: normal;
+      line-height: normal;
+      align-self: stretch;
+      &--16 {
+        color: $black-color;
+        font-family: "fw-700";
+        font-style: normal;
+        line-height: normal;
+        align-self: stretch;
+        font-size: 16px;
+      }
+    }
+    .warrantyPolicy {
+      flex-direction: column;
+      gap: 20px;
+  
+      &__type1 {
+        padding: 20px;
+        h2 {
+          font-size: 18px;
+        }
+        p {
+          font-size: 14px;
+        }
+        ul {
+          li {
+            font-size: 14px;
+          }
+        }
+      }
+  
+      &__type2 {
+        padding: 20px;
+        h2 {
+          font-size: 18px;
+        }
+        p {
+          font-size: 14px;
+        }
+        ul {
+          li {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  
+    .brands {
+      h2 {
+        font-size: 18px;
+      }
+  
+      &__details {
+        gap: 10px;
       }
     }
   }
