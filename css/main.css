@@ -3821,7 +3821,7 @@ ul {
   }
   .mainPayment .wireTransfer .wireTransferDetail {
     flex-direction: column;
-    padding: 0;
+    padding: 0 20px;
     gap: 50px;
   }
   .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer {
@@ -3839,10 +3839,10 @@ ul {
   }
   .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img .wireTransfer-thumbnail-background {
     position: absolute;
-    margin: -227px 0 0 88px;
+    margin: -232px 0 0 88px;
     width: 98px;
-    height: 218px;
-    border-radius: 20px;
+    height: 216px;
+    border-radius: 16px;
   }
   .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img .wireTransfer-thumbnail-background .wireTransfer-img {
     width: 100%;
@@ -3867,7 +3867,6 @@ ul {
   }
   .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer .logo__img {
     width: 30%;
-    height: 100px;
   }
   .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer .logo__illustration h2 {
     font-size: 18px;
@@ -4043,7 +4042,7 @@ ul {
   }
   .mainPayment .wireTransfer .wireTransferDetail {
     flex-direction: column;
-    padding: 0;
+    padding: 0 20px;
     gap: 50px;
   }
   .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer {
@@ -4061,10 +4060,10 @@ ul {
   }
   .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img .wireTransfer-thumbnail-background {
     position: absolute;
-    margin: -227px 0 0 88px;
+    margin: -232px 0 0 88px;
     width: 98px;
-    height: 218px;
-    border-radius: 20px;
+    height: 216px;
+    border-radius: 16px;
   }
   .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img .wireTransfer-thumbnail-background .wireTransfer-img {
     width: 100%;
@@ -4089,7 +4088,6 @@ ul {
   }
   .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer .logo__img {
     width: 30%;
-    height: 100px;
   }
   .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer .logo__illustration h2 {
     font-size: 18px;
@@ -4265,7 +4263,7 @@ ul {
   }
   .mainPayment .wireTransfer .wireTransferDetail {
     flex-direction: column;
-    padding: 0;
+    padding: 0 20px;
     gap: 50px;
   }
   .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer {
@@ -4283,10 +4281,10 @@ ul {
   }
   .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img .wireTransfer-thumbnail-background {
     position: absolute;
-    margin: -227px 0 0 88px;
+    margin: -232px 0 0 88px;
     width: 98px;
-    height: 218px;
-    border-radius: 20px;
+    height: 216px;
+    border-radius: 16px;
   }
   .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img .wireTransfer-thumbnail-background .wireTransfer-img {
     width: 100%;
@@ -4311,7 +4309,6 @@ ul {
   }
   .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer .logo__img {
     width: 30%;
-    height: 100px;
   }
   .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer .logo__illustration h2 {
     font-size: 18px;
@@ -4421,6 +4418,7 @@ ul {
   }
   .mainPayment .modeOfPayment .paymentMutipleChoices-1 {
     flex-direction: column;
+    padding: 0 20px;
     gap: 10px;
   }
   .mainPayment .modeOfPayment .paymentMutipleChoices-1 .paymentChoice {
@@ -4446,6 +4444,7 @@ ul {
     flex-direction: column;
     column-gap: 0;
     gap: 10px;
+    padding: 0 20px;
   }
   .mainPayment .modeOfPayment .paymentMutipleChoices-2 .paymentChoice {
     width: 100%;
@@ -4487,15 +4486,16 @@ ul {
   }
   .mainPayment .wireTransfer {
     width: 100%;
-    padding: 0px;
+    padding: 0px 20px;
     margin-top: 30px;
   }
   .mainPayment .wireTransfer .wireTransferDetail {
-    padding: 0;
+    align-items: center;
     gap: 20px;
   }
   .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer {
     width: 30%;
+    height: 100%;
     padding: 20px;
   }
   .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img {
@@ -4507,10 +4507,10 @@ ul {
     height: 237px;
   }
   .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img .wireTransfer-thumbnail-background {
-    margin: -227px 0 0 88px;
+    margin: -232px 0 0 88px;
     width: 98px;
-    height: 218px;
-    border-radius: 20px;
+    height: 216px;
+    border-radius: 16px;
   }
   .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img .wireTransfer-thumbnail-background .wireTransfer-img {
     width: 100%;
@@ -4524,34 +4524,27 @@ ul {
   }
   .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img .wireTransfer-thumbnail-background .wireTransfer-img .text-status {
     font-size: 14px;
+    margin: 0;
   }
   .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img .wireTransfer-thumbnail-background .wireTransfer-img .ok {
-    margin-top: -20px;
+    margin-top: -15px;
     font-size: 14px;
   }
   .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer {
     width: 70%;
     padding-bottom: 10px;
   }
+  .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer .logo {
+    margin: 20px 20px 0 0;
+  }
   .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer .logo__img {
     width: 30%;
-    height: 100px;
   }
   .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer .logo__illustration h2 {
-    margin: 0;
-    color: #303030;
-    font-family: "fw-700";
-    font-size: 32px;
-    font-style: normal;
-    line-height: normal;
+    font-size: 28px;
   }
   .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer .logo__illustration p {
-    margin: 0;
-    color: #303030;
-    font-family: "fw-400";
-    font-size: 24px;
-    font-style: normal;
-    line-height: 32px;
+    font-size: 20px;
   }
   .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer .scan {
     width: 140px;
@@ -4568,12 +4561,7 @@ ul {
     line-height: normal;
   }
   .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer p {
-    margin: 0;
-    color: #303030;
-    font-family: "fw-400";
-    font-size: 18px;
-    font-style: normal;
-    line-height: normal;
+    line-height: 27px;
   }
   .mainPayment .momo {
     width: 100%;
@@ -4679,6 +4667,7 @@ ul {
   }
   .mainPayment .modeOfPayment .paymentMutipleChoices-1 {
     flex-direction: column;
+    padding: 0 20px;
     gap: 10px;
   }
   .mainPayment .modeOfPayment .paymentMutipleChoices-1 .paymentChoice {
@@ -4704,6 +4693,7 @@ ul {
     flex-direction: column;
     column-gap: 0;
     gap: 10px;
+    padding: 0 20px;
   }
   .mainPayment .modeOfPayment .paymentMutipleChoices-2 .paymentChoice {
     width: 100%;
@@ -4745,15 +4735,16 @@ ul {
   }
   .mainPayment .wireTransfer {
     width: 100%;
-    padding: 0px;
+    padding: 0px 20px;
     margin-top: 30px;
   }
   .mainPayment .wireTransfer .wireTransferDetail {
-    padding: 0;
+    align-items: center;
     gap: 20px;
   }
   .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer {
     width: 30%;
+    height: 100%;
     padding: 20px;
   }
   .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img {
@@ -4765,10 +4756,10 @@ ul {
     height: 237px;
   }
   .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img .wireTransfer-thumbnail-background {
-    margin: -227px 0 0 88px;
+    margin: -232px 0 0 88px;
     width: 98px;
-    height: 218px;
-    border-radius: 20px;
+    height: 216px;
+    border-radius: 16px;
   }
   .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img .wireTransfer-thumbnail-background .wireTransfer-img {
     width: 100%;
@@ -4782,34 +4773,27 @@ ul {
   }
   .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img .wireTransfer-thumbnail-background .wireTransfer-img .text-status {
     font-size: 14px;
+    margin: 0;
   }
   .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img .wireTransfer-thumbnail-background .wireTransfer-img .ok {
-    margin-top: -20px;
+    margin-top: -15px;
     font-size: 14px;
   }
   .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer {
     width: 70%;
     padding-bottom: 10px;
   }
+  .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer .logo {
+    margin: 20px 20px 0 0;
+  }
   .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer .logo__img {
     width: 30%;
-    height: 100px;
   }
   .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer .logo__illustration h2 {
-    margin: 0;
-    color: #303030;
-    font-family: "fw-700";
-    font-size: 32px;
-    font-style: normal;
-    line-height: normal;
+    font-size: 28px;
   }
   .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer .logo__illustration p {
-    margin: 0;
-    color: #303030;
-    font-family: "fw-400";
-    font-size: 24px;
-    font-style: normal;
-    line-height: 32px;
+    font-size: 20px;
   }
   .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer .scan {
     width: 140px;
@@ -4826,12 +4810,7 @@ ul {
     line-height: normal;
   }
   .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer p {
-    margin: 0;
-    color: #303030;
-    font-family: "fw-400";
-    font-size: 18px;
-    font-style: normal;
-    line-height: normal;
+    line-height: 27px;
   }
   .mainPayment .momo {
     width: 100%;
@@ -4937,6 +4916,7 @@ ul {
   }
   .mainPayment .modeOfPayment .paymentMutipleChoices-1 {
     flex-direction: column;
+    padding: 0 20px;
     gap: 10px;
   }
   .mainPayment .modeOfPayment .paymentMutipleChoices-1 .paymentChoice {
@@ -4962,6 +4942,7 @@ ul {
     flex-direction: column;
     column-gap: 0;
     gap: 10px;
+    padding: 0 20px;
   }
   .mainPayment .modeOfPayment .paymentMutipleChoices-2 .paymentChoice {
     width: 100%;
@@ -5003,15 +4984,16 @@ ul {
   }
   .mainPayment .wireTransfer {
     width: 100%;
-    padding: 0px;
+    padding: 0px 20px;
     margin-top: 30px;
   }
   .mainPayment .wireTransfer .wireTransferDetail {
-    padding: 0;
+    align-items: center;
     gap: 20px;
   }
   .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer {
     width: 30%;
+    height: 100%;
     padding: 20px;
   }
   .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img {
@@ -5023,10 +5005,10 @@ ul {
     height: 237px;
   }
   .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img .wireTransfer-thumbnail-background {
-    margin: -227px 0 0 88px;
+    margin: -232px 0 0 88px;
     width: 98px;
-    height: 218px;
-    border-radius: 20px;
+    height: 216px;
+    border-radius: 16px;
   }
   .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img .wireTransfer-thumbnail-background .wireTransfer-img {
     width: 100%;
@@ -5040,34 +5022,27 @@ ul {
   }
   .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img .wireTransfer-thumbnail-background .wireTransfer-img .text-status {
     font-size: 14px;
+    margin: 0;
   }
   .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img .wireTransfer-thumbnail-background .wireTransfer-img .ok {
-    margin-top: -20px;
+    margin-top: -15px;
     font-size: 14px;
   }
   .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer {
     width: 70%;
     padding-bottom: 10px;
   }
+  .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer .logo {
+    margin: 20px 20px 0 0;
+  }
   .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer .logo__img {
     width: 30%;
-    height: 100px;
   }
   .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer .logo__illustration h2 {
-    margin: 0;
-    color: #303030;
-    font-family: "fw-700";
-    font-size: 32px;
-    font-style: normal;
-    line-height: normal;
+    font-size: 28px;
   }
   .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer .logo__illustration p {
-    margin: 0;
-    color: #303030;
-    font-family: "fw-400";
-    font-size: 24px;
-    font-style: normal;
-    line-height: 32px;
+    font-size: 20px;
   }
   .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer .scan {
     width: 140px;
@@ -5084,12 +5059,7 @@ ul {
     line-height: normal;
   }
   .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer p {
-    margin: 0;
-    color: #303030;
-    font-family: "fw-400";
-    font-size: 18px;
-    font-style: normal;
-    line-height: normal;
+    line-height: 27px;
   }
   .mainPayment .momo {
     width: 100%;
@@ -5466,15 +5436,8 @@ ul {
     align-items: flex-start;
     gap: 20px;
   }
-  .videos .details a img {
-    height: 100px;
-  }
-  .videos .details a .overlay {
-    height: 100px;
-  }
   .videos .details a .overlay::after {
     font-size: 50px;
-    line-height: 100px;
   }
   .videos .details__content a {
     font-size: 14px;
@@ -5522,15 +5485,8 @@ ul {
     align-items: flex-start;
     gap: 20px;
   }
-  .videos .details a img {
-    height: 100px;
-  }
-  .videos .details a .overlay {
-    height: 100px;
-  }
   .videos .details a .overlay::after {
     font-size: 50px;
-    line-height: 100px;
   }
   .videos .details__content a {
     font-size: 14px;
@@ -5578,6 +5534,14 @@ ul {
     align-items: flex-start;
     gap: 20px;
   }
+  .videos .details a .overlay::after {
+    font-size: 50px;
+  }
+  .videos .details__content a {
+    font-size: 14px;
+  }
+}
+@media (min-width: 601px) and (max-width: 741px) {
   .videos .details a img {
     height: 100px;
   }
@@ -5585,11 +5549,40 @@ ul {
     height: 100px;
   }
   .videos .details a .overlay::after {
-    font-size: 50px;
     line-height: 100px;
   }
-  .videos .details__content a {
-    font-size: 14px;
+}
+@media (min-width: 742px) and (max-width: 881px) {
+  .videos .details a img {
+    height: 100px;
+  }
+  .videos .details a .overlay {
+    height: 100px;
+  }
+  .videos .details a .overlay::after {
+    line-height: 100px;
+  }
+}
+@media (min-width: 882px) and (max-width: 1023px) {
+  .videos .details a img {
+    height: 200px;
+  }
+  .videos .details a .overlay {
+    height: 200px;
+  }
+  .videos .details a .overlay::after {
+    line-height: 200px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1335px) {
+  .videos .details a img {
+    height: 214px;
+  }
+  .videos .details a .overlay {
+    height: 214px;
+  }
+  .videos .details a .overlay::after {
+    line-height: 214px;
   }
 }
 .videoIsViewing {

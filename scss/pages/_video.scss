@@ -338,7 +338,6 @@
       }
     }
   }
-  
   .videos {
     display: flex;
     width: 100%;
@@ -346,8 +345,7 @@
     justify-content: space-between;
     align-items: flex-start;
     align-content: flex-start;
-    flex-wrap: wrap;
-            
+    flex-wrap: wrap;     
     .details {
       width: 23%;
       display: flex;
@@ -355,20 +353,67 @@
       align-items: flex-start;
       gap: 20px;
       a {
-        img {
-          height: 100px;
-        }
         .overlay {
-          height: 100px;
           &::after {
             font-size: 50px;
-            line-height: 100px;
           }
         }
       }
       &__content {
         a {
           font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@include media(sm-tablet, md-tablet) {
+  .videos {
+    .details {
+      a {
+        img {
+          height: 100px;
+        }
+        .overlay {
+          height: 100px;
+          &::after {
+            line-height: 100px;
+          }
+        }
+      }
+    }
+  }
+}
+@include lg-tablet {
+  .videos {
+    .details {
+      a {
+        img {
+          height: 200px;
+        }
+        .overlay {
+          height: 200px;
+          &::after {
+            line-height: 200px;
+          }
+        }
+      }
+    }
+  }
+}
+@include smm-desk {
+  .videos {
+    .details {
+      a {
+        img {
+          height: 214px;
+        }
+        .overlay {
+          height: 214px;
+          &::after {
+            line-height: 214px;
+          }
         }
       }
     }
