@@ -714,168 +714,76 @@
 }
 
 //for tablet
-.mainPayment {
-  .modeOfPayment {
-    width: 100%;
-    padding: 0;
-    gap: 30px;
-    &__title {
-      gap: 0;
-      p {
-        width: 100%;
-        font-size: 14px;
-      }
-      h2 {
-        width: 100%;
-        font-size: 18px;
-      }
-    }
-    .paymentMutipleChoices-1 {
-      flex-direction: column;
-      gap: 10px;
-      .paymentChoice {
-        width: 100%;
-        a {
-          font-size: 14px;
-        }
-        p {
-          align-self: stretch;
-          font-size: 14px;
-        }
-        .paymentChoice-title {
-          display: flex;
-          align-items: center;
-          gap: 20px;
-          align-self: stretch;
-          h2 {
-            font-size: 20px;
-          }
-        }
-      }
-    }
-    .paymentMutipleChoices-2 {
-      flex-direction: column;
-      column-gap: 0;
-      gap: 10px;
-      .paymentChoice {
-        width: 100%;
-        a {
-          font-size: 14px;
-        }
-        p {
-          font-size: 14px;
-        }
-        .paymentChoice-title {
-          h2 {
-            font-size: 20px;
-          }
-        }
-      }
-    }
-  }
-  .byCash {
-    width: 100%;
-    display: flex;
-    padding: 0px;
-    gap: 20px;
-    &__title { //?
-      padding: 20px;
-      gap: 10px;
-      h2 {
-        margin: 0;
-        color: $black-color;
-        font-family: "fw-700";
-        font-size: 28px;
-        font-style: normal;
-        line-height: normal;
-      }
-      p {
-        margin: 0;
-        color: $black-color;
-        font-family: "fw-400";
-        font-size: 18px;
-        font-style: normal;
-        line-height: normal;
-      }
-    }
-  }
-  .wireTransfer {
-    width: 100%;
-    padding: 0px;
-    margin-top: 30px;
-    .wireTransferDetail {
+@include media(sm-tablet, md-tablet, lg-tablet) {
+  .mainPayment {
+    .modeOfPayment {
+      width: 100%;
       padding: 0;
-      gap: 20px;
-      .thumbnail-wireTransfer {
-        width: 30%;
-        padding: 20px;
-        .img {
-          width: 190px;
-          height: 257px;
-          img {
-            width: 100%;
-            height: 237px;
+      gap: 30px;
+      &__title {
+        gap: 0;
+        p {
+          width: 100%;
+          font-size: 14px;
+        }
+        h2 {
+          width: 100%;
+          font-size: 18px;
+        }
+      }
+      .paymentMutipleChoices-1 {
+        flex-direction: column;
+        gap: 10px;
+        .paymentChoice {
+          width: 100%;
+          a {
+            font-size: 14px;
           }
-          .wireTransfer-thumbnail-background {
-            margin: -227px 0 0 88px;
-            width: 98px;
-            height: 218px;
-            border-radius: 20px;
-            .wireTransfer-img {
-              width: 100%;
-              height: 85%;
-              padding: 10px;
-              gap: 10px;
-              i {
-                margin-top: 20px;
-                font-size: 40px;
-              }
-              .text-status {
-                font-size: 14px;
-              }
-              .ok {
-                margin-top: -20px;
-                font-size: 14px;
-              }
+          p {
+            align-self: stretch;
+            font-size: 14px;
+          }
+          .paymentChoice-title {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            align-self: stretch;
+            h2 {
+              font-size: 20px;
             }
           }
         }
       }
-      .descript-wireTransfer {
-        width: 70%;
-        padding-bottom: 10px;
-        .logo {
-          &__img {
-            width: 30%;
-            height: 100px;
+      .paymentMutipleChoices-2 {
+        flex-direction: column;
+        column-gap: 0;
+        gap: 10px;
+        .paymentChoice {
+          width: 100%;
+          a {
+            font-size: 14px;
           }
-          &__illustration { //?
+          p {
+            font-size: 14px;
+          }
+          .paymentChoice-title {
             h2 {
-              margin: 0;
-              color: $black-color;
-              font-family: "fw-700";
-              font-size: 32px;
-              font-style: normal;
-              line-height: normal;
-            }
-            p {
-              margin: 0;
-              color: $black-color;
-              font-family: "fw-400";
-              font-size: 24px;
-              font-style: normal;
-              line-height: 32px; 
+              font-size: 20px;
             }
           }
         }
-        .scan { //?
-          width: 140px;
-          img {
-            width: 100px;
-          }
-        }
+      }
+    }
+    .byCash {
+      width: 100%;
+      display: flex;
+      padding: 0px;
+      gap: 20px;
+      &__title { //?
+        padding: 20px;
+        gap: 10px;
         h2 {
-          margin: 20px 0;
+          margin: 0;
           color: $black-color;
           font-family: "fw-700";
           font-size: 28px;
@@ -892,94 +800,188 @@
         }
       }
     }
-  }
-  .momo {
-    width: 100%;
-    padding: 0px 20px;
-    gap: 20px;
-    &__detail {
-      padding: 10px;
-      gap: 10px;
-      &__descript { //?
-        h2 {
-          margin: 0;
-          color: $black-color;
-          font-family: "fw-700";
-          font-size: 28px;
-          font-style: normal;
-          line-height: normal;
+    .wireTransfer {
+      width: 100%;
+      padding: 0px;
+      margin-top: 30px;
+      .wireTransferDetail {
+        padding: 0;
+        gap: 20px;
+        .thumbnail-wireTransfer {
+          width: 30%;
+          padding: 20px;
+          .img {
+            width: 190px;
+            height: 257px;
+            img {
+              width: 100%;
+              height: 237px;
+            }
+            .wireTransfer-thumbnail-background {
+              margin: -227px 0 0 88px;
+              width: 98px;
+              height: 218px;
+              border-radius: 20px;
+              .wireTransfer-img {
+                width: 100%;
+                height: 85%;
+                padding: 10px;
+                gap: 10px;
+                i {
+                  margin-top: 20px;
+                  font-size: 40px;
+                }
+                .text-status {
+                  font-size: 14px;
+                }
+                .ok {
+                  margin-top: -20px;
+                  font-size: 14px;
+                }
+              }
+            }
+          }
         }
-        p, b {
-          color: $black-color;
-          font-family: "fw-400";
-          font-size: 18px;
-          font-style: normal;
-          line-height: 28px; 
+        .descript-wireTransfer {
+          width: 70%;
+          padding-bottom: 10px;
+          .logo {
+            &__img {
+              width: 30%;
+              height: 100px;
+            }
+            &__illustration { //?
+              h2 {
+                margin: 0;
+                color: $black-color;
+                font-family: "fw-700";
+                font-size: 32px;
+                font-style: normal;
+                line-height: normal;
+              }
+              p {
+                margin: 0;
+                color: $black-color;
+                font-family: "fw-400";
+                font-size: 24px;
+                font-style: normal;
+                line-height: 32px; 
+              }
+            }
+          }
+          .scan { //?
+            width: 140px;
+            img {
+              width: 100px;
+            }
+          }
+          h2 {
+            margin: 20px 0;
+            color: $black-color;
+            font-family: "fw-700";
+            font-size: 28px;
+            font-style: normal;
+            line-height: normal;
+          }
+          p {
+            margin: 0;
+            color: $black-color;
+            font-family: "fw-400";
+            font-size: 18px;
+            font-style: normal;
+            line-height: normal;
+          }
         }
-      }
-      img {
-        width: 20%;
-        object-fit: cover;
       }
     }
-  }
-  .zaloPay {
-    width: 100%;
-    padding: 0px 20px;
-    gap: 20px;
-    &__detail {
-      padding: 10px;
-      gap: 10px;
-      &__descript { //?
-        h2 {
-          margin: 0;
-          color: $black-color;
-          font-family: "fw-700";
-          font-size: 28px;
-          font-style: normal;
-          line-height: normal;
+    .momo {
+      width: 100%;
+      padding: 0px 20px;
+      gap: 20px;
+      &__detail {
+        padding: 10px;
+        gap: 10px;
+        &__descript { //?
+          h2 {
+            margin: 0;
+            color: $black-color;
+            font-family: "fw-700";
+            font-size: 28px;
+            font-style: normal;
+            line-height: normal;
+          }
+          p, b {
+            color: $black-color;
+            font-family: "fw-400";
+            font-size: 18px;
+            font-style: normal;
+            line-height: 28px; 
+          }
         }
-        p, b {
-          color: $black-color;
-          font-family: "fw-400";
-          font-size: 18px;
-          font-style: normal;
-          line-height: 28px; 
+        img {
+          width: 20%;
+          object-fit: cover;
         }
-      }
-      img {
-        width: 20%;
-        object-fit: cover;
       }
     }
-  }
-  .exchangeOfGoods {
-    width: 100%;
-    padding: 0px 20px;
-    gap: 20px;
-    &__detail {
-      padding: 10px;
-      gap: 10px;
-      &__descript { //?
-        h2 {
-          margin: 0;
-          color: $black-color;
-          font-family: "fw-700";
-          font-size: 28px;
-          font-style: normal;
-          line-height: normal;
+    .zaloPay {
+      width: 100%;
+      padding: 0px 20px;
+      gap: 20px;
+      &__detail {
+        padding: 10px;
+        gap: 10px;
+        &__descript { //?
+          h2 {
+            margin: 0;
+            color: $black-color;
+            font-family: "fw-700";
+            font-size: 28px;
+            font-style: normal;
+            line-height: normal;
+          }
+          p, b {
+            color: $black-color;
+            font-family: "fw-400";
+            font-size: 18px;
+            font-style: normal;
+            line-height: 28px; 
+          }
         }
-        p, b {
-          color: $black-color;
-          font-family: "fw-400";
-          font-size: 18px;
-          font-style: normal;
-          line-height: 28px; 
+        img {
+          width: 20%;
+          object-fit: cover;
         }
       }
-      img {
-        width: 20%;
-        object-fit: cover;
+    }
+    .exchangeOfGoods {
+      width: 100%;
+      padding: 0px 20px;
+      gap: 20px;
+      &__detail {
+        padding: 10px;
+        gap: 10px;
+        &__descript { //?
+          h2 {
+            margin: 0;
+            color: $black-color;
+            font-family: "fw-700";
+            font-size: 28px;
+            font-style: normal;
+            line-height: normal;
+          }
+          p, b {
+            color: $black-color;
+            font-family: "fw-400";
+            font-size: 18px;
+            font-style: normal;
+            line-height: 28px; 
+          }
+        }
+        img {
+          width: 20%;
+          object-fit: cover;
+        }
       }
     }
   }
