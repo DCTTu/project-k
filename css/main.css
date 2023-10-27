@@ -3855,10 +3855,11 @@ ul {
     font-size: 40px;
   }
   .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img .wireTransfer-thumbnail-background .wireTransfer-img .text-status {
+    margin: 0;
     font-size: 14px;
   }
   .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img .wireTransfer-thumbnail-background .wireTransfer-img .ok {
-    margin-top: -20px;
+    margin-top: -15px;
     font-size: 14px;
   }
   .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer {
@@ -4076,10 +4077,11 @@ ul {
     font-size: 40px;
   }
   .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img .wireTransfer-thumbnail-background .wireTransfer-img .text-status {
+    margin: 0;
     font-size: 14px;
   }
   .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img .wireTransfer-thumbnail-background .wireTransfer-img .ok {
-    margin-top: -20px;
+    margin-top: -15px;
     font-size: 14px;
   }
   .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer {
@@ -4297,10 +4299,11 @@ ul {
     font-size: 40px;
   }
   .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img .wireTransfer-thumbnail-background .wireTransfer-img .text-status {
+    margin: 0;
     font-size: 14px;
   }
   .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img .wireTransfer-thumbnail-background .wireTransfer-img .ok {
-    margin-top: -20px;
+    margin-top: -15px;
     font-size: 14px;
   }
   .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer {
@@ -4490,13 +4493,13 @@ ul {
     margin-top: 30px;
   }
   .mainPayment .wireTransfer .wireTransferDetail {
+    padding: 20px;
     align-items: center;
     gap: 20px;
   }
   .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer {
     width: 30%;
     height: 100%;
-    padding: 20px;
   }
   .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img {
     width: 190px;
@@ -4533,9 +4536,6 @@ ul {
   .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer {
     width: 70%;
     padding-bottom: 10px;
-  }
-  .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer .logo {
-    margin: 20px 20px 0 0;
   }
   .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer .logo__img {
     width: 30%;
@@ -4739,13 +4739,13 @@ ul {
     margin-top: 30px;
   }
   .mainPayment .wireTransfer .wireTransferDetail {
+    padding: 20px;
     align-items: center;
     gap: 20px;
   }
   .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer {
     width: 30%;
     height: 100%;
-    padding: 20px;
   }
   .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img {
     width: 190px;
@@ -4782,9 +4782,6 @@ ul {
   .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer {
     width: 70%;
     padding-bottom: 10px;
-  }
-  .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer .logo {
-    margin: 20px 20px 0 0;
   }
   .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer .logo__img {
     width: 30%;
@@ -4988,13 +4985,13 @@ ul {
     margin-top: 30px;
   }
   .mainPayment .wireTransfer .wireTransferDetail {
+    padding: 20px;
     align-items: center;
     gap: 20px;
   }
   .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer {
     width: 30%;
     height: 100%;
-    padding: 20px;
   }
   .mainPayment .wireTransfer .wireTransferDetail .thumbnail-wireTransfer .img {
     width: 190px;
@@ -5031,9 +5028,6 @@ ul {
   .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer {
     width: 70%;
     padding-bottom: 10px;
-  }
-  .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer .logo {
-    margin: 20px 20px 0 0;
   }
   .mainPayment .wireTransfer .wireTransferDetail .descript-wireTransfer .logo__img {
     width: 30%;
