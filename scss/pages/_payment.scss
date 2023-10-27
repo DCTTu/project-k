@@ -524,14 +524,14 @@
                             flex: 1 0 0;
                             color: #162E4C;
                             font-family: fw-500;
-                            font-size: 20px;
+                            font-size: 18px;
                             font-style: normal;
                             font-weight: 700;
                             line-height: normal;
                         }
     
                         img{
-                            width: 54px;
+                            width: 53px;
                             height: 41.929px;
                             flex-shrink: 0;
                             object-fit: cover;
@@ -598,14 +598,14 @@
                             flex: 1 0 0;
                             color: #162E4C;
                             font-family: fw-500;
-                            font-size: 20px;
+                            font-size: 18px;
                             font-style: normal;
                             font-weight: 700;
                             line-height: normal;
                         }
     
                         img{
-                            width: 54px;
+                            width: 53px;
                             height: 41.929px;
                             flex-shrink: 0;
                             object-fit: cover;
@@ -626,6 +626,7 @@
             align-self: stretch;
     
             &__title{
+                width: 100%;
                 display: flex;
                 flex-direction: column;
                 padding: 20px;
@@ -659,7 +660,7 @@
                 .thumbnail-wireTransfer{
                     width: 100%;
                     height: 247px;
-                    padding: 0px 83px;
+                    padding: 0px 20%;
 
                     .img{
                         width: 190px;
@@ -739,7 +740,8 @@
                 }
     
                 .descript-wireTransfer{
-                    // width: 100%;
+                    width: 100%;
+                    padding-bottom: 20px;
                     .logo{
                         display: flex;
                         padding: 20px;
@@ -809,6 +811,9 @@
                     align-items: flex-start;
                     gap: 20px;
                     flex: 1 0 0;
+                    h2{
+                        font-size: 20px;
+                    }
                 }
                 img{
                     width: 20%;
@@ -842,6 +847,9 @@
                     align-items: flex-start;
                     gap: 20px;
                     flex: 1 0 0;
+                    h2{
+                        font-size: 20px;
+                    }
                 }
                 img{
                     width: 20%;
@@ -875,6 +883,9 @@
                     align-items: flex-start;
                     gap: 20px;
                     flex: 1 0 0;
+                    h2{
+                        font-size: 20px;
+                    }
                 }
                 img{
                     width: 20%;
@@ -1206,6 +1217,7 @@
     
                 .descript-wireTransfer{
                     width: 70%;
+                    padding-bottom: 10px;
                     .logo{
                         display: flex;
                         padding: 20px;
