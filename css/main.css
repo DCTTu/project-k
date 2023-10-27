@@ -3356,6 +3356,7 @@ ul {
   align-items: center;
   gap: 20px;
   align-self: stretch;
+  height: 42px;
 }
 .mainPayment .modeOfPayment .paymentMutipleChoices-1 .paymentChoice .paymentChoice-title h2 {
   flex: 1 0 0;
