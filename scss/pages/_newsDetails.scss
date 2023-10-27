@@ -131,8 +131,8 @@
       }
     }
   }
-  .sidebar {
-    &__item {
+  .sidebar.nD {
+    .sidebar__item {
       align-items: stretch;
       flex-direction: column;
       img {

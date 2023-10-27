@@ -1519,7 +1519,7 @@ ul {
     overflow-y: scroll;
     z-index: 2;
   }
-  .btn--dropdown, .btn--close {
+  .btn--dropdown.index, .btn--close.index {
     display: inline-flex;
   }
   .btn--fixed {
@@ -1545,7 +1545,7 @@ ul {
     overflow-y: scroll;
     z-index: 2;
   }
-  .btn--dropdown, .btn--close {
+  .btn--dropdown.index, .btn--close.index {
     display: inline-flex;
   }
   .btn--fixed {
@@ -1571,7 +1571,7 @@ ul {
     overflow-y: scroll;
     z-index: 2;
   }
-  .btn--dropdown, .btn--close {
+  .btn--dropdown.index, .btn--close.index {
     display: inline-flex;
   }
   .btn--fixed {
@@ -1597,7 +1597,7 @@ ul {
     overflow-y: scroll;
     z-index: 2;
   }
-  .btn--dropdown, .btn--close {
+  .btn--dropdown.index, .btn--close.index {
     display: inline-flex;
   }
   .btn--fixed {
@@ -1623,7 +1623,7 @@ ul {
     overflow-y: scroll;
     z-index: 2;
   }
-  .btn--dropdown, .btn--close {
+  .btn--dropdown.index, .btn--close.index {
     display: inline-flex;
   }
   .btn--fixed {
@@ -1649,7 +1649,7 @@ ul {
     overflow-y: scroll;
     z-index: 2;
   }
-  .btn--dropdown, .btn--close {
+  .btn--dropdown.index, .btn--close.index {
     display: inline-flex;
   }
   .btn--fixed {
@@ -3209,11 +3209,11 @@ ul {
   .newsDetails__left hr {
     width: calc(100vw - 80px);
   }
-  .sidebar__item {
+  .sidebar.nD .sidebar__item {
     align-items: stretch;
     flex-direction: column;
   }
-  .sidebar__item img {
+  .sidebar.nD .sidebar__item img {
     width: 100%;
     height: 200px;
   }
@@ -3231,11 +3231,11 @@ ul {
   .newsDetails__left hr {
     width: calc(100vw - 80px);
   }
-  .sidebar__item {
+  .sidebar.nD .sidebar__item {
     align-items: stretch;
     flex-direction: column;
   }
-  .sidebar__item img {
+  .sidebar.nD .sidebar__item img {
     width: 100%;
     height: 200px;
   }
@@ -3253,11 +3253,11 @@ ul {
   .newsDetails__left hr {
     width: calc(100vw - 80px);
   }
-  .sidebar__item {
+  .sidebar.nD .sidebar__item {
     align-items: stretch;
     flex-direction: column;
   }
-  .sidebar__item img {
+  .sidebar.nD .sidebar__item img {
     width: 100%;
     height: 200px;
   }
@@ -4039,7 +4039,7 @@ ul {
     font-size: 14px;
   }
 }
-@media (min-width: 601px) and (max-width: 741px) {
+@media (min-width: 742px) and (max-width: 881px) {
   .videoPage .category-video {
     display: flex;
     padding: 0px 40px;

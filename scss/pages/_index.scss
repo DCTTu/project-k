@@ -266,7 +266,7 @@ ul {
     }
   }
   .btn {
-    &--dropdown, &--close {
+    &--dropdown.index, &--close.index {
       display: inline-flex;
     }
     &--fixed {
