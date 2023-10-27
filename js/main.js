@@ -57,6 +57,23 @@ hideSideMenuNewsTop();
 showSideMenuNewsBottom();
 hideSideMenuNewsBottom();
 
+//create show/hide menu newsDetails
+showSideMenuNewsDetails = () => {
+  $(".newsDetailsDropdown").on("click", function () {
+    $(".newsDetails__right").show();
+    document.body.style.overflow = "hidden";
+  });
+}
+hideSideMenuNewsDetails = () => {
+  $(".newsDetailsClose").on("click", function () {
+    $(".newsDetails__right").hide();
+    document.body.style.overflow = "scroll";
+  });
+}
+
+showSideMenuNewsDetails();
+hideSideMenuNewsDetails();
+
 //change content filter 
 changeNameItem = () => {
   $(".filter__box:first").text("Danh mục: Laptop");
@@ -104,6 +121,19 @@ if (width <= 1023) {
   showAddressDetails();
   showIndexSideBar();
   hideIndexSideBar();
+}
+if (width <=741) {
+  $(window).scroll(function () { 
+    let headerHeight = $(".header").outerHeight();
+    let bannerHeight = $(".navbar").outerHeight();
+    let mainHeight = $(".main").outerHeight();
+    let height_2 = headerHeight + bannerHeight + mainHeight;
+    if ($(window).scrollTop() > height_2 - 1000) {
+      $(".btn--dropdown.newsDetailsDropdown").css("display", "none");
+    } else {
+      $(".btn--dropdown.newsDetailsDropdown").css("display", "inline-flex");
+    }
+  });
 }
 if (width <= 600) {
   changeNameItem();

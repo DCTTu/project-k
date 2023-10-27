@@ -6,7 +6,6 @@
   gap: 10px;
   align-self: stretch;
   background: $black-color;
-
   &__intro {
     width: 32.989%;
     display: flex;
@@ -53,7 +52,6 @@
       }
     }
   }
-
   &__support {
     width: 32.989%;
     display: flex;
@@ -96,7 +94,6 @@
       }
     }
   }
-
   &__img {
     width: 32.989%;
     align-self: stretch;
@@ -107,11 +104,14 @@
       object-fit: cover;
     }
   }
-
   &--mt30 {
     margin-top: 30px;
   }
-  @include media(lg-mobile, md-mobile) {
+}
+
+//mix
+@include media(lg-mobile, md-mobile, sm-tablet) {
+  .footer {
     padding: 60px 20px;
     flex-direction: column;
     gap: 20px;
@@ -146,8 +146,11 @@
       margin-top: 20px;
     }
   }
-  //for mobile
-  @include sm-mobile {
+}
+
+//for mobile
+@include sm-mobile {
+  .footer {
     padding: 60px 20px;
     flex-direction: column;
     gap: 20px;
@@ -185,9 +188,11 @@
       margin-top: 20px;
     }
   }
+}
 
-  //for tablet
-  @include media(sm-tablet, md-tablet, lg-tablet) {
+//for tablet
+@include media(md-tablet, lg-tablet) {
+  .footer {
     padding: 30px 18px;
     &__img {
       img {
@@ -207,7 +212,9 @@
       }
     } 
   }
-  @include media(sm-tablet, md-tablet) {
+}
+@include media(md-tablet) {
+  .footer {
     &__intro {
       h2 {
         font-size: 14px;
@@ -231,9 +238,11 @@
           width: 14px;
         }
       }
-    } 
-  }
-  @include lg-tablet {
+    }
+  } 
+}
+@include lg-tablet {
+  .footer {
     &__intro {
       h2 {
         font-size: 15px;
@@ -257,11 +266,13 @@
           width: 15px;
         }
       }
-    } 
-  }
+    }
+  } 
+}
 
-  //for desk
-  @include smm-desk {
+//for desk
+@include smm-desk {
+  .footer {
     &__img {
       img {
         height: 170px;
