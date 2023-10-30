@@ -27,18 +27,6 @@ hideIndexSideBar = () => {
 }
 
 //create hide/show side menu news 
-showSideMenuNewsTop = () => {
-  $(".newsTop").on("click", function () {
-    $(".news__top__right").show();
-    document.body.style.overflow = "hidden";
-  });
-}
-hideSideMenuNewsTop = () => {
-  $(".newsTopClose").on("click", function () {
-    $(".news__top__right").hide();
-    document.body.style.overflow = "scroll";
-  });
-}
 showSideMenuNewsBottom = () => {
   $(".newsBottom").on("click", function () {
     $(".news__bottom__right").show();
@@ -51,9 +39,6 @@ hideSideMenuNewsBottom = () => {
     document.body.style.overflow = "scroll";
   });
 }
-
-showSideMenuNewsTop();
-hideSideMenuNewsTop();
 showSideMenuNewsBottom();
 hideSideMenuNewsBottom();
 
@@ -90,7 +75,6 @@ let width = screen.width;
 if (width <= 1023) {
   //add sticky dropdown menu
   $(window).scroll(function () { 
-    console.log($(window).scrollTop());
     let headerHeight = $(".header").outerHeight();
     let bannerHeight = $(".navbar").outerHeight();
     let rowHeight = $(".index__produce").outerHeight();
